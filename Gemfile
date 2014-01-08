@@ -2,9 +2,12 @@ source 'https://rubygems.org'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.0'
+gem 'bcrypt-ruby', '3.0.1'
+gem 'bootstrap-sass', '2.3.2.0'
+
 
 # Use sqlite3 as the database for Active Record
-gem 'sqlite3'
+#sgem 'sqlite3'
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0'
@@ -43,3 +46,15 @@ end
 
 # Use debugger
 # gem 'debugger', group: [:development, :test]
+
+group :development, :test do
+	gem 'sqlite3'
+end
+group :production do
+	gem 'pg'
+	gem 'rails_12factor'
+end
+
+group :test, :development do
+	gem 'factory_girl_rails', '4.2.1'
+end
