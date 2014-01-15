@@ -6,9 +6,9 @@ class SessionsController < ApplicationController
   def fb_create
   	if signed_in?
   		if current_user.email != env["omniauth.auth"].info.email
-  			#flash.now[:error] = 'Different email addresses, please change to match before adding FB'
-      		#NEEDS TO BE CHANGED
-      		redirect_to 'users/show'
+  			flash.now[:error] = 'Different email addresses, please change to match before adding FB'
+      		@user = current_user
+      		render 'users/edit'
       		return
       	end
   	end
@@ -28,8 +28,7 @@ class SessionsController < ApplicationController
       sign_in user
       redirect_back_or user
     else
-      #flash.now[:error] = 'Invalid email/password combination'
-      #NEEDS TO BE CHANGED
+      flash.now[:error] = 'Invalid email/password combination'
       render 'new'
     end
   end
