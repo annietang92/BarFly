@@ -8,6 +8,11 @@ class UsersController < ApplicationController
 
   def show
     @user = User.find(params[:id])
+    if @user.provider == "facebook"
+      @facebook_auth = true
+    else
+      @facebook_auth = false
+    end
   end
 
   def new

@@ -4,7 +4,10 @@ source 'https://rubygems.org'
 gem 'rails', '4.0.0'
 gem 'bcrypt-ruby', '3.0.1'
 
-#facebook
+#facebook login
+gem 'omniauth-facebook', '1.5.1' 
+
+#facebook graph
 gem 'fb_graph'
 
 #pagination

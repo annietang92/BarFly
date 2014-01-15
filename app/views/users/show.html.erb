@@ -2,5 +2,8 @@
 <h1>
   <%= gravatar_for @user %>
   <%= @user.name %>
-  <%= @user.email %>
+  <%= @user.email %><br><br>
+  <% if !@facebook_auth %>
+  	<%= link_to "Sign in with Facebook", "/auth/facebook"%>
+  <%end%>
 </h1>
