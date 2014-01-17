@@ -10,6 +10,9 @@ gem 'omniauth-facebook', '1.5.1'
 #facebook graph
 gem 'fb_graph'
 
+#brewerydb
+gem 'brewery_db'
+
 #pagination
 gem 'will_paginate', '3.0.4'
 gem 'bootstrap-will_paginate', '0.0.9'

@@ -11,4 +11,6 @@ Barfly::Application.routes.draw do
   match 'auth/:provider/callback',  to: 'sessions#fb_create', via: 'get'
   match 'auth/failure',             to: 'static_pages#index', via: 'get'
 
+  match '/fb', to: 'facebook#index',     via: 'get'
+
 end

@@ -1,0 +1,12 @@
+US	34050	FPO		AA	Erie	029			41.0375	-111.6789	
+US	34034	APO		AA	Dillon	033			33.0364	-82.2493	
+US	99553	Akutan	Alaska	AK	Aleutians East	013			54.143	-165.7854	
+US	99571	Cold Bay	Alaska	AK	Aleutians East	013			55.3976	-162.4206	
+US	99583	False Pass	Alaska	AK	Aleutians East	013			54.841	-163.4368	
+US	99612	King Cove	Alaska	AK	Aleutians East	013			55.0628	-162.3056	
+US	99661	Sand Point	Alaska	AK	Aleutians East	013			55.3192	-160.4914
+US	99661	Sand Point	Alaska	AK	Aleutians East	013			55.3192	-160.4914
+US	99661	Sand Point	Alaska	AK	Aleutians East	013			55.3192	-160.4914	
+US	99546	Adak	Alaska	AK	Aleutians West (CA)	016			51.88	-176.6581	
+US	99547	Atka	Alaska	AK	Aleutians West (CA)	016			52.1224	-174.4301
+US	99547	Atka	Alaska	AK	Aleutians West (CA)	016			52.1224	-174.4301

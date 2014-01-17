@@ -11,7 +11,40 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140114233924) do
+ActiveRecord::Schema.define(version: 20140117220951) do
+
+  create_table "beers", force: true do |t|
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.string   "name"
+    t.string   "brewed_by"
+    t.string   "img_icon"
+    t.string   "img_med"
+    t.string   "img_lg"
+    t.string   "style"
+    t.string   "style_type"
+    t.string   "description"
+    t.string   "abv"
+    t.string   "ibu"
+    t.string   "is_organic"
+    t.integer  "likes"
+    t.integer  "total"
+    t.integer  "unique"
+    t.integer  "monthly"
+    t.string   "availability"
+    t.string   "serving"
+    t.string   "variations"
+    t.string   "beer_id"
+  end
+
+  create_table "locations", force: true do |t|
+    t.string   "city"
+    t.string   "state"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.float    "latitude"
+    t.float    "longitude"
+  end
 
   create_table "users", force: true do |t|
     t.string   "name"
