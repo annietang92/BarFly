@@ -17,7 +17,7 @@ class UsersController < ApplicationController
 
   def new
     @user = User.new
-    @locations = Location.location_array 
+    @locations = Location.last.city.html_safe
   end
 
   def edit
