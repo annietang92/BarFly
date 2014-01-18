@@ -24,12 +24,9 @@
 # 	end
 # end
 
-# LocationCache.delete_all
-# location_array = []
-# Location.all.each do |city|
-# 	location_array.push(city.concat_location)
-# end
-# LocationCache.create(text: location_array.to_s)
-
-Location.first.destroy
-Location.first.destroy
+LocationCache.delete_all
+location_array = []
+Location.all.each do |city|
+	location_array.push(city.concat_location)
+end
+LocationCache.create(text: location_array.to_s)
