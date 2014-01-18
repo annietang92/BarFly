@@ -12,7 +12,7 @@
       <%= f.text_field :email, placeholder: "johnsmith@test.com" %>
 
       <%= f.label :city %>
-      <%= f.text_field :location, id: "location_tt", placeholder: "Boston, MA"%>
+      <%= f.text_field :location, class: "location_tt", placeholder: "Boston, Massachusetts"%>
 
       <%= f.label :password %>
       <%= f.password_field :password %>
@@ -25,17 +25,4 @@
   </div>
 </div>
 
-<script type="text/javascript">
-  // Set up typeahead
-  var setUpClassTypeahead = function() {
-      // Initialize typeahead.
-      $("#location_tt").typeahead({
-          name: 'location',
-          local: <%= @locations.to_s.html_safe %>
-      });
-  }
-
-  $(document).ready(function(){
-    setUpClassTypeahead();
-  });
-</script>
+<%= render 'location_tt_js' %>

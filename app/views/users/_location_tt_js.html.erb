@@ -1,0 +1,14 @@
+<script type="text/javascript">
+  // Set up typeahead
+  var setUpLocationTypeahead = function() {
+      // Initialize typeahead.
+      $(".location_tt").typeahead({
+          name: 'location',
+          local: <%= @locations.to_s.html_safe %>
+      });
+  }
+
+  $(document).ready(function(){
+    setUpLocationTypeahead();
+  });
+</script>

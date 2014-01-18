@@ -13,7 +13,7 @@
       <%= f.text_field :email %>
 
       <%= f.label :city %>
-      <%= f.text_field :location %>
+      <%= f.text_field :location, class: "location_tt" %>
 
       <%= f.label :password %>
       <%= f.password_field :password %>
@@ -28,3 +28,5 @@
     <a href="http://gravatar.com/emails">change</a>
   </div>
 </div>
+
+<%= render 'location_tt_js' %>

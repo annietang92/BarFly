@@ -22,6 +22,7 @@ class UsersController < ApplicationController
 
   def edit
     @user = User.find(params[:id])
+    @locations = LocationCache.last.text
   end
 
   def update
