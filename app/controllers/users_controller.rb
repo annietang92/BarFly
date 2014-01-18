@@ -17,6 +17,7 @@ class UsersController < ApplicationController
 
   def new
     @user = User.new
+    @locations = Location.location_array 
   end
 
   def edit
@@ -48,7 +49,7 @@ class UsersController < ApplicationController
   private
 
     def user_params
-      params.require(:user).permit(:name, :email, :password,
+      params.require(:user).permit(:name, :email, :location, :password,
                                    :password_confirmation)
     end
 
