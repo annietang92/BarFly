@@ -29,4 +29,4 @@ location_array = []
 Location.all.each do |city|
 	location_array.push(city.concat_location)
 end
-Location.create(city: location_array.to_s)
+LocationCache.create(text: location_array.to_s)
