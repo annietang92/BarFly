@@ -51,6 +51,7 @@ class User < ActiveRecord::Base
 		    user.location = auth.info.location
 		    user.oauth_token = auth.credentials.token
 		    user.provider = auth.provider
+        user.picture = auth.info.image
 		    user.save!
 		  end
   	end

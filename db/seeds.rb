@@ -7,9 +7,7 @@
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
 LocationCache.delete_all
-
 location_array = []
-
 open(File.open(File.join(Rails.root, '/SeedData/US/US.txt'))) do |file|
 	file.read.each_line do |line|
 		line_array = line.split("\t")
@@ -21,13 +19,13 @@ open(File.open(File.join(Rails.root, '/SeedData/US/US.txt'))) do |file|
 		end
 	end
 end
-
 LocationCache.create(text: location_array.to_s)
 
+
+Beer.delete_all
 brewery_db = BreweryDB::Client.new do |config|
 	config.api_key = '20da4cd59c6e41f4ad0850dfa4e1cf7d'
 end
-
 (1..2).each do |i| 
 	brewery_db.beers.all(styleId: i.to_s).each do |beer|
 		temp = Beer.new
