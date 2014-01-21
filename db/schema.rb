@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140118191811) do
+ActiveRecord::Schema.define(version: 20140121200731) do
 
   create_table "beers", force: true do |t|
     t.datetime "created_at"
@@ -43,6 +43,15 @@ ActiveRecord::Schema.define(version: 20140118191811) do
     t.datetime "updated_at"
   end
 
+  create_table "locations", force: true do |t|
+    t.string   "city"
+    t.string   "state"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.float    "latitude"
+    t.float    "longitude"
+  end
+
   create_table "users", force: true do |t|
     t.string   "name"
     t.string   "email"
@@ -54,6 +63,7 @@ ActiveRecord::Schema.define(version: 20140118191811) do
     t.string   "location"
     t.string   "oauth_token"
     t.string   "provider"
+    t.string   "picture"
   end
 
   add_index "users", ["remember_token"], name: "index_users_on_remember_token"
