@@ -1,6 +1,6 @@
-brewery_db = BreweryDB::Client.new do |config|
-  config.api_key = '20da4cd59c6e41f4ad0850dfa4e1cf7d'
-end
+# brewery_db = BreweryDB::Client.new do |config|
+#   config.api_key = '20da4cd59c6e41f4ad0850dfa4e1cf7d'
+# end
 
 # (90..160).each do |i| 
 # 	brewery_db.beers.all(styleId: i.to_s).each do |beer|

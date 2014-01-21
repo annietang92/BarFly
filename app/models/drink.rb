@@ -1,4 +1,5 @@
 class Drink < ActiveRecord::Base
+	self.inheritance_column = nil
 	belongs_to :user
   	validates :name,  presence: true
   	validates :type, presence: true
