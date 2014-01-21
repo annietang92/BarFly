@@ -8,6 +8,8 @@ class User < ActiveRecord::Base
   has_secure_password
 	validates :password, length: { minimum: 6 }
 
+  has_many :drinks
+
   def self.is_existing_email(email)
   	if User.find_by(email: email).nil?
   		false
