@@ -2,9 +2,9 @@ class AddAttributesToBeers < ActiveRecord::Migration
   def change
   	add_column :beers, :name, :string
   	add_column :beers, :brewed_by, :string
-  	add_column :beers, :img_icon, :string
-  	add_column :beers, :img_med, :string
-  	add_column :beers, :img_lg, :string
+  	add_column :beers, :img_icon, :text
+  	add_column :beers, :img_med, :text
+  	add_column :beers, :img_lg, :text
   	add_column :beers, :style, :string
   	add_column :beers, :style_type, :string
   	add_column :beers, :description, :text

@@ -39,7 +39,7 @@ end
 			temp.style = beer.style.name
 			temp.style_type = beer.style.category.name
 		end
-		# temp.description = beer.description
+		temp.description = beer.description
 		temp.abv = beer.abv
 		temp.ibu = beer.ibu
 		temp.is_organic = beer.is_organic
