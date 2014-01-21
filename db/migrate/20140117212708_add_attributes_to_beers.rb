@@ -7,7 +7,7 @@ class AddAttributesToBeers < ActiveRecord::Migration
   	add_column :beers, :img_lg, :string
   	add_column :beers, :style, :string
   	add_column :beers, :style_type, :string
-  	add_column :beers, :description, :string
+  	add_column :beers, :description, :text
   	add_column :beers, :abv, :string
   	add_column :beers, :ibu, :string
   	add_column :beers, :is_organic, :string

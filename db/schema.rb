@@ -23,7 +23,7 @@ ActiveRecord::Schema.define(version: 20140121203759) do
     t.string   "img_lg"
     t.string   "style"
     t.string   "style_type"
-    t.string   "description"
+    t.text     "description"
     t.string   "abv"
     t.string   "ibu"
     t.string   "is_organic"
