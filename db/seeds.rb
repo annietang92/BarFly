@@ -14,8 +14,8 @@ open(File.open(File.join(Rails.root, '/SeedData/US/US.txt'))) do |file|
 	file.read.each_line do |line|
 		line_array = line.split("\t")
 		city = line_array[2]
-		state = line_array[3]
-		concat_location = city + ", " state
+		state = line_array[4]
+		concat_location = city + ", " + state
 		if !location_array.include? concat_location
 			location_array.push(concat_location)
 		end

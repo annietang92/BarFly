@@ -6,9 +6,9 @@ class SessionsController < ApplicationController
       :client_secret => 'U1W5VEBHWP4I020DJL1HQ14MTRCQAMMDKH554VTYKUG4BEGF')
     @venue = client.search_venues(:near => 'Cambridge, Massachusetts', :query => 'Bars')
     # @venue = client.venue(5104)
-    @user = current_user
-    user = FbGraph::User.fetch(@user.uid, :access_token => @user.oauth_token)
-    @username = user.friends
+    # @user = current_user
+    # user = FbGraph::User.fetch(@user.uid, :access_token => @user.oauth_token)
+    # @username = user.friends
   end
 
   def fb_create
