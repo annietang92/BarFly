@@ -13,6 +13,9 @@ gem 'fb_graph'
 #brewerydb
 gem 'brewery_db'
 
+#wine.com
+gem 'wine_dot_com_api_request'
+
 #foursquare
 gem 'foursquare2'
 
