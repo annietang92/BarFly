@@ -1,4 +1,17 @@
-<h1>BarFly</h1>
-<h2>Welcome Page</h2>
+<h1>BarFly</h1><br>
+<% if !signed_in? %>
+	<%= link_to "Sign up now!", signup_path, class: "btn btn-large btn-primary" %>
+<% else %>
+<h3>Your Drinks</h3>
+	<ol>
+		<% @drinks.each do |drink|%>
+			<li>
+				<b><%= drink.name %></b><br>
+				<%= drink.type%><br>
+				likes: <%= drink.likes %><br>
+				<%= drink.created_at %>
+			</li>
+		<% end %>
+	</ol>
 
-<%= link_to "Sign up now!", signup_path, class: "btn btn-large btn-primary" %>
+<% end %>

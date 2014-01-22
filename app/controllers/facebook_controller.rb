@@ -1,8 +1,7 @@
 class FacebookController < ApplicationController
+	require 'will_paginate/array'
 	def index
-		client = FBGraph::Client.new(:client_id => '793181580695859', 
-			:secret_id => 'f7694cc315f760524d59b199002c4c02', 
-			:token => current_user.oauth_token)
-		@user = client.selection.me.info!
+		@user = FbGraph::User.fetch(current_user.uid, :access_token => current_user.oauth_token)
+		@facebook = @user.friends.paginate(page: params[:page], :per_page => 50)
 	end
 end

@@ -1,1 +1,14 @@
-<%=@user.name%>
+<% provide(:title, 'Facebook friends') %>
+<h1>Facebook Friends</h1>
+
+<%= will_paginate %>
+
+<ul class="users">
+  <% @facebook.each do |user| %>
+    <li>
+      <%= user.name %>
+    </li>
+  <% end %>
+</ul>
+
+<%= will_paginate %>

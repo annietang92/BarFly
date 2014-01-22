@@ -6,6 +6,8 @@
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
+User.delete_all
+
 app = FbGraph::Application.new('793181580695859', :secret => 'f7694cc315f760524d59b199002c4c02')
 
 users = []
@@ -16,11 +18,22 @@ end
 
 users.each do |auth|
 	users.each do |u|
-		auth.friends.each do |friend|
-			if friend.identifier != auth.identifier && auth != u
+		if auth != u
+			if auth.friends.empty? && u.friends.empty?
 				auth.friend!(u)
+				p "got here"
+			else
+				exisiting_friend = false
+				auth.friends.each do |friend|
+					if friend.identifier == u.identifier
+						exisiting_friend = true
+					end
+				end 
+				if !exisiting_friend
+					auth.friend!(u)
+				end
 			end
-		end 
+		end
 	end
 	user = User.new
 	user.name = "TestUser" + auth.identifier.to_s
