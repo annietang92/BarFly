@@ -6,46 +6,46 @@
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
-User.delete_all
+# User.delete_all
 
-app = FbGraph::Application.new('793181580695859', :secret => 'f7694cc315f760524d59b199002c4c02')
+# app = FbGraph::Application.new('793181580695859', :secret => 'f7694cc315f760524d59b199002c4c02')
 
-users = []
-(1..10).each do |user|
-	user = app.test_user!(:installed => true, :permissions => :read_stream)
-	users.push(user)
-end
+# users = []
+# (1..10).each do |user|
+# 	user = app.test_user!(:installed => true, :permissions => :read_stream)
+# 	users.push(user)
+# end
 
-users.each do |auth|
-	users.each do |u|
-		if auth != u
-			if auth.friends.empty? && u.friends.empty?
-				auth.friend!(u)
-				p "got here"
-			else
-				exisiting_friend = false
-				auth.friends.each do |friend|
-					if friend.identifier == u.identifier
-						exisiting_friend = true
-					end
-				end 
-				if !exisiting_friend
-					auth.friend!(u)
-				end
-			end
-		end
-	end
-	user = User.new
-	user.name = "TestUser" + auth.identifier.to_s
-	user.email = auth.identifier.to_s+"@test.com"
-	user.password = "testtest"
-	user.password_confirmation = "testtest"
-	user.uid = auth.identifier
-	user.oauth_token = auth.access_token
-	user.provider = "facebook"
-	user.location = "Cambridge, MA"
-	user.save!
-end
+# users.each do |auth|
+# 	users.each do |u|
+# 		if auth != u
+# 			if auth.friends.empty? && u.friends.empty?
+# 				auth.friend!(u)
+# 				p "got here"
+# 			else
+# 				exisiting_friend = false
+# 				auth.friends.each do |friend|
+# 					if friend.identifier == u.identifier
+# 						exisiting_friend = true
+# 					end
+# 				end 
+# 				if !exisiting_friend
+# 					auth.friend!(u)
+# 				end
+# 			end
+# 		end
+# 	end
+# 	user = User.new
+# 	user.name = "TestUser" + auth.identifier.to_s
+# 	user.email = auth.identifier.to_s+"@test.com"
+# 	user.password = "testtest"
+# 	user.password_confirmation = "testtest"
+# 	user.uid = auth.identifier
+# 	user.oauth_token = auth.access_token
+# 	user.provider = "facebook"
+# 	user.location = "Cambridge, MA"
+# 	user.save!
+# end
 
 # Cocktail.delete_all
 # open(File.open(File.join(Rails.root, '/SeedData/Cocktails.txt'))) do |file|
@@ -61,20 +61,20 @@ end
 # 	end
 # end
 
-# LocationCache.delete_all
-# location_array = []
-# open(File.open(File.join(Rails.root, '/SeedData/US/US.txt'))) do |file|
-# 	file.read.each_line do |line|
-# 		line_array = line.split("\t")
-# 		city = line_array[2]
-# 		state = line_array[4]
-# 		concat_location = city + ", " + state
-# 		if !location_array.include? concat_location
-# 			location_array.push(concat_location)
-# 		end
-# 	end
-# end
-# LocationCache.create(text: location_array.to_s)
+LocationCache.delete_all
+location_array = []
+open(File.open(File.join(Rails.root, '/SeedData/US/US.txt'))) do |file|
+	file.read.each_line do |line|
+		line_array = line.split("\t")
+		city = line_array[2]
+		state = line_array[4]
+		concat_location = city + ", " + state
+		if !location_array.include? concat_location
+			location_array.push(concat_location)
+		end
+	end
+end
+LocationCache.create(text: location_array.to_s)
 
 
 # Beer.delete_all
