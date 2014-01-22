@@ -14,16 +14,16 @@
 ActiveRecord::Schema.define(version: 20140121203759) do
 
   create_table "beers", force: true do |t|
+    t.string   "name"
+    t.text     "description"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.string   "name"
     t.string   "brewed_by"
     t.string   "img_icon"
     t.string   "img_med"
     t.string   "img_lg"
     t.string   "style"
     t.string   "style_type"
-    t.text     "description"
     t.string   "abv"
     t.string   "ibu"
     t.string   "is_organic"

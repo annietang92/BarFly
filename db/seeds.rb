@@ -27,9 +27,10 @@ brewery_db = BreweryDB::Client.new do |config|
 	config.api_key = '20da4cd59c6e41f4ad0850dfa4e1cf7d'
 end
 (1..2).each do |i| 
-	brewery_db.beers.all(styleId: i.to_s).each do |beer|
+	brewery_db.beers.all(styleId: i.to_s, :withBreweries => 'Y').each do |beer|
 		temp = Beer.new
 		temp.name = beer.name
+		temp.brewed_by = beer.breweries.first.name
 		if !beer.labels.nil?
 			temp.img_icon = beer.labels.icon
 			temp.img_med = beer.labels.medium
@@ -49,7 +50,9 @@ end
 		if !beer.glass.nil?
 			temp.serving = beer.glass.name
 		end
-		temp.variations = beer.beerVariation.to_s
+		if !beer.beerVariation.nil?
+			temp.variations = beer.beerVariation.id
+		end
 		temp.beer_id = beer.id
 		temp.save
 	end
