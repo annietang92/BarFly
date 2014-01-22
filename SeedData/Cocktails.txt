@@ -1,0 +1,303 @@
+Absinthe	Corpse Reviver	N
+Absinthe	Corpse Reviver #2	N
+Absinthe	Death in the Afternoon	N
+Absinthe	Earthquake	N
+Absinthe	Green Vesper	N
+Absinthe	The Modernista	N
+Absinthe	Moloko Plus	N
+Absinthe	The Monkey Gland	N
+Absinthe	Sazerac	Y
+Beer	Black and Tan	N
+Beer	Black Velvet	N
+Beer	Boilermaker	N
+Beer	Flaming Dr Pepper	N
+Beer	Gose	N
+Beer	Hangman's Blood	N
+Beer	Irish Car Bomb	N
+Beer	Michelada	N
+Beer	Porchcrawler	N
+Beer	Sake Bomb	N
+Beer	Shandy	N
+Beer	Brass Monkey	N
+Beer	U-Boot	N
+Brandy or cognac	Curacao Punch	N
+Brandy or cognac	B & B	N
+Brandy or cognac	The Blenheim	N
+Brandy or cognac	Brandy Alexander   	Y
+Brandy or cognac	Brandy Manhattan	N
+Brandy or cognac	Brandy Sour/Brandy Daisy	N
+Brandy or cognac	Brandy Sour (Cyprus)	N
+Brandy or cognac	Chicago Cocktail	N
+Brandy or cognac	Jack Rose	N
+Brandy or cognac	Four Score	N
+Brandy or cognac	French Connection   	Y
+Brandy or cognac	Horse's Neck   	N
+Brandy or cognac	Incredible Hulk	N
+Brandy or cognac	Nikolaschka	N
+Brandy or cognac	Orgasm	N
+Brandy or cognac	Panama	N
+Brandy or cognac	Paradise   	Y
+Brandy or cognac	Pisco Sour   	Y
+Brandy or cognac	Piscola	N
+Brandy or cognac	Porto flip	N
+Brandy or cognac	Savoy Affair	N
+Brandy or cognac	Savoy Corpse Reviver	N
+Brandy or cognac	Sidecar   	Y
+Brandy or cognac	Singapore Sling   	Y
+Brandy or cognac	Stinger	N
+Brandy or cognac	Tom and Jerry	N
+Brandy or cognac	Zombie	N
+Cachaça	Batida	N
+Cachaça	Caipirinha   	Y
+Cachaça	Caju Amigo	N
+Cachaça	Leite de Onça	N
+Cachaça	Quentão	N
+Cachaça	Rabo-de-galo	N
+Cachaça	Royce	N
+Champagne	Black Velvet	N
+Champagne	Buck's Fizz	N
+Champagne	Mimosa   	Y
+Gin	20th Century	N
+Gin	Alexander	N
+Gin	Aviation	N
+Gin	Bijou	N
+Gin	Bloodhound	N
+Gin	Bronx   	Y
+Gin	French 75	N
+Gin	Gibson   	Y
+Gin	Gimlet	N
+Gin	Gin Fizz   	Y
+Gin	Gin buck (a Buck variant)	N
+Gin	Gin and tonic	N
+Gin	Gin pahit	N
+Gin	Gin Sour	N
+Gin	Hanky-Panky	N
+Gin	The Last Word	N
+Gin	Lime Rickey	N
+Gin	Long Island Iced Tea   	Y
+Gin	Joker	N
+Gin	Lorraine	N
+Gin	Martini   	Y
+Gin	Mickey Slim	N
+Gin	My Fair Lady	N
+Gin	Negroni   	Y
+Gin	Old Etonian	N
+Gin	Pall Mall	N
+Gin	Paradise	N
+Gin	Pegu	N
+Gin	Pimm's Cup	N
+Gin	Pink Gin	N
+Gin	Pink Lady	N
+Gin	Ramos Gin Fizz	N
+Gin	Royal Arrival	N
+Gin	Salty Dog	N
+Gin	Shirley Temple Black	N
+Gin	Singapore Sling   	Y
+Gin	Tom Collins   	Y
+Gin	Vesper Martini	N
+Gin	White Lady or Delilah	N
+Gin	Wolfram	N
+Rum	Bacardi   	Y
+Rum	Blue Hawaii	N
+Rum	Brass Monkey	N
+Rum	Bumbo (also called a Bombo or Bumboo)	N
+Rum	Bushwacker	N
+Rum	Caribou Lou	N
+Rum	Corn N' Oil	N
+Rum	Cuba Libre   	Y
+Rum	Culto A La Vida	N
+Rum	Dark and Stormy  	Y
+Rum	Daiquiri   	Y
+Rum	El Presidente	N
+Rum	Fish House Punch	N
+Rum	Flaming Dr Pepper	N
+Rum	Flaming Volcano	N
+Rum	Grog	N
+Rum	Gunfire	N
+Rum	Havana Cooler	N
+Rum	Hurricane	N
+Rum	Jagertee	N
+Rum	Long Island Iced Tea   	Y
+Rum	Macuá	N
+Rum	Mai-Tai   	Y
+Rum	Mojito   	Y
+Rum	Painkiller	N
+Rum	Piña Colada   	Y
+Rum	Planter's Punch   	Y
+Rum	Royal Bermuda Cocktail	N
+Rum	Rum Swizzle	N
+Rum	Staten Island Ferry	N
+Rum	Sundowner	N
+Rum	Ti Punch	N
+Rum	Tom and Jerry	N
+Rum	Zombie	N
+Sake	Ginza Mary	N
+Sake	Sake Bomb	N
+Sake	Tamagozake	N
+Tequila	Bananarita	N
+Tequila	Bloody Aztec	N
+Tequila	Chimayó Cocktail	N
+Tequila	El Toro Loco Patron and Redbull	N
+Tequila	Long Island Iced Tea   	Y
+Tequila	Margarita   	Y
+Tequila	Matador	N
+Tequila	Paloma	N
+Tequila	Slammer Royale 	N
+Tequila	Tequila Slammer	N
+Tequila	Tequila Sour	N
+Tequila	Tequila Sunrise   	Y
+Tequila	Tonic And Tequila	N
+Vodka	Agent Orange	N
+Vodka	Apple Martini    or Appletini	Y
+Vodka	Batida (traditionally made with cachaça)	N
+Vodka	Bay Breeze	N
+Vodka	Black Russian   	Y
+Vodka	Bloody Mary   	Y
+Vodka	BLT cocktail	N
+Vodka	Bull Shot   	Y
+Vodka	Blue Lagoon	N
+Vodka	Caesar	N
+Vodka	Caipivodka or Caipiroska	N
+Vodka	Cape Cod	N
+Vodka	Chi-Chi	N
+Vodka	Colombia	N
+Vodka	Cosmopolitan   	Y
+Vodka	Fizzy apple cocktail	N
+Vodka	Flirtini	N
+Vodka	The Goldeneye	N
+Vodka	Godmother   	Y
+Vodka	Greyhound	N
+Vodka	Harvey Wallbanger   	Y
+Vodka	Harrogate Nights	N
+Vodka	Hi-fi	N
+Vodka	Kamikaze   	Y
+Vodka	Kensington Court Special	N
+Vodka	Kremlin Colonel	N
+Vodka	Lime Rickey	N
+Vodka	Link Up	N
+Vodka	Long Island Iced Tea   	Y
+Vodka	Moscow Mule	N
+Vodka	Mudslide	N
+Vodka	Orange Tundra	N
+Vodka	Paralyzer	N
+Vodka	Red Lotus	N
+Vodka	Rose Kennedy Cocktail	N
+Vodka	Salmiakki Koskenkorva	N
+Vodka	Salty Dog   	Y
+Vodka	Screwdriver   	Y
+Vodka	Sea Breeze   	Y
+Vodka	Sex on the Beach   	Y
+Vodka	Vesper	N
+Vodka	Vodka Gimlet	N
+Vodka	Vodka Martini    or Kangaroo.	Y
+Vodka	Vodka McGovern	N
+Vodka	Vodka Sundowner	N
+Vodka	Vodka Sunrise	N
+Vodka	White Russian   	Y
+Vodka	Woo Woo	N
+Vodka	Yorsh	N
+Whiskey	Amber Moon	N
+Whiskey	Blue Blazer	N
+Whiskey	Bourbon Lancer	N
+Whiskey	Churchill	N
+Whiskey	Farnell	N
+Whiskey	Four Horsemen	N
+Whiskey	Irish Coffee   	Y
+Whiskey	Jack and Coke	N
+Whiskey	Jungle Juice	N
+Whiskey	Lynchburg Lemonade	N
+Whiskey	Manhattan   	Y
+Whiskey	Mint Julep   	Y
+Whiskey	Missouri Mule	N
+Whiskey	Nixon	N
+Whiskey	Old Fashioned   	Y
+Whiskey	Rob Roy   	Y
+Whiskey	Rusty Nail   	Y
+Whiskey	Sazerac	N
+Whiskey	Seven and Seven or 7 & 7	N
+Whiskey	Three Wise Men	N
+Whiskey	Whiskey sour   	Y
+Whiskey	Whisky Mac	N
+Wines	Agua de Valencia	N
+Wines	Black Velvet	N
+Wines	Death in the Afternoon	N
+Wines	Flirtini	N
+Wines	Prince of Wales	N
+Wines	Sangria	N
+Wines	Bellini   	Y
+Wines	Buck's Fizz   	Y
+Wines	Mimosa   	Y
+Wines	Kir Royal   	Y
+Wines	Ruby Dutchess	N
+Wines	Kalimotxo or Calimocho or Rioja Libre	N
+Wines	Tinto de Verano	N
+Wines	Mulled wine (Glögg)	N
+Wines	Zurracapote	N
+Wines	Kir   	Y
+Wines	Spritzer	N
+Chocolate liqueur	Chocolate Martini	N
+Coffee liqueurs	B-52  	Y
+Coffee liqueurs	Baby Guinness	N
+Coffee liqueurs	Blow Job	N
+Coffee liqueurs	Bushwacker	N
+Coffee liqueurs	Dirty Mother	N
+Coffee liqueurs	Dirty White Mother	N
+Coffee liqueurs	Jamaican Coffee	N
+Coffee liqueurs	Oatmeal Cookie	N
+Coffee liqueurs	Orgasm	N
+Cream liqueurs	Baby Guinness	N
+Cream liqueurs	Buttery Nipple	N
+Cream liqueurs	Golden Cadillac	N
+Cream liqueurs	Grasshopper	N
+Cream liqueurs	Pink Squirrel	N
+Cream liqueurs	Quick Fuck	N
+Cream liqueurs	Slippery Nipple	N
+Cream liqueurs	Screaming Orgasm	N
+Cream liqueurs	Grasshopper	N
+Cream liqueurs	Stinger	N
+Fruit liqueurs	Cosmopolitan	N
+Fruit liqueurs	Golden Dream	N
+Fruit liqueurs	Golden Doublet	N
+Fruit liqueurs	Kamikaze	N
+Fruit liqueurs	Long Island Iced Tea	N
+Fruit liqueurs	Margarita	N
+Fruit liqueurs	Moonwalk	N
+Fruit liqueurs	Skittle Bomb	N
+Fruit liqueurs	Zombie	N
+Fruit liqueurs	Japanese Slipper	N
+Fruit liqueurs	Midori Sour	N
+Fruit liqueurs	Nuclear Iced Tea	N
+Fruit liqueurs	Aviation	N
+Herbal liqueurs	Ouzo	N
+Herbal liqueurs	Harvey Wallbanger	N
+Herbal liqueurs	"Herbsaint Frappé
+"	N
+Herbal liqueurs	Mauresque	N
+Herbal liqueurs	Perroquet	N
+Herbal liqueurs	Tomate	N
+Nut-flavored liqueurs	Alabama Slammer	N
+Nut-flavored liqueurs	Blueberry Tea	N
+Nut-flavored liqueurs	French Connection	N
+Nut-flavored liqueurs	Godfather	N
+Nut-flavored liqueurs	Godmother	N
+Nut-flavored liqueurs	Orgasm	N
+Nut-flavored liqueurs	Screaming Orgasm	N
+Whisky liqueurs	Rusty Nail	N
+Other liqueurs	Backdraft (also a Pepperdraft variation)	N
+Other liqueurs	Carrot Cake	N
+Other liqueurs	Common Market	N
+Other liqueurs	Flaming Sambuca	N
+Other liqueurs	Grasshopper   	Y
+Other liqueurs	Jägerbomb	N
+Other liqueurs	Pucker Up	N
+Other liqueurs	Snowball	N
+Bitters	Americano   	Y
+Bitters	Brut Cocktail	N
+Schnapps	Appletini   	Y
+Schnapps	Fuzzy Navel	N
+Schnapps	Polar Bear	N
+Schnapps	Redheaded slut	N
+Pisco	Pisco Sour	N
+Pisco	Mango Sour	N
+Pisco	Jazmin Sour	N
+Pisco	Aguaymanto Sour	N

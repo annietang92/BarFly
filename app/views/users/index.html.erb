@@ -6,7 +6,7 @@
 <ul class="users">
   <% @users.each do |user| %>
     <li>
-      <%= gravatar_for user %>
+      <%= image_tag user.picture %>
       <%= link_to user.name, user %><br><br>
     </li>
   <% end %>

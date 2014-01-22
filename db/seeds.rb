@@ -6,6 +6,20 @@
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
+Cocktail.delete_all
+open(File.open(File.join(Rails.root, '/SeedData/Cocktails.txt'))) do |file|
+	file.read.each_line do |line|
+		line_array = line.gsub("\n", "").split("\t")
+		cocktail = Cocktail.new
+		cocktail.primary = line_array[0]
+		cocktail.name = line_array[1]
+		cocktail.iba = line_array[2]
+		if Cocktail.find_by(name: cocktail.name).nil?
+			cocktail.save
+		end
+	end
+end
+
 LocationCache.delete_all
 location_array = []
 open(File.open(File.join(Rails.root, '/SeedData/US/US.txt'))) do |file|
@@ -51,7 +65,7 @@ end
 			temp.serving = beer.glass.name
 		end
 		if !beer.beerVariation.nil?
-			temp.variations = beer.beerVariation.id
+			temp.variations = beer.beerVariation.name
 		end
 		temp.beer_id = beer.id
 		temp.save

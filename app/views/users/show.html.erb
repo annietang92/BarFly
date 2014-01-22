@@ -1,6 +1,6 @@
 <% provide(:title, @user.name) %>
 <h1>
-  <%= gravatar_for @user %>
+  <%= image_tag @user.picture %>
   <%= @user.name %>
   <%= @user.email %><br><br>
   <% if !@facebook_auth %>
