@@ -1,0 +1,18 @@
+<% provide(:title, 'BarFly | New Drink') %>
+<h1>New Drink</h1>
+<div class="row">
+  <div class="span6 offset3">
+    <%= form_for(@drink) do |f| %>
+      <%= render 'shared/error_messages' %>
+
+      <%= f.radio_button :type, 'Beer', :checked => true %> 
+      <%= label :type, 'Beer' %>
+      <%= f.radio_button :type, 'Cocktail' %>
+      <%= label :type, 'Cocktail' %><br>
+
+      <%= f.text_field :name, placeholder: "Drink (i.e. Martini)" %>
+
+      <%= f.submit "Submit", class: "btn btn-large btn-primary" %>
+    <% end %>
+  </div>
+</div>
