@@ -1,5 +1,5 @@
 <a href="<%= user_path(current_user) %>">
-  <%= current_user.picture %>
+  <%= image_tag current_user.picture %>
 </a>
 <h1><%= current_user.name %></h1>
 <span><%= link_to "view my profile", current_user %></span>
