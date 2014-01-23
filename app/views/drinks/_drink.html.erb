@@ -1,0 +1,11 @@
+<li>
+  <span class="content"><%= drink.name %></span>
+  <span class="timestamp">
+    Posted <%= time_ago_in_words(drink.created_at) %> ago.
+  </span>
+  <% if current_user?(drink.user) %>
+    <%= link_to "delete", drink, method: :delete,
+                                     confirm: "You sure?",
+                                     title: drink.name %>
+  <% end %>
+</li>

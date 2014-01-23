@@ -5,11 +5,11 @@
   </span>
   <span class="drink">
     <%= feed_item.name %> (<%=feed_item.type%>)
+  </span>
+  <span class="timestamp">
+    <%= time_ago_in_words(feed_item.created_at) %> ago.
   </span><br>
   <span class="comment">"<%= feed_item.comment %>"</span>
-  <span class="timestamp">
-    Posted <%= time_ago_in_words(feed_item.created_at) %> ago.
-  </span>
   <% if current_user?(feed_item.user) %>
     <%= link_to "delete", feed_item, method: :delete,
                                      confirm: "You sure?",

@@ -34,6 +34,10 @@ class DrinksController < ApplicationController
 			render 'new'
 		end
 	end
+	def destroy
+	    @drink.destroy
+	    redirect_to root_path
+	end
 
 	private
 
@@ -47,5 +51,10 @@ class DrinksController < ApplicationController
         store_location
         redirect_to signin_url, notice: "Please sign in."
       end
+    end
+
+    def correct_user
+      @drink = current_user.drinks.find_by_id(params[:id])
+      redirect_to root_path if @drink.nil?
     end
 end

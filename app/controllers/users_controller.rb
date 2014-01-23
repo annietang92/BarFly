@@ -16,7 +16,7 @@ class UsersController < ApplicationController
     @users = @user.followers.paginate(page: params[:page])
     render 'show_follow'
   end
-  
+
   def index
   	@users = User.paginate(page: params[:page], :per_page => 5)
   end
@@ -28,6 +28,7 @@ class UsersController < ApplicationController
     else
       @facebook_auth = false
     end
+    @drinks = @user.drinks.paginate(page: params[:page])
   end
 
   def new
