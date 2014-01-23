@@ -1,21 +1,24 @@
-<% if !signed_in? %>
-	<h1>BarFly</h1><br>
-	<%= link_to "Sign up now!", signup_path, class: "btn btn-large btn-primary" %>
-<% else %>
+<% if signed_in? %>
+  <div class="row">
+    <aside class="span4">
+      <section>
+        <%= render 'shared/user_info' %>
+      </section>
       <section>
         <%= render 'shared/stats' %>
       </section>
-<h3>Your Drinks</h3>
-	<%= link_to "New Drink!", new_drink_path, class: "btn btn-large btn-primary" %><br><br>
-	<ol>
-		<% @drinks.each do |drink|%>
-			<li>
-				<b><%= drink.name %></b> (<%= drink.type%>)<br>
-				<%= drink.comment%><br>
-				likes: <%= drink.likes %><br>
-				<%= drink.created_at %>
-			</li>
-		<% end %>
-	</ol>
+      <%= link_to "New Drink!", new_drink_path, class: "btn btn-large btn-primary" %>
+    </aside>
+    <div class="span8">
+      <h3>Drinks Feed</h3>
+      <%= render 'shared/feed' %>
+    </div>
+  </div>
+<% else %>
+  <div class="center hero-unit">
+    <h1>Barfly</h1>
 
+    <%= link_to "Sign up now!", signup_path, class: "btn btn-large btn-primary" %>
+  </div>
 <% end %>
+
