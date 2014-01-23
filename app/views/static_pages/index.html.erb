@@ -7,8 +7,8 @@
 	<ol>
 		<% @drinks.each do |drink|%>
 			<li>
-				<b><%= drink.name %></b><br>
-				<%= drink.type%><br>
+				<b><%= drink.name %></b> (<%= drink.type%>)<br>
+				<%= drink.comment%><br>
 				likes: <%= drink.likes %><br>
 				<%= drink.created_at %>
 			</li>
