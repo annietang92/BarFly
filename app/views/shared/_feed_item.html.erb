@@ -1,5 +1,5 @@
 <li id="<%= feed_item.id %>">
-  <%=  link_to image_tag(@user.picture), feed_item.user %>
+  <%=  link_to image_tag(feed_item.user.picture), feed_item.user %>
   <span class="user">
     <%= link_to feed_item.user.name, feed_item.user %> drank a 
   </span>
