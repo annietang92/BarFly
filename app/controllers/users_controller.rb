@@ -1,6 +1,6 @@
 class UsersController < ApplicationController
   before_action :signed_in_user, only: [:index, :show, :edit, :update]
-  before_action :correct_user,   only: [:show, :edit, :update]
+  before_action :correct_user,   only: [:edit, :update]
 
   def index
   	@users = User.paginate(page: params[:page], :per_page => 5)
@@ -30,7 +30,7 @@ class UsersController < ApplicationController
     @locations = LocationCache.last.text
     if @user.update_attributes(user_params)
       flash[:success] = "Profile updated"
-      redirect_to @user
+      redirect_to root_url
     else
       render 'edit'
     end
@@ -41,7 +41,7 @@ class UsersController < ApplicationController
     if @user.save
       sign_in @user
       flash[:success] = "Welcome to the Sample App!"
-      redirect_to @user
+      redirect_to root_url
     else
       render 'new'
     end
