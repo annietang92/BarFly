@@ -1,7 +1,11 @@
 Barfly::Application.routes.draw do
   root 'static_pages#index'
 
-  resources :users
+  resources :users do
+    member do
+      get :following, :followers
+    end
+  end
   resources :drinks
   resources :sessions, only: [:new, :create, :destroy]
 
