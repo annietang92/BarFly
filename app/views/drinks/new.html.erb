@@ -10,8 +10,8 @@
       <%= f.radio_button :type, 'Cocktail' %>
       <%= label :type, 'Cocktail' %><br>
 
-      <%= f.text_field :name, placeholder: "Drink (i.e. Martini)", class: "drinks_tt" %>
-
+      <%= f.text_field :name, placeholder: "Drink (i.e. Martini)", class: "drinks_tt" %><br>
+      <%= f.text_area :comment, placeholder: "Comments?" %>
       <%= f.submit "Submit", class: "btn btn-large btn-primary" %>
     <% end %>
   </div>
@@ -23,10 +23,9 @@
       // Initialize typeahead.
       $(".drinks_tt").typeahead({
           name: 'drinks',
-          local: <%= @beers.to_s.html_safe %>
+          local: <%= @all_drinks.to_s.html_safe %>
       });
   }
-
   $(document).ready(function(){
     setUpDrinksTypeahead();
   });
