@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140123010401) do
+ActiveRecord::Schema.define(version: 20140123190727) do
 
   create_table "beers", force: true do |t|
     t.string   "name"
@@ -44,6 +44,17 @@ ActiveRecord::Schema.define(version: 20140123010401) do
     t.datetime "created_at"
     t.datetime "updated_at"
   end
+
+  create_table "drink_venue_relationships", force: true do |t|
+    t.integer  "drink_id"
+    t.integer  "venue_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "drink_venue_relationships", ["drink_id", "venue_id"], name: "index_drink_venue_relationships_on_drink_id_and_venue_id", unique: true
+  add_index "drink_venue_relationships", ["drink_id"], name: "index_drink_venue_relationships_on_drink_id"
+  add_index "drink_venue_relationships", ["venue_id"], name: "index_drink_venue_relationships_on_venue_id"
 
   create_table "drinks", force: true do |t|
     t.string   "name"
@@ -98,5 +109,23 @@ ActiveRecord::Schema.define(version: 20140123010401) do
 
   add_index "users", ["remember_token"], name: "index_users_on_remember_token"
   add_index "users", ["uid"], name: "index_users_on_uid"
+
+  create_table "venues", force: true do |t|
+    t.string   "name"
+    t.string   "address"
+    t.string   "city"
+    t.string   "state"
+    t.string   "zip"
+    t.string   "phone"
+    t.string   "ll"
+    t.text     "description"
+    t.string   "url"
+    t.string   "hours"
+    t.string   "picture"
+    t.integer  "likes"
+    t.integer  "checkins"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
 end
