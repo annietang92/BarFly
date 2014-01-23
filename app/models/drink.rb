@@ -6,6 +6,11 @@ class Drink < ActiveRecord::Base
   	validates :drink_id, presence: true
   	validates :user_id, presence: true
 
+  	default_scope -> { order('updated_at DESC') }
+
+  	has_one :drink_venue_relationship, dependent: :destroy
+  	has_one :venue, through: :drink_venue_relationship, source: :venue
+
   	def self.from_users_followed_by(user)
 	    followed_user_ids = "SELECT followed_id FROM relationships
 	                         WHERE follower_id = :user_id"
