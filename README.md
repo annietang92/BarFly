@@ -1,7 +1,46 @@
-BarFly - A Social Drinking and Bar Discovery App
-=========
+## BarFly - A Social Drinking and Bar Discovery Rails App
 ### Annie Tang (yuetang@mit.edu)
+### http://bar-fly.herokuapp.com
+
+
+##Milestone 2
+
+**1. Did any of your answers to Milestone 1 change (particularly the Additional Questions, your idea for your site, or team members)? Write the numbers for the questions whose answers have changed, and their new answers.**
+
+No changes since milestone 1
+
+**2. Which features are implemented. To what extent are they complete?**
+
+A user can log in, connect to their facebook account, follow other users, and record a drink that they drank either at a specific venue or without a venue. A user can also see a live feed of what his/her friends are drinking
+
+**3. Are there any features you wanted to include in your MVP from Milestone 1 that are not complete? If so, which are they?**
+
+Discovery features have not been made yet, such as finding the top bars in the users location, finding the best drinks, etc. Awards (badges) have also not yet been implemented, and recommendations as well. The beer and cocktail databases have been scraped from BreweryDB and Wikipedia (respectively) but are not complete due to limitations on heroku database sizes - will find some kind of workaround for this.
+
+**4. What additional features do you wish to implement? How far along on those features are you?**
+
+Discovery features, Awards, and Recommendations need to be implemented. There is 0 styling so far, so that also needs to be done. The models for these remaining features are been set up, just need to figure out the views and forms.
+
+**5. What technologies are you using for the back-end? Include any frameworks if relevant.**
+
+Ruby on Rails
+
+**6. What technologies are you using for the front-end? Include Javascript frameworks such as jQuery, templating frameworks such as Handlebars.js, and other client-side frameworks such as Ember.js or Backbone.js.**
+
+Javascript, jQuery, sass css
+
+**7. What is the main browser you are targeting? Must be one of our supported browsers.**
+
+Chrome
+
+**8. What implementation unknown / risks are you still facing? Consider this an exercise of imagination, not a test of confidence.**
+
+Limited database on heroku (max 10,000 entires)
+
 ***
+
+## Milestone 1
+
 **Description**
 
 Social drinking just became even more social! BarFly is a social discovery application that lets you find the trendiest bars and drinks in your city and share the beverages you’re trying with your friends via a twitter-like feed. BarFly will easily let you find nearby bars and pubs, see which beers, wines and cocktails are trending, and see what your friends are drinking at each location. As you make your way across all the bars in town, you’ll fill up your Drinkery Passport, collect memorabilia (achievements) and perhaps become the Lord of the BarFlies in your city.
