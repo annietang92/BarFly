@@ -1,0 +1,40 @@
+<% provide(:title, 'BarFly | Venue') %>
+<h1>Search Venues</h1>
+	<div class="row">
+		<%= form_for @venue, url: venues_search_path do |f| %>
+		  <%= f.label :name %>
+	      <%= f.text_field :name, placeholder: "Venue Name"%><br>
+	      <%= f.label :near %>
+	      <%= f.text_field :city, placeholder: "City", class: "location_tt"%>
+	      <%= f.submit "Search", class: "btn btn-large btn-primary" %>
+    	<% end %>
+    	<%= link_to "Skip", root_path, class: "btn btn-large btn-primary" %>
+  </div>
+  <% if !@venues.nil?%>
+  <h1><br>Venue Search Results</h1>
+  	<div class="row">
+  		<ol class="venues">
+  		<% @venues.each do |v| %>
+  			<li>
+  				<%= v.name%> <%=link_to "Select", new_venue_path%>
+  			</li>
+  		<%end%>
+  		</ol>
+  	</div>
+  <%end%>
+</div>
+
+<script type="text/javascript">
+  // Set up typeahead
+  var setUpLocationTypeahead = function() {
+      // Initialize typeahead.
+      $(".location_tt").typeahead({
+          name: 'location',
+          local: <%= LocationCache.last.text.to_s.html_safe %>
+      });
+  }
+
+  $(document).ready(function(){
+    setUpLocationTypeahead();
+  });
+</script>

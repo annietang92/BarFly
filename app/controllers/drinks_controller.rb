@@ -9,7 +9,8 @@ class DrinksController < ApplicationController
 
 	def create
 		@user = current_user
-		@drink = current_user.drinks.new(user_params)
+		@drink = current_user.drinks.new(drink_params)
+		@venue = Venue.new
 		if @drink.type === "Beer"
 			if !Beer.find_by(name: @drink.name).nil?
 				@drink.drink_id = Beer.find_by(name: @drink.name).id
@@ -28,20 +29,21 @@ class DrinksController < ApplicationController
 			end
 		end
 		if @drink.save
-			flash[:success] = "New Drink Saved!"
-			redirect_to root_path
+			flash[:success] = "New drink recorded! You can add a venue for your drink, or skip this step."
+			render 'venues/new'
 		else
 			render 'new'
 		end
 	end
 	def destroy
+		@drink = Drink.all.find(params[:id])
 	    @drink.destroy
 	    redirect_to root_path
 	end
 
 	private
 
-    def user_params
+    def drink_params
       params.require(:drink).permit(:name, :type, :comment)
     end
 

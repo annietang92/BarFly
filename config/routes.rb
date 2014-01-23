@@ -7,9 +7,13 @@ Barfly::Application.routes.draw do
     end
   end
   resources :drinks
+  resources :venues
   resources :sessions, only: [:new, :create, :destroy]
   resources :relationships, only: [:create, :destroy]
 
+
+  match '/venues/search',  to: 'venues#search', via: 'post'
+  match '/venues/search',  to: 'venues#search', via: 'get'
   match '/signup',  to: 'users#new',            via: 'get'
   match '/signin',  to: 'sessions#new',         via: 'get'
   match '/signout', to: 'sessions#destroy',     via: 'delete'
