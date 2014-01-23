@@ -2,6 +2,9 @@
 	<h1>BarFly</h1><br>
 	<%= link_to "Sign up now!", signup_path, class: "btn btn-large btn-primary" %>
 <% else %>
+      <section>
+        <%= render 'shared/stats' %>
+      </section>
 <h3>Your Drinks</h3>
 	<%= link_to "New Drink!", new_drink_path, class: "btn btn-large btn-primary" %><br><br>
 	<ol>

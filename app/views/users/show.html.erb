@@ -1,9 +1,21 @@
 <% provide(:title, @user.name) %>
-<h1>
-  <%= image_tag @user.picture %>
-  <%= @user.name %>
-  <%= @user.email %><br><br>
-  <% if !@facebook_auth %>
+<div class="row">
+  <aside class="span4">
+    <section>
+      <h1>
+        <%= image_tag @user.picture %>
+  		<%= @user.name %>
+  		<%= @user.email %><br><br>
+      </h1>
+       <% if !@facebook_auth %>
   	<%= link_to "Sign in with Facebook", "/auth/facebook"%>
   <%end%>
-</h1>
+    </section>
+    <section>
+      <%= render 'shared/stats' %>
+    </section>
+  </aside>
+  <div class="span8">
+    <%= render 'follow_form' if signed_in? %>
+  </div>
+</div>

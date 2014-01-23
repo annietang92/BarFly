@@ -8,7 +8,7 @@
 # 		temp.name = beer.name
 # 		if !beer.labels.nil?
 # 			temp.img_icon = beer.labels.icon
-# 			temp.img_med = beer.labels.medium
+# 			temp.img_med` = beer.labels.medium
 # 			temp.img_lg = beer.labels.large
 # 		end
 # 		if !beer.style.nil?
