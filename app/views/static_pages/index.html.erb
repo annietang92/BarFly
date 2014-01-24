@@ -15,8 +15,13 @@
     </div>
   </div>
 <% else %>
-  <div class="center hero-unit">
-    <h1>Barfly</h1>
+  <div class="landing_container">
+    <div class="landing_icon">
+      <%=image_tag "Icons/icon_final.png" %>
+    </div>
+    <div class="landing_name">
+      <%=image_tag "barfly_text.png" %>
+    </div>
 
     <%= link_to "Sign up now!", signup_path, class: "btn btn-large btn-primary" %>
   </div>

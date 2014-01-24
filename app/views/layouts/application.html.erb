@@ -9,12 +9,19 @@
     <%= csrf_meta_tags %>
   </head>
   <body>
-    <%= render 'layouts/header' %>
-    <div class="container">
+    <% if signed_in? %>
+      <%= render 'layouts/header' %>
+      <div class="container">
         <% flash.each do |key, value| %>
           <div class="alert alert-<%= key %>"><%= value %></div>
         <% end %>
         <%= yield %>
-    </div>
+      </div>
+    <% else %>
+      <% flash.each do |key, value| %>
+          <div class="alert alert-<%= key %>"><%= value %></div>
+        <% end %>
+        <%= yield %>
+    <% end %>
   </body>
 </html>
