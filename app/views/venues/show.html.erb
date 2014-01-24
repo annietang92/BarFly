@@ -1,0 +1,7 @@
+<h1><%=@venue.name%></h1>
+<h1><%=pluralize(@venue.drinks.count, "check-ins")%></h1>
+<%=@venue.address%><br>
+<%=@venue.city%>, <%=@venue.state%> <%=@venue.zip%><br>
+<%=@venue.phone%><br><br>
+<%= link_to @venue.url %><br>
+<%=@venue.description%>

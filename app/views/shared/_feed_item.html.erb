@@ -8,7 +8,7 @@
   </span>
   <% if !Drink.find(feed_item.id).venue.nil? %> at
   <span class="venue">
-    <%= feed_item.venue.name %>
+    <%= link_to feed_item.venue.name, feed_item.venue%>
   </span>
   <span class="timestamp">
     <%= time_ago_in_words(feed_item.created_at) %> ago.

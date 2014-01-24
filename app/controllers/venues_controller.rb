@@ -1,4 +1,9 @@
 class VenuesController < ApplicationController
+
+	def show
+		@venue = Venue.find(params[:id])
+	end
+
 	def new
 		@venue = Venue.new
 		if !@drink.nil?
