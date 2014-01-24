@@ -23,11 +23,14 @@
       <%=image_tag "barfly_text.png" %>
     </div>
     <div class="description">
-      <h2>Social Drinking + Bar Discovery</h2>
-      <h2>Find out what's trending in your city!</h2>
+      <h2>Social Drinking + Bar Discovery.</h2>
     </div>
-
-    <%= link_to "Sign up now!", signup_path, class: "btn btn-large btn-primary" %>
+    <div class="session_actions">
+      <div class="btn-group btn-group-justified">
+        <%= link_to "Sign Up", signup_path, class: "btn btn-primary btn-xlarge" %>
+        <%= link_to "Log In", signin_path, class: "btn btn-success btn-xlarge" %>
+       </div>
+     </div>
   </div>
 <% end %>
 
