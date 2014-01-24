@@ -6,6 +6,7 @@
 	      <%= f.text_field :name, placeholder: "Venue Name"%><br>
 	      <%= f.label :near %>
 	      <%= f.text_field :city, placeholder: "City", class: "location_tt"%>
+	      <%= f.hidden_field :drink_id, :value => @drink.id %>
 	      <%= f.submit "Search", class: "btn btn-large btn-primary" %>
     	<% end %>
     	<%= link_to "Skip", root_path, class: "btn btn-large btn-primary" %>
@@ -16,7 +17,23 @@
   		<ol class="venues">
   		<% @venues.each do |v| %>
   			<li>
-  				<%= v.name%> <%=link_to "Select", new_venue_path%>
+  				<%= form_for @venue, url: venues_path do |t| %>
+  					<%= t.hidden_field :name, :value => v.name %>
+  					<%= t.hidden_field :foursquare_id, :value => v.id%>
+  					<%= t.hidden_field :address, :value => v.location.address %>
+  					<%= t.hidden_field :city, :value => v.location.city %>
+  					<%= t.hidden_field :state, :value => v.location.state %>
+  					<%= t.hidden_field :zip, :value => v.location.postalCode %>
+  					<%= t.hidden_field :lat, :value => v.location.lat %>
+  					<%= t.hidden_field :lng, :value => v.location.lng %>
+  					<%= t.hidden_field :phone, :value => v.contact.formattedPhone %>
+  					<%= t.hidden_field :description, :value => v.description %>
+  					<%= t.hidden_field :url, :value => v.url %>
+  					<%= t.hidden_field :hours, :value => v.hours %>
+  					<%= t.hidden_field :picture, :value => v.photos %>
+  					<%= t.hidden_field :drink_id, :value => @drink.id %>
+  					<%= t.submit "Select" %> <%= v.name%>
+				<% end %>
   			</li>
   		<%end%>
   		</ol>

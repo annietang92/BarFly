@@ -4,11 +4,16 @@
     <%= link_to feed_item.user.name, feed_item.user %> drank a 
   </span>
   <span class="drink">
-    <%= feed_item.name %> (<%=feed_item.type%>)
+    <%= feed_item.name %>
+  </span>
+  <% if !Drink.find(feed_item.id).venue.nil? %> at
+  <span class="venue">
+    <%= feed_item.venue.name %>
   </span>
   <span class="timestamp">
     <%= time_ago_in_words(feed_item.created_at) %> ago.
   </span><br>
+  <%end%>
   <span class="comment">"<%= feed_item.comment %>"</span>
   <% if current_user?(feed_item.user) %>
     <%= link_to "delete", feed_item, method: :delete,

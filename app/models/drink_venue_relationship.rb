@@ -3,5 +3,5 @@ class DrinkVenueRelationship < ActiveRecord::Base
 	belongs_to :venue, class_name: "Venue"
 
 	validates :drink_id, presence: true
-	validates :note_id, presence: true
+	validates :venue_id, presence: true
 end
