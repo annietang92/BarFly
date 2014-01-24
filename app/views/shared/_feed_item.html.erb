@@ -10,10 +10,10 @@
   <span class="venue">
     <%= link_to feed_item.venue.name, feed_item.venue%>
   </span>
+  <%end%>
   <span class="timestamp">
     <%= time_ago_in_words(feed_item.created_at) %> ago.
   </span><br>
-  <%end%>
   <span class="comment">"<%= feed_item.comment %>"</span>
   <% if current_user?(feed_item.user) %>
     <%= link_to "delete", feed_item, method: :delete,
