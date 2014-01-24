@@ -27,7 +27,8 @@
 	width: 100%;
 	height: 100%;
 	position: absolute;
-	background: url('/assets/bg_color.jpg') no-repeat center center fixed; 
+	background-image: url('/assets/bg_color.jpg');
+	background-position: center;
   	-webkit-background-size: cover;
   	-moz-background-size: cover;
   	background-size: cover;
