@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140124041754) do
+ActiveRecord::Schema.define(version: 20140125175142) do
 
   create_table "beers", force: true do |t|
     t.string   "name"
@@ -113,6 +113,8 @@ ActiveRecord::Schema.define(version: 20140124041754) do
     t.string   "oauth_token"
     t.string   "provider"
     t.string   "picture"
+    t.string   "recommendations"
+    t.string   "new"
   end
 
   add_index "users", ["remember_token"], name: "index_users_on_remember_token"
