@@ -1,8 +1,7 @@
 <% provide(:title, "Sign in") %>
-<h1>Sign in</h1>
-
-<div class="row">
-  <div class="span6 offset3">
+<div class="center_div sm_div">
+  <div class="animated fadeInUp">
+    <h1>Sign in</h1>
   	<%= link_to "Sign in with Facebook", "/auth/facebook"%>
     <%= form_for(:session, url: sessions_path) do |f| %>
 
@@ -10,7 +9,7 @@
       <%= f.text_field :email %>
 
       <%= f.label :password %>
-      <%= f.password_field :password %>
+      <%= f.password_field :password %><br>
 
       <%= f.submit "Sign in", class: "btn btn-large btn-primary" %>
     <% end %>
