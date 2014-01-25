@@ -1,23 +1,3 @@
-body {
-  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 13px;
-  color: #717171;
-  background-color: #f3f5f9;
-}
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-.h1,
-.h2,
-.h3,
-.h4,
-.h5,
-.h6 {
-  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-}
 a {
   color: #575757;
   text-decoration: none;
@@ -227,6 +207,8 @@ a:hover .caret-white {
   width: 30px;
 }
 .panel {
+  padding: 20px;
+  margin: 10px !important;
   border-radius: 2px;
   border-color: #ebeff6;
 }
@@ -260,6 +242,7 @@ a:hover .caret-white {
   border-right: none;
 }
 .panel-heading {
+  margin-bottom: 10px;
   border-color: #ebeff6;
   background-color: #fff;
   border-radius: 2px 2px 0 0;
@@ -753,12 +736,14 @@ html.layout-box .vbox > footer {
 }
 .nav-brand {
   text-align: center;
-  font-size: 25px;
+  font-size: 40px;
   line-height: 50px;
   display: block;
+  color: white;
 }
 .nav-brand:hover {
   text-decoration: none;
+  color: #ddd;
 }
 .nav-brand img {
   max-height: 20px;

@@ -222,7 +222,6 @@ a:focus {
   border-radius: 500px; }
 
 .row, section {
-  margin-left: -20px;
   *zoom: 1; }
   .row:before, section:before, .row:after, section:after {
     display: table;
