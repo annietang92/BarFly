@@ -21,10 +21,10 @@
 	margin: 0 auto 0 auto;
 
 	-webkit-animation-name: rotate; 
-	-webkit-animation-duration: 1.5s; 
+	-webkit-animation-duration: 1s; 
 	-webkit-animation-timing-function: ease-in-out;
 	-moz-animation-name: rotate; 
-	-moz-animation-duration: 1.5s; 
+	-moz-animation-duration: 1s; 
 	-moz-animation-timing-function: ease-in-out;
 }
 
@@ -35,10 +35,10 @@
 	padding-left: 5px;
 
 	-webkit-animation-name: move_up; 
-	-webkit-animation-duration: 1.5s; 
+	-webkit-animation-duration: 1s; 
 	-webkit-animation-timing-function: ease-in-out;
 	-moz-animation-name: move_up; 
-	-moz-animation-duration: 1.5s; 
+	-moz-animation-duration: 1s; 
 	-moz-animation-timing-function: ease-in-out;
 }
 
@@ -51,10 +51,10 @@
 		color: white;
 	}
 	-webkit-animation-name: move_up; 
-	-webkit-animation-duration: 1.5s; 
+	-webkit-animation-duration: 1s; 
 	-webkit-animation-timing-function: ease-in-out;
 	-moz-animation-name: move_up; 
-	-moz-animation-duration: 1.5s; 
+	-moz-animation-duration: 1s; 
 	-moz-animation-timing-function: ease-in-out;
 }
 
@@ -69,7 +69,7 @@
 	padding: 15px 40px !important;
     line-height: normal;
     -webkit-border-radius: 8px;
-       -moz-border-radius: 8px;
-            border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
 }
 

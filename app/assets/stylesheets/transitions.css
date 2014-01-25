@@ -23,7 +23,7 @@
 /*move up fade in*/
 @-webkit-keyframes move_up {
 	from {
-		padding-top: 25px;
+		padding-top: 20px;
 		opacity: 0;
 	}
 	to {
@@ -33,7 +33,7 @@
 }
 @-moz-keyframes move_up {
 	from {
-		padding-top: 25px;
+		padding-top: 20px;
 		opacity: 0;
 	}
 	to {
