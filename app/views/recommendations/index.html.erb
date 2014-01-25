@@ -1,0 +1,29 @@
+aksdhjflkasjhdflkajs
+
+<%@drinks.each do |drink| %>
+	<%=drink.name%><br>
+<%end%>
+<br><br>
+Cocktails<br>
+<%@cocktails.each do |cocktail| %>
+	<%=cocktail%><br>
+<%end%><br><br>
+Beers<br>
+<%@beers.each do |beer| %>
+	<%=beer%><br>
+<%end%><br><br>
+
+Beer Types<br>
+<%@beer_types.each do |bt| %>
+	<%=bt%><br>
+<%end%><br><br>
+
+Cocktail Types<br>
+<%@cocktail_types.each do |c| %>
+	<%=c%><br>
+<%end%><br><br>
+
+Similar Cocktails<br>
+<%@similar_cocktails.each do |c| %>
+	<%=c.name%> (<%=c.primary%>)<br>
+<%end%><br><br>

@@ -15,6 +15,35 @@ class User < ActiveRecord::Base
                                    class_name:  "Relationship",
                                    dependent:   :destroy
   has_many :followers, through: :reverse_relationships, source: :follower
+  
+  def cocktails
+    return self.drinks.where(type: "Cocktail").pluck(:name).uniq
+  end
+
+  def beers
+    return self.drinks.where(type: "Beer").pluck(:name).uniq
+  end
+
+  def cocktail_types
+    @cocktails = self.cocktails
+    @cocktail_types = []
+    @cocktails.each do |cocktail|
+      style = Cocktail.find_by(name: cocktail).primary
+      @cocktail_types.push(style) unless @cocktail_types.include?(style)
+    end
+    return @cocktail_types
+  end
+
+  def beer_types
+    @beers = self.beers
+    @beer_types = []
+    @beers.each do |beer|
+      style = Beer.find_by(name: beer).style
+      @beer_types.push(style) unless @beer_types.include?(style)
+    end
+    return @beer_types
+  end
+
   def feed
     Drink.from_users_followed_by(self)
   end

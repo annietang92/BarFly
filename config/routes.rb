@@ -11,7 +11,7 @@ Barfly::Application.routes.draw do
   resources :sessions, only: [:new, :create, :destroy]
   resources :relationships, only: [:create, :destroy]
 
-
+  match '/recommendations',  to: 'recommendations#index', via: 'get'
   match '/venues/search',  to: 'venues#search', via: 'post'
   match '/venues/search',  to: 'venues#search', via: 'get'
   match '/signup',  to: 'users#new',            via: 'get'

@@ -16,5 +16,5 @@ class Drink < ActiveRecord::Base
 	                         WHERE follower_id = :user_id"
 	    where("user_id IN (#{followed_user_ids}) OR user_id = :user_id",
 	          user_id: user.id)
-	end
+	  end
 end
