@@ -1,5 +1,4 @@
 <% provide(:title, "Sign in") %>
-<!-- <div class="center_div sm_div"> -->
 <section id="content" class="m-t-lg wrapper-md animated fadeInUp">
   <%=link_to "BarFly", root_path, class: "nav-brand"%>
   <div class="row m-n">
@@ -19,18 +18,17 @@
         </div>
         <div class="checkbox pull-right m-t-xs">
           <label>
-            <input type="checkbox"> Remember Me<br><br>
+            <input type="checkbox"> Keep me logged in<br><br>
           </label>
         </div>
-        <%= f.submit "Sign in", class: "btn btn-info btn-xlarge" %>
+        <%= f.submit "Sign in", class: "btn btn-info btn-large" %>
         <% end %>
         <div class="line line-dashed"></div>
-        <%= link_to "Sign in with Facebook", "/auth/facebook", class: "btn btn-xlarge btn-primary btn-block m-b-sm"%>
+        <%= link_to "Sign in with Facebook", "/auth/facebook", class: "btn btn-large btn-primary btn-block m-b-sm"%>
         <div class="line line-dashed"></div>
         <p class="text-muted text-center">Don't have an account?<br><br></p>
-        <%= link_to "Sign up now!", signup_path, class: "btn btn-block btn-xlarge" %></p>
+        <%= link_to "Sign up now!", signup_path, class: "btn btn-block btn-large" %></p>
       </section>
     </div>
   </div>
 </section>
-<!-- </div> -->
