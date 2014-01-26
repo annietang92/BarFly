@@ -763,8 +763,8 @@ html.layout-box .vbox > footer {
 }
 .nav-msg .dropdown-menu {
   top: -13px;
-  margin-left: 9px;
-  width: 300px;
+  margin-left: 10px;
+  width: 230px;
 }
 .nav-msg .arrow.left {
   top: 25px;
