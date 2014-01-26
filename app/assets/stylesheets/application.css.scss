@@ -21,6 +21,7 @@
  	margin: 0 !important;
 	padding: 0 !important;
 	font-weight: 300 !important;
+
  }
 
  h1,h2,h3,h4,h5,h6,p, input, button, select, textarea {
@@ -54,10 +55,6 @@
     border-radius: 8px;
 }
 
-.row, section{
-	margin-left: -8px !important;
-}
-
 .form-control{
 	padding: 18px 10px !important;
 	font-family: 'Open Sans Condensed', sans-serif !important; 
@@ -71,3 +68,7 @@
 label, input, button, select, textarea {
 	font-size: 18px !important;
 }
+
+/*.row, section{
+	margin-left: -8px !important;
+}*/
