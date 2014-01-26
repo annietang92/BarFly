@@ -9,7 +9,7 @@
           </a>
           <%=link_to "BarFly", root_path, class: "nav-brand" %>
           <a class="btn btn-link visible-xs" data-toggle="class:show" data-target=".nav-user">
-            <i class="fa fa-comment-o"></i>
+            <i class="fa fa-user"></i>
           </a>
         </header>
         <section>
@@ -18,15 +18,14 @@
             <div class="nav-avatar pos-rlt">
               <a href="/" class="thumb-sm avatar animated rollIn">
                 <%if @user.picture.nil?%>
-                  <%=image_tag "Icons/icon_final_sm.png"%>
+                  <%=image_tag "Icons/icon_final.png"%>
                 <%else%> 
                 <%=image_tag @user.picture%> 
                 <%end%>
               </a>
-          
               <div class="visible-xs m-t m-b">
-                <a href="#" class="h3">John.Smith</a>
-                <p><i class="fa fa-map-marker"></i> London, UK</p>
+                <a href="#" class="h3"><%=@user.name%></a>
+                <p><i class="fa fa-map-marker"></i> <%=@user.location%></p>
               </div>
             </div>
              <div class="nav-msg">
