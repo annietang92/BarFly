@@ -139,7 +139,7 @@ class User < ActiveRecord::Base
 		    user.location = auth.info.location
 		    user.oauth_token = auth.credentials.token
 		    user.provider = auth.provider
-        user.picture = auth.info.image
+        user.picture = "http://graph.facebook.com/"+auth.uid+"/picture?width=300&height=300"
 		    user.save!
 		  end
   	end

@@ -113,18 +113,19 @@
         <section class="scrollable wrapper">
           <div class="row">
             <div class="col-lg-8">
-              <section class="panel">
-                <form>
-                  <textarea class="form-control input-lg no-border" rows="2" placeholder="What are you doing..."></textarea>
-                </form>
-                <footer class="panel-footer bg-light lter">
-                  <button class="btn btn-info pull-right">POST</button>
+              <section class="panel ">
+                <% flash.each do |key, value| %>
+                    <div class="alert alert-<%= key %>"><%= value %></div>
+                  <% end %>
+                <%= form_for(@new_drink) do |f| %>
+                  <%= f.text_field :name, placeholder: "What are you drinking?", class: "drinks_tt form-control" %>
+                  <div class="small_space"></div>
+                  <%= f.text_area :comment, placeholder: "How is it?", class: "form-control" %>
+                <footer class="panel-footer">
+                  <%= f.submit "Submit", class: "btn btn-info pull-right" %>
                   <ul class="nav nav-pills">
-                    <li><a href="#"><i class="fa fa-location-arrow"></i></a></li>
-                    <li><a href="#"><i class="fa fa-camera"></i></a></li>
-                    <li><a href="#"><i class="fa fa-video-camera"></i></a></li>
-                    <li><a href="#"><i class="fa fa-microphone"></i></a></li>
                   </ul>
+                  <% end %>
                 </footer>
               </section>
               <div class="row">
