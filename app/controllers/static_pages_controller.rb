@@ -1,7 +1,8 @@
 class StaticPagesController < ApplicationController
 	def index
 		if signed_in?
-			@all_drinks = Cocktail.all_cocktails + Beer.all_beers
+			all_drinks = Cocktail.all_cocktails + Beer.all_beers
+			@all_drinks = all_drinks.sort
 			@user = current_user
 			@new_drink = Drink.new
 			@drinks = current_user.drinks

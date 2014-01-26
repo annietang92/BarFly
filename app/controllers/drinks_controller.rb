@@ -10,6 +10,9 @@ class DrinksController < ApplicationController
 	def create
 		@user = current_user
 		@drink = current_user.drinks.new(drink_params)
+		drink_name_type = @drink.name.split(" \- ")
+		@drink.name = drink_name_type[0]
+		@drink.type = drink_name_type[1]
 		@venue = Venue.new
 		if @drink.type === "Beer"
 			if !Beer.find_by(name: @drink.name).nil?
@@ -44,7 +47,7 @@ class DrinksController < ApplicationController
 	private
 
     def drink_params
-      params.require(:drink).permit(:name, :type, :comment)
+      params.require(:drink).permit(:name, :comment)
     end
 
     # Before filters
