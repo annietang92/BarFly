@@ -22,6 +22,9 @@ gem 'foursquare2'
 #filepicker
 gem 'filepicker-rails'
 
+#font-awesome
+gem 'font-awesome-rails'
+
 #pagination
 gem 'will_paginate', '3.0.4'
 gem 'bootstrap-will_paginate', '0.0.9'

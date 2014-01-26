@@ -9,6 +9,7 @@
  * compiled file, but it's generally better to create a new file per style scope.
  *
  *= require_self
+ *= require font-awesome
  *= require_tree .
  */
  body {
@@ -69,6 +70,18 @@ label, input, button, select, textarea {
 	font-size: 18px !important;
 }
 
+#content{
+	width: -moz-calc(100% - 150px);
+    width: -webkit-calc(100% - 150px);
+    width: calc(100% - 150px);
+    background-image: url(image-path('/assets/bg_color.jpg'));
+}
+
+@media screen and (max-width: 768px) {
+  #content{
+	width: 100%;
+	}
+}
 /*.row, section{
 	margin-left: -8px !important;
 }*/

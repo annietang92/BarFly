@@ -63,6 +63,8 @@ GEM
       tzinfo
     filepicker-rails (1.0.0)
       rails (>= 3.2)
+    font-awesome-rails (4.0.3.1)
+      railties (>= 3.2, < 5.0)
     foursquare2 (1.9.8)
       faraday (~> 0.8)
       faraday_middleware (>= 0.8)
@@ -181,6 +183,7 @@ DEPENDENCIES
   factory_girl_rails (= 4.2.1)
   fb_graph
   filepicker-rails
+  font-awesome-rails
   foursquare2
   jbuilder (~> 1.2)
   jquery-rails
