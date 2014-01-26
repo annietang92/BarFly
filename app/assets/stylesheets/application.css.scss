@@ -87,6 +87,16 @@ label, input, button, select, textarea {
 	height:10px;
 }
 
+.small_vert{
+	width: 10px;
+	float:left;
+}
+
+.med_vert{
+	width: 20px;
+	display:inline-block;
+}
+
 .med_space{
 	height:20px;
 }
@@ -99,6 +109,28 @@ label, input, button, select, textarea {
 	background-image: url(image-path('/assets/map.png'));
 }
 
+.width_fx{
+	width: 75px;
+}
+.bg-purple{
+	background: rgba(100, 80, 120, 0.7) !important;
+	color: white;
+}
+
+.bg-purple-lter{
+	background: rgba(60, 80, 150, 0.7) !important;
+	color: white;
+}
+
+.new_alert{
+	font-size: 14px;
+	text-align: center;
+}
+
 .dim{
 	opacity: 0.3;
+}
+
+.font_white{
+	color: white !important;
 }

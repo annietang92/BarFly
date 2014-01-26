@@ -1,6 +1,12 @@
 <% if signed_in? %>
   <!-- .vbox -->
     <section id="content">
+      <!-- note -->
+          <div class="new_alert bg-purple wrapper hidden-vertical animated fadeInDown">          
+              <a href="#" data-dismiss="alert" class="pull-right m-r-n-sm m-t-n-sm"><i class="fa fa-times font_white"></i></a>
+              Hello! Welcome to BarFly
+          </div>
+      <!-- / note -->
       <section class="vbox">
         <section class="scrollable wrapper">
           <div class="row">
@@ -21,7 +27,21 @@
               </section>
               <div class="row">
                 <div class="col-lg-12">
-                  
+                  <section class="panel bg-primary lt no-borders">
+                      <span class="font_white">Your News Feed</span>
+                      <div class="med_vert"></div>
+                        <div class="btn-group" data-toggle="buttons">
+                        <label class="btn btn-sm btn-info active width_fx">
+                          <input type="radio" name="options" id="option1"> <i class="fa fa-check text-active"></i> Local
+                        </label>
+                        <label class="btn btn-sm btn-primary width_fx">
+                          <input type="radio" name="options" id="option2"> <i class="fa fa-check text-active"></i> Friends
+                        </label>
+                        <label class="btn btn-sm btn-success width_fx">
+                          <input type="radio" name="options" id="option3"> <i class="fa fa-check text-active"></i> All
+                        </label>
+                      </div>
+                  </section>
                   <%=render 'widgets/news'%>
                 </div>
               </div>
