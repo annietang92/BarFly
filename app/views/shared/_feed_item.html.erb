@@ -4,7 +4,11 @@
     <%= link_to feed_item.user.name, feed_item.user %> drank a 
   </span>
   <span class="drink">
-    <%= feed_item.name %>
+    <% if feed_item.type === "Beer"%> 
+      <%= link_to feed_item.name, Beer.find_by(feed_item.drink_id) %>
+    <%else%>
+      <%= link_to feed_item.name, Cocktail.find_by(id: feed_item.drink_id) %>
+    <%end%>
   </span>
   <% if !Drink.find(feed_item.id).venue.nil? %> at
   <span class="venue">

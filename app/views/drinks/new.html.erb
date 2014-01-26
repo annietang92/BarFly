@@ -14,20 +14,5 @@
       <%= f.text_area :comment, placeholder: "Comments?" %>
       <%= f.submit "Submit", class: "btn btn-large btn-primary" %>
     <% end %>
-    <%= link_to "Skip", root_path, class: "btn btn-large btn-primary" %>
   </div>
 </div>
-
-<script type="text/javascript">
-  // Set up typeahead
-  var setUpDrinksTypeahead = function() {
-      // Initialize typeahead.
-      $(".drinks_tt").typeahead({
-          name: 'drinks',
-          local: <%= @all_drinks.to_s.html_safe %>
-      });
-  }
-  $(document).ready(function(){
-    setUpDrinksTypeahead();
-  });
-</script>
