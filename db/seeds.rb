@@ -65,7 +65,7 @@ open(File.open(File.join(Rails.root, '/SeedData/Cocktails.txt'))) do |file|
 		cocktail.served = line_array[4]
 		cocktail.glass = line_array[5]
 		cocktail.ingredients = line_array[6]
-		# cocktail.instructions = line_array[7]
+		cocktail.instructions = line_array[7]
 		cocktail.description = line_array[8]
 		cocktail.image = line_array[9]
 		if !line_array[10].nil?
