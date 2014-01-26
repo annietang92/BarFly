@@ -2,7 +2,7 @@ class Beer < ActiveRecord::Base
   def self.all_beers
   	beer_array = []
   	Beer.all.each do |beer|
-  		beer_array.push (beer.name)
+  		beer_array.push (beer.name+ " - Beer")
   	end
   	return beer_array
   end

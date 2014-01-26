@@ -1,6 +1,14 @@
 <% if signed_in? %>
   <div class="row">
     <aside class="span4">
+
+      <%= form_for(@new_drink) do |f| %>
+        <%= render 'shared/error_messages' %>
+        <%= f.text_field :name, placeholder: "What are you drinking?", class: "drinks_tt form-control" %><br>
+        <%= f.text_area :comment, placeholder: "How is it?", class: "form-control" %>
+        <%= f.submit "Submit", class: "btn btn-large btn-primary" %>
+      <% end %>
+
       <section>
         <%= render 'shared/user_info' %>
       </section>

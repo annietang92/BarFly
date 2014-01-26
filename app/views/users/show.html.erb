@@ -5,6 +5,7 @@
       <h1>
         <%= image_tag @user.picture %>
         <%= @user.name %>
+        (<%= @user.fly_status %>)
       </h1>
     </section>
     <% if !@facebook_auth %>

@@ -15,7 +15,7 @@ class User < ActiveRecord::Base
                                    class_name:  "Relationship",
                                    dependent:   :destroy
   has_many :followers, through: :reverse_relationships, source: :follower
-  
+
   def cocktails
     return self.drinks.where(type: "Cocktail").pluck(:name).uniq
   end
@@ -42,6 +42,44 @@ class User < ActiveRecord::Base
       @beer_types.push(style) unless @beer_types.include?(style)
     end
     return @beer_types
+  end
+
+  def uniq_drink_count
+    return self.cocktails.count + self.beers.count
+  end
+
+  def fly_status
+    if self.drinks.count >= 350 && self.uniq_drink_count >= 200
+      return 'BarFly'
+    elsif self.drinks.count >= 275 && self.uniq_drink_count >= 180
+      return 'PubFly'
+    elsif self.drinks.count >= 200 && self.uniq_drink_count >= 150
+      return 'WineFly'
+    elsif self.drinks.count >= 150 && self.uniq_drink_count >= 100
+      return 'BeerFly'
+    elsif self.drinks.count >= 125 && self.uniq_drink_count >= 80
+      return 'CorkFly'
+    elsif self.drinks.count >= 100 && self.uniq_drink_count >= 75
+      return 'AleFly'
+    elsif self.drinks.count >= 75 && self.uniq_drink_count >= 40
+      return 'TapFly'
+    elsif self.drinks.count >= 50 && self.uniq_drink_count >= 30
+      return 'BottleFly'
+    elsif self.drinks.count >= 35 && self.uniq_drink_count >= 20
+      return 'FleshFly'
+    elsif self.drinks.count >= 25 && self.uniq_drink_count >= 15
+      return 'CraneFly'
+    elsif self.drinks.count >= 15 && self.uniq_drink_count >= 10
+      return 'HorseFly'
+    elsif self.drinks.count >= 10 && self.uniq_drink_count >= 6
+      return 'DrainFly'
+    elsif self.drinks.count >= 5 && self.uniq_drink_count >= 4
+      return 'FruitFly'
+    elsif self.drinks.count > 0
+      return 'Gnat'
+    else
+      return 'Newbie'
+    end
   end
 
   def feed
