@@ -1,0 +1,18 @@
+  <section class="panel bg-success lter no-borders">
+    <div class="panel-body">
+      <div class="clearfix m-b">
+        <a href="#" class="thumb-sm pull-left m-r">
+          <%=image_tag @user.picture, class: "img-circle"%>
+        </a>
+        <div class="clear">
+          <a href="#"><strong><%=@user.name%></strong></a>
+          <small class="block text-muted"><%=@user.location%></small>
+        </div>
+      </div>
+      <div class="pull-in bg-map bg-light clearfix m-b-n hight_med">
+        <p class="m-t-sm m-b text-center animated bounceInDown">
+          <i class="fa fa-map-marker text-danger fa fa-4x" data-toggle="tooltip"></i>
+        </p>
+      </div>
+    </div>
+  </section>

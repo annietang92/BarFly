@@ -1600,7 +1600,7 @@ fieldset[disabled] .btn-gplus.active {
   left: 39px;
 }
 .comment-list .comment-item .comment-body {
-  margin-left: 46px;
+  margin-left: 46px !important;
 }
 .comment-list .comment-item .panel-body {
   padding: 10px 15px;
