@@ -5,7 +5,7 @@
   <div class="row m-n">
     <div class="col-md-4 col-md-offset-4 m-t-lg">
       <section class="panel">
-        <%= link_to "Sign Up with Facebook", "/auth/facebook", class: "btn btn-large btn-primary btn-block m-b-sm"%>
+        <%= link_to "Sign Up with Facebook", "/auth/facebook", class: "btn btn-xlarge btn-primary btn-block m-b-sm"%>
         <div class="line line-dashed"></div>
         <%= form_for(@user) do |f| %>
           <%= render 'shared/error_messages' %>
@@ -28,7 +28,7 @@
           <div class="form-group">
             <%= f.label :password_confirmation, "Confirmation", class: 'control-label' %>
             <%= f.password_field :password_confirmation, class: 'form-control' %>
-          </div>
+          </div><div class="small_space"></div>
           <%= f.submit "Create My Account", class: "btn btn-large btn-info" %>
         <% end %>
         <div class="line line-dashed"></div>

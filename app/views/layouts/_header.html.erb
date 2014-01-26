@@ -71,7 +71,7 @@
               </li>
               <li>
                 <a href="/recommendations">
-                  <i class="fa fa-heart"></i>
+                  <i class="fa fa-beer"></i>
                   <span>Try These!</span>
                 </a>
               </li>
@@ -79,7 +79,12 @@
           </nav>
         </section>
         <footer class="footer bg-gradient hidden-xs">
-          <p class="dim"><small><br>&copy; Annie Tang 2014</small></p>
+          <span class="btn btn-sm btn-link m-r-n-xs pull-right">
+            <%= link_to(raw("<i class='fa fa-power-off'></i>"), signout_path, method: "delete") %>
+          </span>
+          <a href="#nav" data-toggle="class:nav-vertical" class="btn btn-sm btn-link m-l-n-sm">
+            <i class="fa fa-bars"></i>
+          </a>
         </footer>
       </section>
   </aside>
