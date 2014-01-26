@@ -1,303 +1,295 @@
-Absinthe	Corpse Reviver	N
-Absinthe	Corpse Reviver #2	N
-Absinthe	Death in the Afternoon	N
-Absinthe	Earthquake	N
-Absinthe	Green Vesper	N
-Absinthe	The Modernista	N
-Absinthe	Moloko Plus	N
-Absinthe	The Monkey Gland	N
-Absinthe	Sazerac	Y
-Beer	Black and Tan	N
-Beer	Black Velvet	N
-Beer	Boilermaker	N
-Beer	Flaming Dr Pepper	N
-Beer	Gose	N
-Beer	Hangman's Blood	N
-Beer	Irish Car Bomb	N
-Beer	Michelada	N
-Beer	Porchcrawler	N
-Beer	Sake Bomb	N
-Beer	Shandy	N
-Beer	Brass Monkey	N
-Beer	U-Boot	N
-Brandy or cognac	Curacao Punch	N
-Brandy or cognac	B & B	N
-Brandy or cognac	The Blenheim	N
-Brandy or cognac	Brandy Alexander   	Y
-Brandy or cognac	Brandy Manhattan	N
-Brandy or cognac	Brandy Sour/Brandy Daisy	N
-Brandy or cognac	Brandy Sour (Cyprus)	N
-Brandy or cognac	Chicago Cocktail	N
-Brandy or cognac	Jack Rose	N
-Brandy or cognac	Four Score	N
-Brandy or cognac	French Connection   	Y
-Brandy or cognac	Horse's Neck   	N
-Brandy or cognac	Incredible Hulk	N
-Brandy or cognac	Nikolaschka	N
-Brandy or cognac	Orgasm	N
-Brandy or cognac	Panama	N
-Brandy or cognac	Paradise   	Y
-Brandy or cognac	Pisco Sour   	Y
-Brandy or cognac	Piscola	N
-Brandy or cognac	Porto flip	N
-Brandy or cognac	Savoy Affair	N
-Brandy or cognac	Savoy Corpse Reviver	N
-Brandy or cognac	Sidecar   	Y
-Brandy or cognac	Singapore Sling   	Y
-Brandy or cognac	Stinger	N
-Brandy or cognac	Tom and Jerry	N
-Brandy or cognac	Zombie	N
-Cachaça	Batida	N
-Cachaça	Caipirinha   	Y
-Cachaça	Caju Amigo	N
-Cachaça	Leite de Onça	N
-Cachaça	Quentão	N
-Cachaça	Rabo-de-galo	N
-Cachaça	Royce	N
-Champagne	Black Velvet	N
-Champagne	Buck's Fizz	N
-Champagne	Mimosa   	Y
-Gin	20th Century	N
-Gin	Alexander	N
-Gin	Aviation	N
-Gin	Bijou	N
-Gin	Bloodhound	N
-Gin	Bronx   	Y
-Gin	French 75	N
-Gin	Gibson   	Y
-Gin	Gimlet	N
-Gin	Gin Fizz   	Y
-Gin	Gin buck (a Buck variant)	N
-Gin	Gin and tonic	N
-Gin	Gin pahit	N
-Gin	Gin Sour	N
-Gin	Hanky-Panky	N
-Gin	The Last Word	N
-Gin	Lime Rickey	N
-Gin	Long Island Iced Tea   	Y
-Gin	Joker	N
-Gin	Lorraine	N
-Gin	Martini   	Y
-Gin	Mickey Slim	N
-Gin	My Fair Lady	N
-Gin	Negroni   	Y
-Gin	Old Etonian	N
-Gin	Pall Mall	N
-Gin	Paradise	N
-Gin	Pegu	N
-Gin	Pimm's Cup	N
-Gin	Pink Gin	N
-Gin	Pink Lady	N
-Gin	Ramos Gin Fizz	N
-Gin	Royal Arrival	N
-Gin	Salty Dog	N
-Gin	Shirley Temple Black	N
-Gin	Singapore Sling   	Y
-Gin	Tom Collins   	Y
-Gin	Vesper Martini	N
-Gin	White Lady or Delilah	N
-Gin	Wolfram	N
-Rum	Bacardi   	Y
-Rum	Blue Hawaii	N
-Rum	Brass Monkey	N
-Rum	Bumbo (also called a Bombo or Bumboo)	N
-Rum	Bushwacker	N
-Rum	Caribou Lou	N
-Rum	Corn N' Oil	N
-Rum	Cuba Libre   	Y
-Rum	Culto A La Vida	N
-Rum	Dark and Stormy  	Y
-Rum	Daiquiri   	Y
-Rum	El Presidente	N
-Rum	Fish House Punch	N
-Rum	Flaming Dr Pepper	N
-Rum	Flaming Volcano	N
-Rum	Grog	N
-Rum	Gunfire	N
-Rum	Havana Cooler	N
-Rum	Hurricane	N
-Rum	Jagertee	N
-Rum	Long Island Iced Tea   	Y
-Rum	Macuá	N
-Rum	Mai-Tai   	Y
-Rum	Mojito   	Y
-Rum	Painkiller	N
-Rum	Piña Colada   	Y
-Rum	Planter's Punch   	Y
-Rum	Royal Bermuda Cocktail	N
-Rum	Rum Swizzle	N
-Rum	Staten Island Ferry	N
-Rum	Sundowner	N
-Rum	Ti Punch	N
-Rum	Tom and Jerry	N
-Rum	Zombie	N
-Sake	Ginza Mary	N
-Sake	Sake Bomb	N
-Sake	Tamagozake	N
-Tequila	Bananarita	N
-Tequila	Bloody Aztec	N
-Tequila	Chimayó Cocktail	N
-Tequila	El Toro Loco Patron and Redbull	N
-Tequila	Long Island Iced Tea   	Y
-Tequila	Margarita   	Y
-Tequila	Matador	N
-Tequila	Paloma	N
-Tequila	Slammer Royale 	N
-Tequila	Tequila Slammer	N
-Tequila	Tequila Sour	N
-Tequila	Tequila Sunrise   	Y
-Tequila	Tonic And Tequila	N
-Vodka	Agent Orange	N
-Vodka	Apple Martini    or Appletini	Y
-Vodka	Batida (traditionally made with cachaça)	N
-Vodka	Bay Breeze	N
-Vodka	Black Russian   	Y
-Vodka	Bloody Mary   	Y
-Vodka	BLT cocktail	N
-Vodka	Bull Shot   	Y
-Vodka	Blue Lagoon	N
-Vodka	Caesar	N
-Vodka	Caipivodka or Caipiroska	N
-Vodka	Cape Cod	N
-Vodka	Chi-Chi	N
-Vodka	Colombia	N
-Vodka	Cosmopolitan   	Y
-Vodka	Fizzy apple cocktail	N
-Vodka	Flirtini	N
-Vodka	The Goldeneye	N
-Vodka	Godmother   	Y
-Vodka	Greyhound	N
-Vodka	Harvey Wallbanger   	Y
-Vodka	Harrogate Nights	N
-Vodka	Hi-fi	N
-Vodka	Kamikaze   	Y
-Vodka	Kensington Court Special	N
-Vodka	Kremlin Colonel	N
-Vodka	Lime Rickey	N
-Vodka	Link Up	N
-Vodka	Long Island Iced Tea   	Y
-Vodka	Moscow Mule	N
-Vodka	Mudslide	N
-Vodka	Orange Tundra	N
-Vodka	Paralyzer	N
-Vodka	Red Lotus	N
-Vodka	Rose Kennedy Cocktail	N
-Vodka	Salmiakki Koskenkorva	N
-Vodka	Salty Dog   	Y
-Vodka	Screwdriver   	Y
-Vodka	Sea Breeze   	Y
-Vodka	Sex on the Beach   	Y
-Vodka	Vesper	N
-Vodka	Vodka Gimlet	N
-Vodka	Vodka Martini    or Kangaroo.	Y
-Vodka	Vodka McGovern	N
-Vodka	Vodka Sundowner	N
-Vodka	Vodka Sunrise	N
-Vodka	White Russian   	Y
-Vodka	Woo Woo	N
-Vodka	Yorsh	N
-Whiskey	Amber Moon	N
-Whiskey	Blue Blazer	N
-Whiskey	Bourbon Lancer	N
-Whiskey	Churchill	N
-Whiskey	Farnell	N
-Whiskey	Four Horsemen	N
-Whiskey	Irish Coffee   	Y
-Whiskey	Jack and Coke	N
-Whiskey	Jungle Juice	N
-Whiskey	Lynchburg Lemonade	N
-Whiskey	Manhattan   	Y
-Whiskey	Mint Julep   	Y
-Whiskey	Missouri Mule	N
-Whiskey	Nixon	N
-Whiskey	Old Fashioned   	Y
-Whiskey	Rob Roy   	Y
-Whiskey	Rusty Nail   	Y
-Whiskey	Sazerac	N
-Whiskey	Seven and Seven or 7 & 7	N
-Whiskey	Three Wise Men	N
-Whiskey	Whiskey sour   	Y
-Whiskey	Whisky Mac	N
-Wines	Agua de Valencia	N
-Wines	Black Velvet	N
-Wines	Death in the Afternoon	N
-Wines	Flirtini	N
-Wines	Prince of Wales	N
-Wines	Sangria	N
-Wines	Bellini   	Y
-Wines	Buck's Fizz   	Y
-Wines	Mimosa   	Y
-Wines	Kir Royal   	Y
-Wines	Ruby Dutchess	N
-Wines	Kalimotxo or Calimocho or Rioja Libre	N
-Wines	Tinto de Verano	N
-Wines	Mulled wine (Glögg)	N
-Wines	Zurracapote	N
-Wines	Kir   	Y
-Wines	Spritzer	N
-Chocolate liqueur	Chocolate Martini	N
-Coffee liqueurs	B-52  	Y
-Coffee liqueurs	Baby Guinness	N
-Coffee liqueurs	Blow Job	N
-Coffee liqueurs	Bushwacker	N
-Coffee liqueurs	Dirty Mother	N
-Coffee liqueurs	Dirty White Mother	N
-Coffee liqueurs	Jamaican Coffee	N
-Coffee liqueurs	Oatmeal Cookie	N
-Coffee liqueurs	Orgasm	N
-Cream liqueurs	Baby Guinness	N
-Cream liqueurs	Buttery Nipple	N
-Cream liqueurs	Golden Cadillac	N
-Cream liqueurs	Grasshopper	N
-Cream liqueurs	Pink Squirrel	N
-Cream liqueurs	Quick Fuck	N
-Cream liqueurs	Slippery Nipple	N
-Cream liqueurs	Screaming Orgasm	N
-Cream liqueurs	Grasshopper	N
-Cream liqueurs	Stinger	N
-Fruit liqueurs	Cosmopolitan	N
-Fruit liqueurs	Golden Dream	N
-Fruit liqueurs	Golden Doublet	N
-Fruit liqueurs	Kamikaze	N
-Fruit liqueurs	Long Island Iced Tea	N
-Fruit liqueurs	Margarita	N
-Fruit liqueurs	Moonwalk	N
-Fruit liqueurs	Skittle Bomb	N
-Fruit liqueurs	Zombie	N
-Fruit liqueurs	Japanese Slipper	N
-Fruit liqueurs	Midori Sour	N
-Fruit liqueurs	Nuclear Iced Tea	N
-Fruit liqueurs	Aviation	N
-Herbal liqueurs	Ouzo	N
-Herbal liqueurs	Harvey Wallbanger	N
-Herbal liqueurs	"Herbsaint Frappé
-"	N
-Herbal liqueurs	Mauresque	N
-Herbal liqueurs	Perroquet	N
-Herbal liqueurs	Tomate	N
-Nut-flavored liqueurs	Alabama Slammer	N
-Nut-flavored liqueurs	Blueberry Tea	N
-Nut-flavored liqueurs	French Connection	N
-Nut-flavored liqueurs	Godfather	N
-Nut-flavored liqueurs	Godmother	N
-Nut-flavored liqueurs	Orgasm	N
-Nut-flavored liqueurs	Screaming Orgasm	N
-Whisky liqueurs	Rusty Nail	N
-Other liqueurs	Backdraft (also a Pepperdraft variation)	N
-Other liqueurs	Carrot Cake	N
-Other liqueurs	Common Market	N
-Other liqueurs	Flaming Sambuca	N
-Other liqueurs	Grasshopper   	Y
-Other liqueurs	Jägerbomb	N
-Other liqueurs	Pucker Up	N
-Other liqueurs	Snowball	N
-Bitters	Americano   	Y
-Bitters	Brut Cocktail	N
-Schnapps	Appletini   	Y
-Schnapps	Fuzzy Navel	N
-Schnapps	Polar Bear	N
-Schnapps	Redheaded slut	N
-Pisco	Pisco Sour	N
-Pisco	Mango Sour	N
-Pisco	Jazmin Sour	N
-Pisco	Aguaymanto Sour	N
+B&B	Brandy or cognac	N	Brandy	Straight up; without ice or on the rocks	 Brandy snifter	1 oz Benedictine, 1 oz brandy	Pour the Benedictine into a brandy snifter. Use the back of a bar spoon to gently float the brandy on top.	B&B stands for Brandy & Benedictine. It is one of the icons of fine drinking and is a true classic cocktail. Often, a B&B is served on the rocks, although some prefer it straight up and other prefer it slightly warmer (prep your snifter with warm water, dumping it before adding the spirits). It is almost always served in a brandy snifter and this also makes an ideal after dinner drink or nightcap.	http://cdn3.foodviva.com/static-content/food-images/cocktail-recipes/b-b-benedictine-brandy-cocktail/b-b-benedictine-brandy-cocktail.jpg	6
+Rusty Nail	Whiskey	Y	Whiskey	On the rocks; poured over ice	"old-fashioned" glass, stemmed glass "martini-style"	45ml (9 parts) Scotch Whisky, 25ml (5 parts) Drambuie	First fill a 16 oz glass with crushed ice until it is overflowing. Pour in 5 parts drambuie and 9 parts scotch. Stir gently, as to not bruise the ice. Keep stirring until a thick frost develops on the side of the glass. Garnish with a lemon twist. Serve.	A Rusty Nail is made by mixing Drambuie and Scotch whisky. The drink was included in Difford's Guide Top 100 Cocktails. Some prefer less Drambuie to decrease the sweetness of the drink. Scotch whisky has a fairly biting and hot taste that is counterbalanced by the honeyed, herbal overtones of the Drambuie. A Rusty Nail can be served in an old-fashioned glass on the rocks, neat, or "up" in a stemmed glass. It is most commonly served over ice. A Rusty Nail served without ice is sometimes called a Straight Up Nail.	http://1.bp.blogspot.com/-vjLjvmqdwJ8/Tdb5XwNyltI/AAAAAAAAApM/T98k6eCR31w/s1600/Gaslight%2B01.jpg	16
+Cuba Libre	Rum	Y	Rum	On the rocks; poured over ice	12 oz. glass	120 mL Cola, 50 mL White rum, 10 mL Fresh lime juice	Build all ingredients in a highball glass filled with ice. Garnish with lime wedge.	The Cuba Libre is a highball made of cola, lime, and white rum. This highball is often referred to as a Rum and Coke in the United States, Canada, the UK, Ireland, Australia and New Zealand where the lime juice may or may not be included.	http://2eat2drink.files.wordpress.com/2013/01/107-2eat2drink-barrilito-cuba-libre-p.jpg	6
+Sake Bomb	Beer	N	Beer, Sake	Straight up; without ice	A pub glass and a shot glass	1 pint (~14 parts) beer, 1 shot (1 part) Sake	The shot of sake is dropped into the beer, causing it to fizz violently. The drink should then be consumed immediately.	The sake bomb or sake bomber is a beer cocktail made by pouring sake into a shot glass and dropping it into a glass of beer. Sometimes two chopsticks are placed parallel on top of the glass of beer, and the shot glass is carefully balanced between them. The drinker slams the table with his fists, causing the sake to fall into the beer. It should be drunk immediately, and works best with warm sake. Alternatively, the drinker may count to three in Japanese, "ichi...ni...san...SAKE BOMB!" Or he may simply yell "KANPAI!" A variation of the sake bomb is to "bomb" a shot of warm sake into chilled Red Bull energy drink.	http://kunights.com/images/6/media/2011/07/07/sake_bomb.jpg	10
+Flaming Dr Pepper	Beer	N	Beer, Amaretto	Straight up; without ice	A pub glass and a shot glass	1 pint (~13 parts) beer, 3 parts Amaretto, 1 part high-proof liquor	Layer the two spirits in the shot glass, with the high-proof liquor on top. Light the shot and allow it to burn; then extinguish it by dropping it into the beer glass. Drink immediately.	A Flaming Doctor Pepper is a flaming cocktail said to taste like the soft drink Dr Pepper, although Dr Pepper is not one of its ingredients. It is usually made by filling a shot glass with 3 parts Amaretto and 1 part high-proof liquor, such as Everclear or Bacardi 151. The two liquors are not mixed; the high-proof alcohol is layered on top of the Amaretto. The shot is then set on fire and dropped into a glass half-filled with beer. The flames are extinguished by the beer, and the cocktail should then be drunk quickly.	http://www.mutineermagazine.com/img/blog/flaming_dr_pepper.jpg	20
+Irish Car Bomb	Beer	N	Beer, Irish whiskey, Irish cream	Straight up; without ice	A pub glass and a shot glass	1/2 shot Irish whiskey, 1/2 shot Irish cream, 1/2 pint Irish stout	The whiskey is floated on top of the Irish cream in a shot glass, and the shot glass is then dropped into the stout.	An Irish Car Bomb is an American beer cocktail that is drunk as a bomb shot, similar to a boilermaker. It is made with Irish stout, Irish cream, and Irish whiskey.[	http://goinglikesixty.com/wp-content/uploads/2010/03/Irish_Car_Bomb-topshot.jpg	15
+U-Boot	Beer	N	Beer, Vodka	Straight up; without ice	A pub glass and a shot glass.	1 (500 ml) bottle of beer (preferably Belgian), 1 shot (40 ml) of vodka (ideally Polish)	small 40 ml glass of vodka is dropped into the larger half-litre (500 ml) beer glass	A U-Boot is a beer cocktail (popular in Germany, Poland, Serbia and Flanders) that is made with a glass of beer and a shot glass of vodka. In Germany, the liquor korn is sometimes used instead, while in Flanders and the Netherlands, jonge jenever is preferred.	http://images1.wikia.nocookie.net/__cb20110208223929/cocktails/images/5/57/Boilermaker.jpg	0
+Shandy	Beer	N	Beer	Straight up; without ice	Beer Stein	beer, soft drink	Mix the beer and soft drink, the proportions of the two ingredients are adjusted to taste, usually half-and-half	A shandy is beer mixed with a soft drink, carbonated lemonade, ginger beer, ginger ale, or apple juice. The proportions of the two ingredients are adjusted to taste, usually half-and-half. Nonalcoholic shandies are known as "rock shandies"	http://www.bobthebrit.net/wp-content/uploads/2009/06/shandy.jpg	3
+Mimosa	Champagne	Y	Champagne	stirred not shaken	Champagne flute	One part champagne, one part orange juice	Ensure both ingredients are well chilled, then mix into the glass. Serve cold.	A Mimosa is a cocktail-like drink composed of one part champagne (or other sparkling wine) and one part thoroughly chilled citrus fruit juice, usually orange juice unless otherwise specified (e.g. "grapefruit [juice] mimosa"). It is traditionally served in a tall champagne flute with a morning brunch as hair of the dog or to guests at weddings.	http://www.inspiredtaste.net/wp-content/uploads/2012/12/Mimosa-Cocktail-Recipe-1.jpg	20
+Bellini	Wines	Y	Sparkling wine	Straight up; without ice	Champagne flute	100ml (2 parts) dry sparkling wine, 50ml (1 part) fresh peach purée	Pour peach puree into chilled flute, add gently sparkling wine. Stir gently.	A Bellini cocktail is a mixture of Prosecco sparkling wine and peach purée or nectar, originating in Venice, Italy.	http://foododdity.com/wp-content/uploads/2011/06/rosemary-bellini.jpeg	32
+Buck's Fizz	Wines	Y	Champagne	Straight up; without ice	Champagne flute	100ml (2 parts) orange juice, 50ml (1 part) champagne	Pour the orange juice into glass and top up champagne. Stir gently, garnish and serve.	The Buck's Fizz is an alcoholic drink made of two parts orange juice to one part champagne. Some older recipes list grenadine as an additional ingredient, but the International Bartenders Association recipe does not include it.	http://www.greedygourmet.com/wp-content/uploads/2008/02/img_8802-final.jpg	18
+Kir Royal	Wines	Y	Champagne	Straight up; without ice	Champagne flute	90ml (3 ounces) (9 parts) champagne, 10ml (0.33 ounce) (1 part) crème de cassis	Add the crème de cassis to the bottom of the glass, then top up champagne.	Kir Royal is the same as Kir except it's made with champagne instead of white wine. The Apéritif is typically served in a Flute glass.	http://www.thewinebar.com/sites/default/files/styles/main_image/public/kir-royale_1.jpg	13
+Death in the Afternoon	Absinthe	N	Champagne, Absinthe	Straight up; without ice	Champagne flute	1 ounce absinthe, 5 ounces chilled champagne	Pour absinthe into a champagne flute. Top with champagne.	Death in the Afternoon, also called the Hemingway or the Hemingway Champagne, is a cocktail made up of absinthe and Champagne invented by Ernest Hemingway. The cocktail shares a name with Hemingway's book Death in the Afternoon, and the recipe published in So Red the Nose, or Breath in the Afternoon, 1935 cocktail book with contributions from famous authors. Hemingway's original instructions were: "Pour one jigger absinthe into a Champagne glass. Add iced Champagne until it attains the proper opalescent milkiness. Drink three to five of these slowly."	http://media.cocktailia.com/2009/11/death-in-the-afternoon-480x640.jpg	1
+Black Velvet	Beer	N	Beer, Champaign	Straight up; without ice	Champagne flute	beer and sparkling wine or champagne	A Black Velvet is made by filling a vessel, traditionally a tall champagne flute, halfway with sparkling wine and floating the chilled stout beer on top of the wine. The differing densities of the liquids cause them to remain largely in separate layers (as in a pousse-café). The effect is best achieved by pouring over a spoon turned upside down over the top of the glass so that the liquid runs gently down the sides rather than splashing into the lower layer and mixing with it.	The Black Velvet is a beer cocktail made from stout beer (often Guinness) and white, sparkling wine, traditionally champagne. The drink was first created by the bartender of Brooks's Club in London in 1861, to mourn the death of Prince Albert, Queen Victoria's Prince Consort. It is supposed to symbolise the black or purple cloth armbands worn by mourners.	http://img4-3.myrecipes.timeinc.net/i/recipes/sl/07/10/black-velvet-sl-1662857-x.jpg	6
+Brandy Alexander	Brandy or cognac	Y	Brandy	Straight up; without ice	Cocktail Glass	30ml (1 part) Cognac, 30ml (1 part) Crème de cacao (brown), 30ml (1 part) Fresh cream	Shake and strain into a chilled cocktail glass. Sprinkle with fresh ground nutmeg.	Brandy Alexander is a sweet, brandy-based cocktail consisting of cognac and crème de cacao that became popular during the early 20th century.[1] It is a variation of an earlier, gin-based cocktail called simply an Alexander.	http://2.bp.blogspot.com/-cOAEAnBaowo/UQrlsMQdRCI/AAAAAAAAFAg/lDe3rEkAc6I/s1600/Brandy%2BAlexander.JPG	10
+Paradise   	Brandy or cognac	Y	Brandy, Gin	Straight up; without ice	Cocktail Glass	35ml (7 parts) gin, 20ml (4 parts) apricot brandy, 15ml (3 parts) orange juice	Shake together over ice. Strain into cocktail glass and serve chilled.	The Paradise is an IBA official cocktail, and is classified as a "pre-dinner" drink, an apéritif. The earliest known in-print recipe for the Paradise Cocktail was written by Harry Craddock. This cocktail is prepared using gin, apricot brandy (apricot liqueur), and orange juice in a 2:1:1 ratio, with a splash of lemon juice.	http://upload.wikimedia.org/wikipedia/commons/b/b3/Paradise_cocktail.jpg	2
+Sidecar	Brandy or cognac	Y	Brandy	Straight up; without ice	Cocktail Glass	Four parts brandy or cognac, Two parts Cointreau, Two parts lemon juice	Mix the ingredients in a shaker half-full of ice. Strain and serve in a sugar-rimmed glass. Garnish with a strip of lemon rind	The Sidecar is a classic cocktail traditionally made with cognac, orange liqueur (Cointreau, Grand Marnier,Grand Gala or another triple sec), and lemon juice. In its ingredients, the drink is perhaps most closely related to the older Brandy Daisy, which differs both in presentation and in proportions of its components.	http://mostmetro.com/wp-content/uploads/2012/05/sidecar-cocktail.jpg	16
+Bronx	Gin	Y	Gin	Straight up; without ice	Cocktail Glass	30ml (6 parts) Gin, 15ml (3 parts) Sweet Red Vermouth, 10ml (2 parts) Dry Vermouth, 15ml (3 parts) Orange juice	Pour into cocktail shaker all ingredients with ice cubes, shake well. Strain in chilled cocktail or martini glass.	The Bronx Cocktail is essentially a Perfect Martini with orange juice added. It was ranked number three in "The World's 10 Most Famous Cocktails in 1934", making it a very popular rival to the Martini (#1) and the Manhattan (#2). Today, it remains a popular choice in some markets, and is designated as an Official Cocktail by the International Bartender Association. Like the Manhattan, the Bronx is one of five cocktails named for one of New York City's five boroughs, but is perhaps most closely related to the Queens (cocktail), which substitutes pineapple for the Bronx's orange.	http://2.bp.blogspot.com/-6G-vhUKofPs/Ti3ibz27AGI/AAAAAAAACFQ/0j_m6svxfuk/s1600/bronx%2Bcocktail.jpg	17
+Gibson	Gin	Y	Gin	stirred not shaken	Cocktail Glass	60ml (2 ounces) (6 parts) gin, 10ml (0.33 ounce) (1 part) dry vermouth	*Stir well in a shaker with ice, then strain into a chilled martini glass. Garnish and serve	The Gibson is a mixed drink made with gin and vermouth, and often garnished with a pickled onion. The oldest published recipe for the Gibson is found in the 1908 book, The World's Drinks and How to Mix Them by William Boothby.	http://www.bubblews.com/assets/images/news/1266559591_1389912062.jpg	5
+Martini	Gin	Y	Gin	straight (or on the rocks)	Cocktail Glass	55ml (11 parts) gin,15ml (3 parts) dry vermouth	Straight: Pour all ingredients into mixing glass with ice cubes. Stir well. Strain in chilled martini cocktail glass. Squeeze oil from lemon peel onto the drink, or garnish with olive. (On the rocks: Pour all ingredients over ice cubes in old-fashioned glass, garnish as above and serve.)	The Martini is a cocktail made with gin and vermouth, and garnished with an olive or a lemon twist. Over the years, the Martini has become one of the best-known mixed alcoholic beverages. H. L. Mencken called the Martini "the only American invention as perfect as the sonnet" and E. B. White called it "the elixir of quietude".	http://liquor.com/wp-content/uploads/2011/04/Dirty-Martini-newest.jpg	14
+Bacardi   	Rum	Y	Rum	straight up	Cocktail Glass	45ml (9 parts) Bacardi white rum, 20ml (4 parts) lemon or lime juice, 5ml (1 part) grenadine syrup	Shake together in a mixer with ice. Strain into glass and serve	The Bacardi cocktail is an IBA Official Cocktail made primarily with Bacardi Superior. It is served as a "pre-dinner" cocktail.	http://farm4.staticflickr.com/3151/3071029795_3b774caca8.jpg	4
+Daiquiri	Rum	Y	Rum	Straight up; without ice	Cocktail Glass	45ml (9 parts) White rum, 25ml (5 parts) lime juice, 15ml (3 parts) Simple syrup	Pour all ingredients into shaker with ice cubes. Shake well. Strain in chilled cocktail glass.	Daiquiri is a family of cocktails whose main ingredients are rum, citrus (typically lime juice), and sugar or other sweetener. The Daiquirí is one of the six basic drinks listed in David A. Embury's classic The Fine Art of Mixing Drinks. In the book, he also suggests some variations.	http://www.examiner.com/images/blog/wysiwyg/image/DaiquiriLime.jpg	40
+Apple Martini (Appletini)	Vodka	Y	Vodka	straight up	Cocktail Glass	40ml (3 parts) Vodka, 15ml (1 part) Apple schnapps / Calvados, 15ml (1 part) Cointreau	Mix in a shaker, then pour into a chilled glass. Garnish and serve.	An apple martini (appletini for short) is a cocktail containing vodka and one or more of apple juice, apple cider, apple liqueur, or apple brandy. Optionally, vermouth may be included, as in a regular martini. Typically, the apple vodka is shaken or stirred with a sweet and sour mix and then strained into a cocktail glass.	http://www.bunkycooks.com/wp-content/uploads/2010/11/Green-Appletini-close-up-2.jpg	39
+Cosmopolitan	Vodka	Y	Vodka	Straight up; without ice	Cocktail Glass	40 ml Vodka Citron, 15 ml Cointreau, 15 ml Fresh lime juice, 30 ml Cranberry juice	Add all ingredients into cocktail shaker filled with ice. Shake well and double strain into large cocktail glass. Garnish with lime wheel.	A cosmopolitan, or informally a cosmo, is a cocktail made with vodka, triple sec, cranberry juice, and freshly squeezed lime juice or sweetened lime juice.	http://www.inspiredtaste.net/wp-content/uploads/2012/11/Cosmopolitan-Cockail-Recipe-1.jpg	32
+Kamikaze	Vodka	Y	Vodka, Orange-flavored liqueur	Straight up; without ice	Cocktail Glass	30ml (1 part) vodka, 30ml (1 part) triple sec, 30ml (1 part) lime juice	Shake all ingredients together in a mixer with ice. Strain into glass, garnish and serve.	The Kamikaze is made of equal parts vodka, triple sec and lime juice. According to the International Bartenders Association, it is served straight up in a cocktail glass. Garnish is typically a wedge or twist of lime.	http://www.killingtime.com/Pegu/wp-content/uploads/2008/10/kamikaze.png	16
+Vodka Martini (Kangaroo)	Vodka	Y	Vodka	straight (or on the rocks)	Cocktail Glass	"1 1/2 oz vodka
+3/4 oz dry vermouth"	Shake vodka and vermouth together with several ice cubes in a shaker. Strain into a cocktail glass, garnish with an olive and serve.	A vodka martini, also known as a vodkatini or kangaroo cocktail, is a cocktail made with vodka and vermouth, a variation of a martini.	http://1.bp.blogspot.com/-_dHlxMIdKWw/T-zQ9bu2FuI/AAAAAAAAAIM/ePTG8fvo93k/s1600/martini.JPG	12
+Manhattan	Whiskey	Y	Whiskey	Straight up; without ice	Cocktail Glass	50 mL rye or Canadian whisky, 20 mL Sweet red vermouth, Dash Angostura bitters, Maraschino cherry (Garnish)	Stirred over ice, strained into a chilled glass, garnished, and served straight up.	A Manhattan is a cocktail made with whiskey, sweet vermouth, and bitters. Commonly used whiskeys include rye (the traditional choice), Canadian whisky (simply called Rye in Canada), bourbon, blended whiskey and Tennessee whiskey. The cocktail is often stirred or shaken with ice and strained into a cocktail glass, where it is garnished with a Maraschino cherry with a stem.	http://www.inspiredtaste.net/wp-content/uploads/2012/02/Manhattan-Cocktail-Recipe-2.jpg	41
+Rob Roy	Whiskey	Y	Whiskey	Choice of "straight up" or "On the rocks"	Cocktail Glass	45ml Scotch whisky, 25ml Sweet vermouth, Dash Angostura bitters	Stirred over ice, strained into a chilled glass, garnished, and served straight up, or mixed in rocks glass, filled with ice.	The Rob Roy is a cocktail created in 1894 by a bartender at the Waldorf Astoria New York. The drink was named in honor of the premiere of Rob Roy, an operetta by composer Reginald De Koven and lyricist Harry B. Smith loosely based upon Scottish folk hero Robert Roy MacGregor. The Rob Roy is similar to a Manhattan but is made exclusively with Scotch whisky, while the Manhattan is traditionally made with rye and today commonly made with bourbon or Canadian whisky.	http://www.mutineermagazine.com/img/blog/rob_roy.jpg	13
+Grasshopper	Other liqueurs	Y	Crème de cacao, Crème de menthe	Straight up; without ice	Cocktail Glass	30 ml (1 part) Crème de menthe (green), 30 ml (1 part) Crème de cacao (white), 30 ml (1 part) Fresh cream	Pour ingredients into a cocktail shaker with ice. Shake briskly and then strain into a chilled cocktail glass.	A grasshopper is a sweet, mint-flavored, after-dinner drink. The name of the drink is derived from its green color, which is provided by the crème de menthe. The drink reputedly originated at Tujague's, a landmark bar in the French Quarter of New Orleans, Louisiana, and gained popularity during the 1950s and 1960s throughout the American South.	http://outlookcolumbus.com/wp-content/uploads/2012/09/2012-08-13_CC.jpg	14
+Corpse Reviver	Absinthe	N	Cognac	Straight up; without ice	Cocktail Glass	2 parts cognac, 1 part apple brandy or Calvados, 1 part sweet vermouth	Stir with ice, strain into a chilled cocktail glass.	The plain Corpse Reviver cocktail is a cognac-based cocktail, with two parts cognac, one part Calvados or equivalent apple brandy, and one part sweet vermouth.	http://www.travelandleisure.com/images/amexpub/0022/7698/201105-w-hangover-corpse-reviver.jpg	3
+Corpse Reviver #2	Absinthe	N	Gin	Straight up; without ice	Cocktail Glass	3/4 ounce gin, 3/4 ounce lemon juice, 3/4 ounce Cointreau (triple sec), 3/4 ounce Lillet, 1 dash absinthe	Shake ingredients together in a mixer with ice. Strain into chilled glass.	The Corpse Reviver #2 is the more popular of the corpse revivers, and consists of equal parts gin, lemon juice, triple sec (commonly Cointreau), Kina Lillet, and a dash of absinthe. The dash of absinthe can either be added to the mix before shaking, or added to the cocktail glass and moved around until the glass has been coated with a layer of absinthe. It can also be used to coat the edge of the glass to give a subtle absinthe aroma and flavor to the drink.	http://3.bp.blogspot.com/-CDueRNnmA6U/Ub-4JuboSuI/AAAAAAAAI64/zxVsaZn1JvM/s1600/corpse%2Breviver%2B2.jpg	15
+Earthquake	Absinthe	N	Cognac, Absinthe	Straight up; without ice	Cocktail Glass	3 parts Absinthe, 3 parts Cognac	Shake with ice and strain into a collins glass.	The Tremblement de Terre (or "Earthquake") Cocktail has been attributed to the French Post-Impressionist painter Henri de Toulouse-Lautrec. The name is derived from its effects, which tend to "shake up" the drinker.	http://4.bp.blogspot.com/_ASitGYUhXGU/TMf8DpCRCNI/AAAAAAAAApE/1FSkz9jMgso/s1600/Earthquake.jpg	2
+Green Vesper	Absinthe	N	Gin	Straight up; without ice	Cocktail Glass	3 ounce gin, 1 ounce vodka, 1/2 ounce absinthe	Add absinthe, vodka and gin into a boston shaker, add ice and stir. Double strain into a chilled cocktail glass and serve with a twist of lime	Variation of the Vesper Martini	http://www.organicauthority.com/wp-content/uploads/2009/05/kiwivesper1.jpg	6
+The Monkey Gland	Absinthe	N	Gin, Absinthe	Straight up; without ice	Cocktail Glass	1 part gin, 1 part orange juice, dash absinthe, dash grenadine	Shake well over ice cubes in a shaker, strain into a chilled cocktail glass.	The Monkey Gland is a cocktail of gin, orange juice, grenadine and absinthe named after a surgical technique of grafting monkey testicle tissue into humans. The practice was started by Dr Serge Voronoff, and was intended to produce longevity.	http://www.scienceofdrink.com/wp-content/uploads/2009/02/monkey-gland-x-2.jpg	15
+The Blenheim	Brandy or cognac	N	Brandy	Straight up; without ice	Cocktail Glass	1 oz vodka, 1/2 oz coffee liqueur, 1/2 oz fresh orange juice	Pour the vodka, Tia Maria coffee liqueur and orange juice into a cocktail shaker. Shake well, strain into a cocktail glass, and serve.	The Blenheim was created by Joe Gilmore for Sir Winston Churchills 90th birthday. The drink is also called the Four Score and Ten.	http://www.cocktailhunter.com/wp-content/uploads/2012/09/The-Blenheim.jpg	2
+Jack Rose	Brandy or cognac	N	Brandy	Straight up; without ice	Cocktail Glass	2 parts applejack, 1 part lemon or lime juice, 1/2 part grenadine	Traditionally shaken into a chilled glass, garnished, and served straight up.	Jack Rose is the name of a classic cocktail, popular in the 1920s and 1930s, containing applejack, grenadine, and lemon or lime juice. It notably appeared in a scene in Ernest Hemingway's 1926 classic, The Sun Also Rises, in which Jake Barnes, the narrator, drinks a Jack Rose in the Crillon Paris hotel bar while awaiting the arrival of Lady Brett Ashley. The Jack Rose is one of six basic drinks listed in David A. Embury's classic The Fine Art of Mixing Drinks.	http://ymnation.com/wp-content/uploads/2011/06/JackRoseCocktail1.jpg	15
+The Modernista	Absinthe	N	Scotch	Straight up; without ice	Cocktail glass, Champagne flute	2 ounces Scotch, 1/2 ounce Dark Jamaican rum, 1 teaspoon absinthe or pastis, 1/2 ounce Swedish Punsch, 1/2 ounce fresh lemon juice, 2 dashes orange bitters	Shake in an iced cocktail shaker, and strain into cocktail glass. Add a lemon twist.	The Modernista (also known as the Modern Maid Cocktail) is a scotch-pastis/absinthe cocktail. It is a bitter cocktail with proportions of rum-based Swedish Punsch.	http://stardustvideoandcoffee.files.wordpress.com/2012/04/stardustsdrink.jpg	2
+Tom Collins	Gin	Y	Gin	On the rocks; poured over ice	Collins Glass	45ml (3 parts) Old Tom Gin, 30ml (2 parts) freshly squeezed lemon juice, 15ml (1 part) sugar syrup, 60ml (4 parts) carbonated water to taste	Mix the gin, lemon juice and sugar syrup in a tall glass with ice, top up with soda water, garnish and serve.	The Tom Collins is a Collins cocktail made from gin, lemon juice, sugar and carbonated water. First memorialized in writing in 1876 by "the father of American mixology" Jerry Thomas, this "gin and sparkling lemonade" drink typically is served in a Collins glass over ice.	http://www.inspiredtaste.net/wp-content/uploads/2011/07/tom-collins1.jpg	23
+Mojito	Rum	Y	Rum	On the rocks; poured over ice	Collins Glass	4 cl (4 parts) White rum, 3 cl (3 parts) Fresh lime juice, 6 leaves of Mint, 2 teaspoons Sugar, Soda Water	Mint sprigs muddled with sugar and lime juice. Rum added and topped with soda water. Garnished with sprig of mint leaves. Served with a straw.	Traditionally, a mojito is a cocktail that consists of five ingredients: white rum, sugar (traditionally sugar cane juice), lime juice, sparkling water, and mint. The original Cuban recipe uses spearmint or yerba buena, a mint variety very popular on the island. Its combination of sweetness, refreshing citrus, and mint flavors is intended to complement the potent kick of the rum, and have made this clear highball a popular summer drink. The cocktail has a relatively low alcohol content (about 10 percent alcohol by volume).	http://www.cbc.ca/stevenandchris/content/images/42_mojito.jpg	32
+Gin Fizz	Gin	Y	Gin	On the rocks; poured over ice	Highball Glass	45ml (3 parts) Gin, 30ml (2 parts) Fresh lemon juice, 10ml (1 part) Gomme syrup, 80ml (5 parts) Soda water	Pour the gin, juice, sugar, and egg white into a cocktail shaker filled with ice. Shake vigorously. More than usual if using the egg white to ensure it is mixed thoroughly with the other ingredients. Strain into a chilled highball glass with ice cubes. Top off with soda water. Garnish with a cherry.	A Gin Fizz is the best-known cocktail in the Fizz family. A Gin Fizz contains gin, lemon juice, sugar, and carbonated water, served in a tumbler with two ice cubes. The drink is similar to a Tom Collins, the difference, contrary to common belief, being that a Tom Collins historically used "Old Tom Gin" (a sweetened version of, and precursor to, London Dry Gin), whereas the kind of gin historically used in a Gin Fizz is unknown.	http://1.bp.blogspot.com/_9BwMs_QlKaU/TCNfknCpoAI/AAAAAAAAAys/RxQi3vRoQag/s1600/cocktail-gin-and-dill.jpg	20
+Long Island Iced Tea	Gin	Y	Gin, Tequila, Vodka, Rum, Triple sec	On the rocks; poured over ice	Highball Glass	15 mL Vodka, 15 mL Tequila, 15 mL White rum, 15 mL Triple sec, 15 mL Gin, 25 mL Lemon juice, 30 mL Gomme Syrup, 1 dash of Cola	Mix ingredients in glass over ice, stir, garnish and serve.	The drink has a much higher alcohol concentration (approximately 22 percent) than most highball drinks due to the relatively small amount of mixer. Long islands can be ordered "extra long", which further increases the alcohol to mixer ratio.	http://pad2.whstatic.com/images/thumb/1/1a/Make-a-Long-Island-Iced-Tea-Step-9.jpg/670px-Make-a-Long-Island-Iced-Tea-Step-9.jpg	32
+Dark 'N' Stormy	Rum	Y	Rum	On the rocks; poured over ice	Highball Glass	60ml Gosling's Black Seal rum, 100ml Ginger beer	Pour the black rum into a glass over ice. Top off with ginger beer. Garnish with lime wedge.	A Dark and Stormy (or Dark 'n' Stormy) is a highball cocktail made with black rum (the dark) and ginger beer (the stormy) served over ice, optionally accompanied by a slice of lime.	http://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Dark_n_Stormy.jpg/400px-Dark_n_Stormy.jpg	4
+Mai-Tai	Rum	Y	Rum	On the rocks; poured over ice	Highball Glass	40ml (8 parts) white rum, 20ml (4 parts) dark rum, 15ml (3 parts) orange curaçao, 15ml (3 parts) Orgeat syrup. 10ml (2 parts) fresh lime juice	Shake all ingredients except the dark rum together in a mixer with ice. Strain into glass and float the dark rum onto the top. Garnish and serve with straw.	The Mai Tai is an alcoholic cocktail based on rum, Curaçao liqueur, and lime juice, associated with Polynesian-style settings.	http://img4-3.myrecipes.timeinc.net/i/recipes/su/08/09/mai-tai-su-1835314-l.jpg	19
+Planter's Punch	Rum	Y	Rum	On the rocks; poured over ice	Highball Glass	4.5cl Dark rum, 3.5cl Fresh orange juice, 3.5cl Fresh pineapple juice, 2cl Fresh lemon juice, 1cl Grenadine syrup, 1cl Sugar syrup, 3 or 4 dashes Angostura bitters	Pour all ingredients, except the bitters, into shaker filled with ice. Shake well. Pour into large glass, filled with ice. Add Angostura bitters, "on top". Garnish with cocktail cherry and pineapple.	The cocktail has been said to have originated at the Planters Hotel in Charleston, SC, but the recipe originates in Jamaica. The September 1878 issue of the London magazine Fun listed the recipe as follows: "A wine-glass with lemon juice fill, of sugar the same glass fill twice / Then rub them together until / The mixture looks smooth, soft, and nice. / Of rum then three wine glasses add, / And four of cold water please take. A Drink then you'll have that's not bad — / At least, so they say in Jamaica."	http://upload.wikimedia.org/wikipedia/commons/1/10/Planters_Punch_2.jpg	22
+Tequila Sunrise	Tequila	Y	Tequila	On the rocks; poured over ice	Highball Glass	45ml (3 parts) Tequila, 90ml (6 parts) Orange juice, 15ml (1 part) Grenadine syrup	Pour the tequila and orange juice into glass over ice. Add the grenadine, which will sink to the bottom. Do not stir. Garnish and serve.	The Tequila Sunrise is a cocktail made in two different ways, the original (tequila, crème de cassis, lime juice and soda water) and the more popular concoction (tequila, orange juice, and grenadine syrup). Originally served at the Arizona Biltmore Hotel, where it was created by Gene Sulit in the 1930s or 1940s, the cocktail is named for the way it looks after it has been poured into a glass. The denser ingredients (cassis or grenadine) settle, creating gradations in color that mimic a sunrise. The more popular version was invented by Bobby Lazoff and Billy Rice at the Trident restaurant in Sausalito, California in the early 1970s.	http://4.bp.blogspot.com/-zn2CJJW9I2c/Ufwy7DMmpFI/AAAAAAAAIdE/bmWi7uxnkuo/s1600/DSC_0116.JPG	41
+Bloody Mary	Vodka	Y	Vodka	On the rocks; poured over ice	Highball Glass	45ml (3 parts) Vodka, 90ml (6 parts) Tomato juice, 15ml (1 part) Lemon juice	Add dashes of Worcestershire Sauce, Tabasco, salt and pepper into highball glass, then pour all ingredients into highball with ice cubes. Stir gently. Garnish with celery stalk and lemon wedge (optional).	A Bloody Mary is a popular cocktail containing vodka, tomato juice, and usually other spices or flavorings such as Worcestershire sauce, Tabasco sauce, piri piri sauce, beef consommé or bouillon, horseradish, celery, olive, salt, black pepper, cayenne pepper, lemon juice, and celery salt. It has been called "the world's most complex cocktail."	http://ei.isnooth.com/multimedia/2/0/3/image_2579854.jpeg	10
+Bull Shot	Vodka	Y	Vodka	On the rocks; poured over ice	Highball Glass	"1 1/2 oz vodka, 3 oz chilled beef bouillon, dash of Worchestershire, Tabasco, salt and pepper to taste
+celery salt (optional)"	Pour the ingredients into a cocktail shaker filled with ice. Shake well. Strain into a highball glass filled with ice.	The Bull Shot is a drink for acquired tastes, one that you will either love or hate. Personally I can't get into this one, but some people swear by it. There is a lot of beef bouillon in the Bull Shot and you can use your sauces and spices to adapt it to your personal taste. Amazingly enough some people will also serve this drink warm, sort of like sipping on a mug of spiked soup.	http://www.bonappetit.com/wp-content/uploads/2008/04/mare_bull_shot_v.jpg	3
+Harvey Wallbanger	Vodka	Y	Vodka	On the rocks; poured over ice	Highball Glass	45 mL (3 parts) Vodka, 15 mL (1 part) Galliano, 90 mL (6 parts) fresh orange juice	Stir the vodka and orange juice with ice in the glass, then float the Galliano on top. Garnish and serve.	The Harvey Wallbanger is a cocktail made with vodka, Galliano, and orange juice.	http://3.bp.blogspot.com/-YJ5K4CJRCK0/UaNezxzHodI/AAAAAAAAIzg/XKQdQkJQGa4/s1600/Harvey%2Bwallbanger.jpg	18
+Salty Dog	Vodka	Y	Vodka	Straight up; without ice	Highball Glass	40ml vodka or gin, 100ml grapefruit juice	Shake vodka and grapefruit juice in cocktail shaker. Strain into a salt-rimmed highball glass.	A Salty Dog is a cocktail of vodka and grapefruit juice, served in a highball glass with a salted rim. The salt is the only difference between a Salty Dog and a Greyhound. Gin may be used as a substitute for vodka.	http://media1.onsugar.com/files/2012/02/08/3/192/1922195/5dfc90c14c486486_Salty-Dog.preview.jpg	14
+Screwdriver	Vodka	Y	Vodka	On the rocks; poured over ice	Highball Glass	50 mL (1 part) vodka, 100 mL (2 parts) orange juice	Mix in a highball glass with ice. Garnish and serve.	A screwdriver is a popular alcoholic highball drink made with orange juice and vodka. While the basic drink is simply the two ingredients, there are many variations; the most common one is made with one part vodka, one part of any kind of orange soda, and one part of orange juice. Many of the variations have different names in different parts of the world. The International Bartender Association has designated this cocktail as an IBA Official Cocktail.	http://liquor.s3.amazonaws.com/wp-content/uploads/2012/04/screwdriver.jpg	24
+Sea Breeze	Vodka	Y	Vodka	On the rocks; poured over ice	Highball Glass	40 ml Vodka, 120 ml Cranberry juice, 30 ml Grapefruit juice	Build all ingredients in a highball glass filled with ice. Garnish with lime wedge.	A Sea Breeze is a cocktail containing vodka with cranberry juice and grapefruit juice. The cocktail is usually consumed during summer months. The drink may be shaken in order to create a foamy surface. It is considered an IBA Official Cocktail. The drink follows the classic cocktail principle of balancing strong (alcohol) with weak (fruit juice) and sweet and sour.	http://ruhlman.com/wp-content/uploads/2013/06/sea-breeze.jpeg	29
+Sex on the Beach	Vodka	Y	Vodka	On the rocks; poured over ice	Highball Glass	2 parts (40ml) Vodka, 1 parts (20ml) Peach schnapps, 2 parts (40ml) Orange juice, 2 parts (40ml) Cranberry juice	Build all ingredients in a highball glass filled with ice. Garnish with orange slice.	One of the most popular cocktails, a Sex on the Beach is a delicious fruity drink that almost anyone will like. It's a great tropical highball that is wonderful on hot summer nights or afternoons at the beach.	http://beersandbeans.com/wp-content/uploads/sex-on-the-beach-.jpg	39
+Brass Monkey	Beer	N	Beer	On the rocks; poured over ice	Highball Glass	beer, orange juice	Pour beer and orange juice together	A beer cocktail consisting of a half-empty bottle of malt liquor (traditionally Olde English), to which orange juice is added until full.	http://www.stepbystep.com/wp-content/uploads/2012/05/brass-monkey-cocktail-400x318.jpg	0
+Brandy Sour (Cyprus)	Brandy or cognac	N	Brandy	On the rocks; poured over ice	Highball Glass	5 cl (two parts) Cyprus brandy, 2.5 cl (one part) lemon squash, 2-4 drops of bitters, Top with carbonated water	Stir into glass over ice, garnish and serve.	The Brandy Sour is a mixed alcoholic cocktail that has been cited as the national drink of Cyprus. While other forms of the Brandy Sour cocktail exist, the Cypriot variety is a distinct mixture, which only shares the basic brandy and lemon flavourings with other variants. Both brandy and lemons are among Cyprus's major exports, and both have distinctive Cypriot characteristics.	http://2.bp.blogspot.com/-DhaAB2ckZEI/T-LVqOTMGiI/AAAAAAAANAA/PNczeWdOKs8/s1600/Brandy%2BSour.jpg	2
+x (Rum)	Rum	N	Rum	On the rocks; poured over ice	Highball Glass	One part dark rum, One part vodka, One part orange juice	Stir together and serve over ice.	Brass Monkey is a name given to a number of different cocktail recipes. As with many lesser-known cocktails that are named after colloquial expressions, there are widely differing recipes that share the same name.	http://www.stepbystep.com/wp-content/uploads/2012/05/brass-monkey-cocktail-400x318.jpg	4
+Singapore Sling	Brandy or cognac	Y	Brandy, Gin	Straight up; without ice	Hurricane Glass	40ml (8 parts) Gin, 20ml (4 parts) Heering Cherry Liqueur (cherry brandy), 5ml (1 part) Cointreau, 5ml (1 part) DOM Bénédictine, 10ml (2 parts) Grenadine, 80ml (16 parts) Pineapple juice, 30ml (6 parts) Fresh lemon juice, 1 dash Angostura bitters	Pour all ingredients into cocktail shaker filled with ice cubes. Shake well. Strain into hurricane glass. Garnish with pineapple and maraschino cherry.	The Singapore Sling is a South-East Asian cocktail. This long drink was developed sometime before 1915 by Ngiam Tong Boon, a Hainanese bartender working at the Long Bar in Raffles Hotel Singapore. It was initially called the gin sling, - a sling was originally an American drink composed of spirit and water, sweetened and flavoured.	http://images.askmen.com/fine_living/drinks_500/510_singapore-sling-recipes-1058322-flash.jpg	8
+Irish Coffee	Whiskey	Y	Whiskey	Hot	Irish Coffee Glass	40ml (2 parts) Irish whiskey, 80ml (4 parts) hot coffee, 30ml (1½ parts) fresh cream, 1tsp brown sugar	Heat the coffee, whiskey and sugar; do not boil. Pour into glass and top with cream; serve hot.	Irish coffee is a cocktail consisting of hot coffee, Irish whiskey, and sugar (some recipes specify that brown sugar should be used), stirred, and topped with thick cream. The coffee is drunk through the cream. The original recipe explicitly uses cream that has not been whipped, although drinks made with whipped cream are often sold as "Irish coffee".	http://silk.com/sites/default/files/recipes/medium/IrishCoffee_DT.jpg	39
+Margarita	Tequila	Y	Tequila	On the rocks; poured over ice	Margarita Glass	35 mL (7 parts) tequila, 20 mL (4 parts) Cointreau, 15 mL (3 parts) lime juice	Rub the rim of the glass with the lime slice to make the salt stick to it. Shake the other ingredients with ice, then carefully pour into the glass (taking care not to dislodge any salt). Garnish and serve over ice.	The margarita is a Mexican cocktail consisting of tequila mixed with Cointreau or similar orange-flavoured liqueur and lime or lemon juice, often served with salt on the glass rim. It is the most common tequila-based cocktail in the United States. The drink is served shaken with ice (on the rocks), blended with ice (frozen margarita), or without ice (straight up).	http://pixelatedcrumb.com/wp-content/uploads/2012/05/Fresh_Margarita-1.jpg	51
+Sazerac	Absinthe	Y	Whiskey	Straight up; without ice	Old Fashioned Glass	2 ounces Rye whiskey, 3 dashes Peychaud's Bitters, One sugar cube or 1 tsp simple syrup, Splash of absinthe or Herbsaint	One old fashioned or rocks glass is packed with ice and water to chill the glass. In a second old fashioned glass, muddle the sugar cube or simple syrup with the bitters. Add the rye to this mixture. Stir to combine. Empty the ice from the first glass. Pour the absinthe or Herbsaint into the glass and swirl to coat the sides of the glass. Any excess absinthe or Herbsaint is discarded. Pour the rye/sugar/bitters mixture into the coated glass. Twist a lemon peel over the glass and rub the rim of the glass with the peel. The peel can be discarded or placed into the cocktail.	The Sazerac is a local New Orleans variation of an old-fashioned cognac or whiskey cocktail, named for the Sazerac de Forge et Fils brand of cognac that was its original prime ingredient. The drink is some combination of cognac or rye whiskey, absinthe or Herbsaint, and Peychaud's Bitters; it is distinguished by its preparation method. It is sometimes referred to as the oldest known American cocktail, with origins in pre–Civil War New Orleans, though there are much earlier published instances of the word cocktail.	http://latimesblogs.latimes.com/.a/6a00d8341c630a53ef0120a529ec8c970c-800wi	6
+French Connection   	Brandy or cognac	Y	Cognac, Amaretto	On the rocks; poured over ice	Old Fashioned Glass	3.5cl (1 part) Cognac, 3.5cl (1 part) Disaronno liqueur	Pour ingredients into a Snifter with ice cubes. Stir gently.	The French Connection is a relatively simple, somewhat common mixed drink that makes a stunning after dinner drink or nightcap. The Cognac adds warmth to the chilled drink and the flavor mixes nicely with a quality amaretto liqueur. Drinks as simple as this depend more on high-end spirits than those with more mixers, so do yourself a favor and choose a nice Cognac (VSOP , XO or older) and amaretto (ie. Di Saronno, Gozio).	http://liquor.s3.amazonaws.com/wp-content/uploads/2013/01/fa-french_connection.jpg	5
+Pisco Sour	Brandy or cognac	Y	Pisco	Straight up; without ice	Old Fashioned Glass	2 fl oz (8 parts) Pisco, 1 fl oz (4 parts) Key lime or lemon juice, 3/4 fl oz (3 part) Simple syrup, 1 Egg white	Shake hard or blend with ice and strain into glass. The bitters are an aromatic garnish topping the finished drink, put on top of Pisco Sour foam.	A Pisco Sour is a cocktail typical of South American cuisine. The drink's name comes from pisco, which is its base liquor, and the cocktail term sour, in reference to sour citrus juice and sweetener components. The Peruvian Pisco Sour uses Peruvian pisco as the base liquor and adds Key lime (or lemon) juice, syrup, ice, egg white, and Angostura bitters. The Chilean version is similar, but uses Chilean pisco and Pica lime, and excludes the bitters and egg white. Other variants of the cocktail include those created with fruits like pineapple or plants such as coca leaves.	http://rischmoller.files.wordpress.com/2012/02/pisco_sour.jpg	18
+Caipirinha   	Cachaça	Y	Cachaça	On the rocks; poured over ice	Old Fashioned Glass	50 ml (1⅔ fl oz) cachaça, ½ Lime cut into 4 wedges (or tahiti lime, but not green lemon), 2 teaspoons brown sugar	Place lime and sugar into old fashioned glass and muddle (mash the two ingredients together using a muddler or a wooden spoon). Fill the glass with crushed ice and add the Cachaça.	Caipirinha is Brazil's national cocktail, made with cachaça (sugar cane hard liquor), sugar and lime. Cachaça is Brazil's most common distilled alcoholic beverage (also known as Pinga or Caninha). Both rum and cachaça are made from sugarcane-derived products. Specifically with cachaça, the alcohol results from the fermentation of sugarcane juice that is afterwards distilled.	http://cigarbrief.com/wp-content/uploads/2011/07/caipirinha2.jpg	24
+Negroni	Gin	Y	Gin, Vermouth, Campari	On the rocks; poured over ice	Old Fashioned Glass	30ml (1 part) gin, 30ml (1 part) sweet red vermouth, 30ml (1 part) campari	Stir into glass over ice, garnish and serve.	The Negroni cocktail is made of one part gin, one part vermouth rosso (red, semi-sweet), and one part bitters, traditionally Campari. It is considered an apéritif.	http://com_shakestir.s3.amazonaws.com/Article/MainImages/golden-ratios-the-negroni.jpg	10
+Black Russian	Vodka	Y	Vodka	On the rocks; poured over ice	Old Fashioned Glass	50ml (5 parts) Vodka, 20ml (2 parts) Coffee liqueur	Pour the ingredients into the old fashioned glass filled with ice cubes. Stir gently.	The Black Russian is a cocktail of vodka and coffee liqueur. It contains either three parts vodka and two parts coffee liqueur, per the Kahlúa bottle's label, or five parts vodka to two parts coffee liqueur, per IBA specified ingredients. Traditionally the drink is made by pouring the vodka over ice cubes or cracked ice in an old-fashioned glass, followed by the coffee liqueur.	http://blogfactory.it/ricette-cocktail/files/2010/10/Black_Russian.jpg	13
+Godmother	Vodka	Y	Vodka, Amaretto	On the rocks; poured over ice	Old Fashioned Glass	1 1/2 oz Vodka, 1/2 oz Amaretto	Build the ingredients in an old-fashioned glass with ice cubes.	The Godmother (or Tawny Russian) is the softer variation of the Godfather. Lose the Scotch and add vodka for this more lady-like lowball on the rocks.	http://vodkaonly.com/wp-content/uploads/2011/09/godmother.jpg	5
+White Russian	Vodka	Y	Vodka, Coffee liqueur	On the rocks; poured over ice	Old Fashioned Glass	50 ml (5 parts) Vodka, 20 ml (2 parts) Coffee liqueur, 30 ml (3 parts) fresh cream	Pour coffee liqueur and vodka into an Old Fashioned glass filled with ice. Float fresh cream on top and stir slowly.	A White Russian is a sweet cocktail classically made with vodka, coffee liqueur (e.g., Kahlúa or Tia Maria), and cream served with ice in an Old Fashioned glass.	http://www.esquire.com/cm/esquire/images/j7/esq-dude-cocktail-040912-xlg.jpg	61
+Old Fashioned	Whiskey	Y	Whiskey	On the rocks; poured over ice	Old Fashioned Glass	4.5 cl Bourbon or Rye whiskey, 2 dashes Angostura bitters, 1 sugar cube, Few dashes plain water	Place sugar cube in old fashioned glass and saturate with bitters, add a dash of plain water. Muddle until dissolved. Fill the glass with ice cubes and add whiskey. Garnish with orange slice, and a cocktail cherry.	The Old Fashioned is an IBA Official Cocktail made by muddling sugar with bitters then adding alcohol, such as whiskey or brandy, and a twist of citrus rind. It is traditionally served in a short, round, 8–12 US fl oz (240–350 ml) tumbler-like glass, which is called an Old Fashioned glass, named after the drink.	http://cravedfw.files.wordpress.com/2013/07/old-fashioned.jpg	6
+Americano	Bitters	Y	Vermouth, Campari	On the rocks; poured over ice	Old Fashioned Glass	30ml Campari, 30ml red vermouth, A splash of soda water	Pour the Campari and vermouth over ice into glass, add a splash of soda water and garnish with half orange slice.	The Americano is an IBA Official Cocktail composed of Campari, sweet vermouth, and club soda. The cocktail was first served in creator Gaspare Campari's bar, Caffè Campari, in the 1860s. It was originally known as the "Milano-Torino" because of its ingredients: Campari, the bitter liqueur, is from Milan (Milano) and Cinzano, the vermouth, is from Turin (Torino). It is popular belief that in the early 1900s, the Italians noticed a surge of Americans who enjoyed the cocktail. As a compliment to the Americans, the cocktail later became known as the "Americano". A more unlikely explanation is that the name was derived from the word "amaro", which means "bitter" in Italian.	http://blog.purentonline.com/wp-content/uploads/2012/04/americano-cocktail.jpg	26
+Godfather	Nut-flavored liqueurs	Y	liqueurs	on the rocks	Old Fashioned Glass	35 ml (2 parts) scotch whisky, 35 ml (2 parts) amaretto	pour into an old fashioned glass	The Godfather is a cocktail made of even parts scotch whisky and amaretto. Typically, the drink is served on the rocks in an old fashioned glass.	http://natzestacio.files.wordpress.com/2011/01/picture-1352.jpg	7
+Chicago Cocktail	Brandy or cognac	N	Brandy	On the rocks; poured over ice	Old Fashioned Glass	Brandy, Triple sec, Bitters, Champagne	Shake or stir with ice.	The Chicago Cocktail is a brandy-based mixed drink probably named for the city of Chicago, Illinois. It has been documented in numerous cocktail manuals dating back to the 19th century. Chicago restaurant critic John Drury included it in his 1931 guide Dining in Chicago, noting that it had been served at the American Bar in Nice and the Embassy Club in London. Whether it originated in Chicago is unknown.	http://www.giglig.com/wp-content/uploads/2011/06/chicago-fizz.jpg	5
+Whiskey Sour	Whiskey	Y	Whiskey	shaken	Old Fashioned glass or cobbler	45ml (3 parts) Bourbon whiskey, 30ml (2 parts) fresh lemon juice, 15ml (1 part) Gomme syrup, dash egg white (optional)	Shake with ice. Strain into ice-filled old-fashioned glass to serve "on the rocks."	The whiskey sour is a mixed drink containing whiskey (often Bourbon), lemon juice, sugar, and optionally, a dash of egg white. With the egg white, it is sometimes called a Boston Sour. It is shaken and served either straight or over ice.	http://www.drinkinginamerica.com/wp-content/uploads/2013/02/whiskey-sour.jpg	68
+Brandy Manhattan	Brandy or cognac	N	Brandy	On the rocks; poured over ice or straight up; without ice	Old-Fashioned Glass or Cocktail Glass	1 tsp maraschino cherry juice, 1 maraschino cherry, 2 dashes bitters, 1/2 oz sweet vermouth, 2 oz brandy, 1 splash water	Fill rocks glass with ice. Add Cherry juice and cherry, then bitters. Add brandy, then sweet vermouth. Add water, stir. Enjoy!	Variation of the classic Mnahattan	http://reviewsmedia.drinkedin.net/original/a9/66/48/dry-brandy-manhattan-recipe-93-1359297726.jpeg	5
+Black and Tan	Beer	N	Beer	Straight up; without ice	Pint glass	Pale ale or lager and stout or porter	To prepare a Black and Tan, fill a glass halfway with pale ale then add the stout. The top layer is best poured slowly over an upside-down tablespoon placed over the glass to avoid splashing and mixing the layers. A specially designed black-and-tan spoon is bent in the middle so that it can balance on the edge of the pint-glass for easier pouring. Alternatively, the stout can be poured first so that the drinks are thoroughly mixed together.	Black and Tan is a beer cocktail made from a blend of a pale beer (usually pale ale or lager) with a dark beer (usually stout or porter).	http://www.barnonedrinks.com/drinks/images/13533.jpg	2
+Boilermaker	Beer	N	Beer	Straight up; without ice	Pint glass	glass of beer and a shot of whiskey	The beer is either served as a chaser or mixed with the whiskey. 	A boilermaker can refer to two types of beer cocktail. In American terminology, the drink consists of a glass of beer and a shot of whiskey. The beer is either served as a chaser or mixed with the whiskey. When the beer is served as a chaser, the drink is often called simply a shot and a beer.	http://upload.wikimedia.org/wikipedia/commons/thumb/5/57/Boilermaker.jpg/350px-Boilermaker.jpg	1
+Hangman's Blood	Beer	N	Beer	Straight up; without ice	Pint glass	gin, whisky, rum, port and brandy	Into a pint glass [568 mL], doubles [i.e., 50 mL measures] of the following are poured: gin, whisky, rum, port and brandy. A small bottle of stout is added and the whole topped up with champagne	Hangman's Blood is a drink first described by Richard Hughes in his 1929 novel, A High Wind in Jamaica. According to Hughes, "Hangman's blood... is compounded of rum, gin, brandy, and porter... Innocent (merely beery) as it looks, refreshing as it tastes, it has the property of increasing rather than allaying thirst, and so once it has made a breach, soon demolishes the whole fort." 	http://www.cocktailhunter.com/wp-content/uploads/2013/01/Hangmans-Blood-2.jpg	0
+Michelada	Beer	N	Beer	In a chilled, salt-rimmed glass	Pint glass	beer, tomato juice, lime juice, savory sauce	Mix the beer with tomato juice, freshly squeezed lime juice, and Worcestershire sauce, teriyaki sauce, soy sauce, or hot sauce.	Michelada is a Mexican cerveza preparada made with beer, lime juice, and assorted sauces, spices, and peppers. It is served in a chilled, salt-rimmed glass. There are numerous variations of this beverage throughout Mexico and Latin America. Some people in Mexico believe micheladas are a good remedy for hangovers. There are different variations of Micheladas; for example in Mexico City, the most common form of a Michelada is prepared with beer, lime, salt, and particular hot sauces or chile slices. There are several other optional ingredients such as Maggi, Worcestershire sauce, Chamoy powder, serrano peppers, Camaronazo, Clamato, or slices of orange.	http://foodrepublik.com/wp-content/uploads/2010/01/Michelada.jpg	5
+Piña Colada	Rum	Y	Rum	Blended with ice (frozen style)	Poco Grande glass	30 ml (one part) white rum, 30 ml (one part) coconut milk, 90 ml (3 parts) pineapple juice	Mix with crushed ice until smooth. Pour into chilled glass, garnish and serve.	The piña colada is a sweet, rum-based cocktail made with rum, cream of coconut, and pineapple juice, usually served either blended or shaken with ice. It may be garnished with a pineapple wedge, a maraschino cherry or both. The piña colada has been the official beverage of Puerto Rico since 1978.	http://whiteonricecouple.com/recipe/images/2008/10/pina-colada-cocktail-drink-recipes-5.jpg	42
+B-52	Coffee liqueurs	Y	Irish cream, Kahlúa	Neat; undiluted and without ice	Shot glass	20ml (1 part) coffee liqueur (Kahlúa), 20ml (1 part) Irish Cream (Baileys Irish Cream), 20ml (1 part) Orange Cognac (Grand Marnier)	Layer ingredients into a shot glass. Serve with a stirrer.	The B-52 (also B52 or Bifi) cocktail is a layered shot composed of a coffee liqueur (Kahlúa), an Irish cream (Baileys Irish Cream), and a triple sec (Grand Marnier). When prepared properly, the ingredients separate into three distinctly visible layers (due to their relative densities).	http://theframedtable.com/wp-content/uploads/2013/11/V01_B52_0003.jpg	18
+Moloko Plus	Absinthe	N	Absinthe	Straight up; without ice	Tall glass	25 ml Absinthe, 25 ml Anisette Liqueur, 50 ml Irish Cream Liqueur, 125 ml Milk, 1 tablespoon Sugar	Shake all ingredients with ice in a cocktail shaker. Strain into a chilled tall glass.	The Moloko Plus, also called Knifey Moloko is a highball cocktail drink from the book A Clockwork Orange. The book does not specify ingredients, so there are many variations, all of which use a large milk base and some have drugs, such as barbiturates added.	http://www.allcocktails.net/gallery/moloko-plus-cocktail/moloko-plus-cocktail.jpg	2
+Mint Julep	Whiskey	Y	Whiskey	over crushed or shaved ice	tall glass, or julep cup	3 US fluid ounces (89 ml) Bourbon whiskey, 4 to 6 sprigs mint leaves, granulated sugar, to taste	Put mint, sugar, and a small amount of bourbon into the bottom of a mixing glass. Gently muddle the mint and sugar, then let stand for a bit to allow the muddled leaves to release their flavor. Strain and pour into a julep cup (or similar vessel), rotating to coat the sides. Fill with ice, then add the rest of the bourbon whiskey. Garnish with a lightly slapped small mint sprig.	The mint julep is a mixed alcoholic drink, or cocktail, associated with the cuisine of the Southern United States.	http://img4-2.myrecipes.timeinc.net/i/recipes/su/05/06/mint-julep-su-682571-l.jpg	52
+Porchcrawler	Beer	N	Beer, Vodka	Chilled, with ice	Varies	2 cansfrozen pink lemonade, 10 bottles beer, 13 oz gin, 13 oz vodka	Combine all ingredients in a punch bowl.	A porchcrawler or porchclimb is a mixed drink made primarily of beer, vodka, gin,and a sweetening agent (for instance, lemonade concentrate). Sometimes rum or whiskey are included as well. The final product is generally a highly-alcoholic, carbonated punch with a fruity taste and a light pink or yellow color. It is typically served from a large cooler of ice and is especially popular with North American college students.	http://photo2.foodgawker.com/wp-content/uploads/2012/08/999110.jpeg	4
+Curacao Punch	Brandy or cognac	N	Brandy	Varies	Varies	1/2 tablespoon (7 ml) sugar, 2 or 3 dashes fresh lemon juice, 1 ounce (1/4 gill, 3 cl) soda water, 1 ounce (1/4 gill, 3 cl) brandy, 2 ounce (1/2 gill, 6 cl) orange curacao, 1 ounce (1/4 gill, 3 cl) Jamaican rum	In a bar glass or goblet, combine the sugar, lemon juice, and soda water. Dissolve the sugar, and fill a glass with finely shaved or thoroughly crushed ice. Add the remaining ingredients.	Curacao Punch is a cocktail that comes from Harry Johnson's New and Improved Bartender's Manual (1882). Dale DeGroff, one of the most famous barmen in the world and author of The Craft of the Cocktail (Clarkson Potter, 2002), holds this to be his favorite forgotten potation.	http://www.gourmetindia.com/img/fruitmin.jpg	5
+Kir	Wines	Y	Wine	Straight up; without ice	Wine glass (white)	90ml (3 ounces) (9 parts) white wine, 10ml (0.33 ounce) (1 part) crème de cassis	Add the crème de cassis to the bottom of the glass, then top up with wine.	Kir is a popular French cocktail made with a measure of crème de cassis (blackcurrant liqueur) topped up with white wine. In France it is usually drunk as an apéritif before a meal or snack. Originally the wine used was Bourgogne Aligoté, a lesser white wine of Burgundy. Nowadays, various white wines are used throughout France, according to the region and the whim of the barkeeper. Many prefer a white Chardonnay-based Burgundy, such as Chablis.	http://whygo-eur.s3.amazonaws.com/www.francetravelguide.com/files/2009/06/kir.jpg	6
+Four Score	Brandy or cognac	N								
+Horse's Neck   	Brandy or cognac	N								
+Incredible Hulk	Brandy or cognac	N								
+Nikolaschka	Brandy or cognac	N								
+Orgasm	Brandy or cognac	N								
+Panama	Brandy or cognac	N								
+Piscola	Brandy or cognac	N								
+Porto flip	Brandy or cognac	N								
+Savoy Affair	Brandy or cognac	N								
+Savoy Corpse Reviver	Brandy or cognac	N								
+Stinger	Brandy or cognac	N								
+Tom and Jerry	Brandy or cognac	N								
+Zombie	Brandy or cognac	N								
+Batida	Cachaça	N								
+Caju Amigo	Cachaça	N								
+Leite de Onça	Cachaça	N								
+Quentão	Cachaça	N								
+Rabo-de-galo	Cachaça	N								
+Royce	Cachaça	N								
+Black Velvet	Champagne	N								
+Buck's Fizz	Champagne	N								
+20th Century	Gin	N								
+Alexander	Gin	N								
+Aviation	Gin	N								
+Bijou	Gin	N								
+Bloodhound	Gin	N								
+French 75	Gin	N								
+Gimlet	Gin	N								
+Gin buck (a Buck variant)	Gin	N								
+Gin and tonic	Gin	N								
+Gin pahit	Gin	N								
+Gin Sour	Gin	N								
+Hanky-Panky	Gin	N								
+The Last Word	Gin	N								
+Lime Rickey	Gin	N								
+Joker	Gin	N								
+Lorraine	Gin	N								
+Mickey Slim	Gin	N								
+My Fair Lady	Gin	N								
+Old Etonian	Gin	N								
+Pall Mall	Gin	N								
+Paradise	Gin	N								
+Pegu	Gin	N								
+Pimm's Cup	Gin	N								
+Pink Gin	Gin	N								
+Pink Lady	Gin	N								
+Ramos Gin Fizz	Gin	N								
+Royal Arrival	Gin	N								
+Salty Dog	Gin	N								
+Shirley Temple Black	Gin	N								
+Vesper Martini	Gin	N								
+White Lady or Delilah	Gin	N								
+Wolfram	Gin	N								
+Blue Hawaii	Rum	N								
+Bumbo (also called a Bombo or Bumboo)	Rum	N								
+Bushwacker	Rum	N								
+Caribou Lou	Rum	N								
+Corn N' Oil	Rum	N								
+Culto A La Vida	Rum	N								
+El Presidente	Rum	N								
+Fish House Punch	Rum	N								
+Flaming Dr Pepper	Rum	N								
+Flaming Volcano	Rum	N								
+Grog	Rum	N								
+Gunfire	Rum	N								
+Havana Cooler	Rum	N								
+Hurricane	Rum	N								
+Jagertee	Rum	N								
+Macuá	Rum	N								
+Painkiller	Rum	N								
+Royal Bermuda Cocktail	Rum	N								
+Rum Swizzle	Rum	N								
+Staten Island Ferry	Rum	N								
+Sundowner	Rum	N								
+Ti Punch	Rum	N								
+Tom and Jerry	Rum	N								
+Zombie	Rum	N								
+Ginza Mary	Sake	N								
+Sake Bomb	Sake	N								
+Tamagozake	Sake	N								
+Bananarita	Tequila	N								
+Bloody Aztec	Tequila	N								
+Chimayó Cocktail	Tequila	N								
+El Toro Loco Patron and Redbull	Tequila	N								
+Matador	Tequila	N								
+Paloma	Tequila	N								
+Slammer Royale 	Tequila	N								
+Tequila Slammer	Tequila	N								
+Tequila Sour	Tequila	N								
+Tonic And Tequila	Tequila	N								
+Agent Orange	Vodka	N								
+Batida (traditionally made with cachaça)	Vodka	N								
+Bay Breeze	Vodka	N								
+BLT cocktail	Vodka	N								
+Blue Lagoon	Vodka	N								
+Caesar	Vodka	N								
+Caipivodka or Caipiroska	Vodka	N								
+Cape Cod	Vodka	N								
+Chi-Chi	Vodka	N								
+Colombia	Vodka	N								
+Fizzy apple cocktail	Vodka	N								
+Flirtini	Vodka	N								
+The Goldeneye	Vodka	N								
+Greyhound	Vodka	N								
+Harrogate Nights	Vodka	N								
+Hi-fi	Vodka	N								
+Kensington Court Special	Vodka	N								
+Kremlin Colonel	Vodka	N								
+Lime Rickey	Vodka	N								
+Link Up	Vodka	N								
+Moscow Mule	Vodka	N								
+Mudslide	Vodka	N								
+Orange Tundra	Vodka	N								
+Paralyzer	Vodka	N								
+Red Lotus	Vodka	N								
+Rose Kennedy Cocktail	Vodka	N								
+Salmiakki Koskenkorva	Vodka	N								
+Vesper	Vodka	N								
+Vodka Gimlet	Vodka	N								
+Vodka McGovern	Vodka	N								
+Vodka Sundowner	Vodka	N								
+Vodka Sunrise	Vodka	N								
+Woo Woo	Vodka	N								
+Yorsh	Vodka	N								
+Amber Moon	Whiskey	N								
+Blue Blazer	Whiskey	N								
+Bourbon Lancer	Whiskey	N								
+Churchill	Whiskey	N								
+Farnell	Whiskey	N								
+Four Horsemen	Whiskey	N								
+Jack and Coke	Whiskey	N								
+Jungle Juice	Whiskey	N								
+Lynchburg Lemonade	Whiskey	N								
+Missouri Mule	Whiskey	N								
+Nixon	Whiskey	N								
+Sazerac	Whiskey	N								
+Seven and Seven or 7 & 7	Whiskey	N								
+Three Wise Men	Whiskey	N								
+Whisky Mac	Whiskey	N								
+Agua de Valencia	Wines	N								
+Black Velvet	Wines	N								
+Death in the Afternoon	Wines	N								
+Flirtini	Wines	N								
+Prince of Wales	Wines	N								
+Sangria	Wines	N								
+Ruby Dutchess	Wines	N								
+Kalimotxo or Calimocho or Rioja Libre	Wines	N								
+Tinto de Verano	Wines	N								
+Mulled wine (Glögg)	Wines	N								
+Zurracapote	Wines	N								
+Spritzer	Wines	N								
+Chocolate Martini	Chocolate liqueur	N								
+Baby Guinness	Coffee liqueurs	N								
+Blow Job	Coffee liqueurs	N								
+Bushwacker	Coffee liqueurs	N								
+Dirty Mother	Coffee liqueurs	N								
+Dirty White Mother	Coffee liqueurs	N								
+Jamaican Coffee	Coffee liqueurs	N								
+Oatmeal Cookie	Coffee liqueurs	N								
+Orgasm	Coffee liqueurs	N								
+Baby Guinness	Cream liqueurs	N								
+Buttery Nipple	Cream liqueurs	N								
+Golden Cadillac	Cream liqueurs	N								
+Grasshopper	Cream liqueurs	N								
+Pink Squirrel	Cream liqueurs	N								
+Quick Fuck	Cream liqueurs	N								
+Slippery Nipple	Cream liqueurs	N								
+Screaming Orgasm	Cream liqueurs	N								
+Grasshopper	Cream liqueurs	N								
+Stinger	Cream liqueurs	N								
+Cosmopolitan	Fruit liqueurs	N								
+Golden Dream	Fruit liqueurs	N								
+Golden Doublet	Fruit liqueurs	N								
+Kamikaze	Fruit liqueurs	N								
+Margarita	Fruit liqueurs	N								
+Moonwalk	Fruit liqueurs	N								
+Skittle Bomb	Fruit liqueurs	N								
+Zombie	Fruit liqueurs	N								
+Japanese Slipper	Fruit liqueurs	N								
+Midori Sour	Fruit liqueurs	N								
+Nuclear Iced Tea	Fruit liqueurs	N								
+Aviation	Fruit liqueurs	N								
+Ouzo	Herbal liqueurs	N								
+Harvey Wallbanger	Herbal liqueurs	N								
+"Herbsaint Frappé
+"	Herbal liqueurs	N								
+Mauresque	Herbal liqueurs	N								
+Perroquet	Herbal liqueurs	N								
+Tomate	Herbal liqueurs	N								
+Alabama Slammer	Nut-flavored liqueurs	N								
+Blueberry Tea	Nut-flavored liqueurs	N								
+French Connection	Nut-flavored liqueurs	N								
+Orgasm	Nut-flavored liqueurs	N								
+Screaming Orgasm	Nut-flavored liqueurs	N								
+Rusty Nail	Whisky liqueurs	N								
+Backdraft (also a Pepperdraft variation)	Other liqueurs	N								
+Carrot Cake	Other liqueurs	N								
+Common Market	Other liqueurs	N								
+Flaming Sambuca	Other liqueurs	N								
+Jägerbomb	Other liqueurs	N								
+Pucker Up	Other liqueurs	N								
+Snowball	Other liqueurs	N								
+Brut Cocktail	Bitters	N								
+Fuzzy Navel	Schnapps	N								
+Polar Bear	Schnapps	N								
+Redheaded slut	Schnapps	N								
+Pisco Sour	Pisco	N								
+Mango Sour	Pisco	N								
+Jazmin Sour	Pisco	N								
+Aguaymanto Sour	Pisco	N								
