@@ -97,7 +97,7 @@ Beer.delete_all
 brewery_db = BreweryDB::Client.new do |config|
 	config.api_key = '20da4cd59c6e41f4ad0850dfa4e1cf7d'
 end
-(3..10).each do |i| 
+(11..30).each do |i| 
 	brewery_db.beers.all(styleId: i.to_s, :withBreweries => 'Y').each do |beer|
 		temp = Beer.new
 		temp.name = beer.name
