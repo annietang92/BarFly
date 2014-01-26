@@ -1,10 +1,107 @@
 <% if signed_in? %>
+<section class="hbox stretch">
+  <aside class="bg-primary aside-sm" id="nav">
+    <section class="vbox">
+      <header class="dker nav-bar nav-bar-fixed-top">
+          <a class="btn btn-link visible-xs" data-toggle="class:nav-off-screen" data-target="#nav">
+            <i class="fa fa-bars"></i>
+          </a>
+          <a href="#" class="nav-brand" data-toggle="fullscreen">BarFly</a>
+          <a class="btn btn-link visible-xs" data-toggle="class:show" data-target=".nav-user">
+            <i class="fa fa-comment-o"></i>
+          </a>
+        </header>
+        <section>
+          <!-- user -->
+          <div class="bg-success nav-user hidden-xs pos-rlt">
+            <div class="nav-avatar pos-rlt">
+              <a href="#" class="thumb-sm avatar animated rollIn" data-toggle="dropdown">
+                <img src="images/avatar.jpg" alt="" class="">
+                <span class="caret caret-white"></span>
+              </a>
+              <ul class="dropdown-menu m-t-sm animated fadeInLeft">
+                <span class="arrow top"></span>
+                <li>
+                  <a href="#">Settings</a>
+                </li>
+                <li>
+                  <a href="profile.html">Profile</a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span class="badge bg-danger pull-right">3</span>
+                    Notifications
+                  </a>
+                </li>
+                <li class="divider"></li>
+                <li>
+                  <a href="docs.html">Help</a>
+                </li>
+                <li>
+                  <a href="signin.html">Logout</a>
+                </li>
+              </ul>
+              <div class="visible-xs m-t m-b">
+                <a href="#" class="h3">John.Smith</a>
+                <p><i class="fa fa-map-marker"></i> London, UK</p>
+              </div>
+            </div>
+            <nav class="nav-primary hidden-xs">
+            <ul class="nav">
+              <li class="active">
+                <a href="index.html">
+                  <i class="fa fa-eye"></i>
+                  <span>Discover</span>
+                </a>
+              </li>
+              <li class="dropdown-submenu">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                  <i class="fa fa-flask"></i>
+                  <span>UI kit</span>
+                </a>
+                <ul class="dropdown-menu">                
+                  <li>
+                    <a href="buttons.html">Buttons</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="dropdown-submenu">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                  <i class="fa fa-file-text"></i>
+                  <span>Pages</span>
+                </a>
+                <ul class="dropdown-menu">                
+                  <li>
+                    <a href="dashboard.html">Dashboard</a>                    
+                  </li>
+                  <li>
+                    <a href="dashboard-1.html">Dashboard one</a>              
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href="mail.html">
+                  <b class="badge bg-primary pull-right">3</b>
+                  <i class="fa fa-envelope-o"></i>
+                  <span>Mail</span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </section>
+        <footer class="footer bg-gradient hidden-xs">
+          <a href="#nav" data-toggle="class:nav-vertical" class="btn btn-sm btn-link m-l-n-sm">
+            <i class="fa fa-bars"></i>
+          </a>
+        </footer>
+      </section>
+  </aside>
   <div class="row">
     <aside class="span4">
 
       <%= form_for(@new_drink) do |f| %>
         <%= render 'shared/error_messages' %>
-        <%= f.text_field :name, placeholder: "What are you drinking?", class: "drinks_tt form-control" %><br>
+        <%= f.text_field :name, placeholder: "Whatcha drinking?", class: "drinks_tt form-control" %><br>
         <%= f.text_area :comment, placeholder: "How is it?", class: "form-control" %>
         <%= f.submit "Submit", class: "btn btn-large btn-primary" %>
       <% end %>
@@ -22,6 +119,8 @@
       <%= render 'shared/feed' %>
     </div>
   </div>
+</section>
+
 <% else %>
   <div class="landing_container">
     <div class="landing_icon">
