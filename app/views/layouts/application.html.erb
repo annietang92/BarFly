@@ -11,7 +11,10 @@
   </head>
   <body>
     <% if signed_in? %>
-        <%= yield %>
+        <section class="hbox stretch">
+          <%= render 'layouts/header' %>
+          <%= yield %>
+        </section>
     <% else %>
         <%= yield %>
     <% end %>
