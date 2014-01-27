@@ -26,7 +26,8 @@
                 <%=image_tag Cocktail.find(feed_item.drink_id).image, class: "img-circle" %>
               </a>
             <%end%>
-          <%end%><br>
+          <%end%>
+          <div class="small_space"></div>
           <%if feed_item.comment === "" %>
           <%else%>
             <i class="fa fa-comment-o"></i> "<%=feed_item.comment%>"
@@ -34,10 +35,11 @@
           </div>
           <div>
             <span class="text-muted m-l-sm pull-right">
-              <small><i class="fa fa-clock-o"></i>
-              <%= time_ago_in_words(feed_item.created_at) %> ago.</small><div class="med_vert"></div>
               <small><i class="fa fa-map-marker"></i>
               <%= feed_item.location %></small>
+              <div class="small_vert"></div>
+              <small><i class="fa fa-clock-o"></i>
+              <%= time_ago_in_words(feed_item.created_at) %> ago.</small>
             </span>
           </div>
       </div>
