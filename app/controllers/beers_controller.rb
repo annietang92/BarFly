@@ -4,6 +4,7 @@ class BeersController < ApplicationController
 	
 	def show
 		@beer = Beer.find(params[:id])
+		@feed_items = Drink.all.where(name: @beer.name).paginate(page: params[:page], :per_page => 20)
 	end
 
 	def create

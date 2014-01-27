@@ -1,12 +1,68 @@
-<%=image_tag @beer.img_icon%><br>
-<%=@beer.name%><br>
-<%=@beer.brewed_by%><br>
-<%=@beer.description%><br>
-<%=@beer.style%><br>
-<%=@beer.style_type%><br>
-ABV: <%=@beer.abv%><br>
-IBU: <%=@beer.ibu%><br>
-Organic: <%=@beer.is_organic%><br>
-Serving: <%=@beer.serving%><br>
-Variations: <%=@beer.variations%><br>
+<% provide(:title, @beer.name) %>
+<section id="content">
+  <section class="vbox">
+    <section class="scrollable wrapper">
+      <div class="row">
+        <div class="col-lg-4">
+        	<section class="panel">
+				<div class="panel-body">
+					<div class="clearfix text-center m-t">
+						<div class="thumb-xlg">
+							<%= image_tag @beer.img_lg, class: "img-circle-lg" %>
+						</div>
+						<div class="h3 m-t m-b-xs">
+							<strong><%= @beer.name%></strong><div class="small_space"></div>
+							<small class="text-muted m-b"><i class="fa fa-beer"></i> <%= @beer.brewed_by%>
+							</small>
+						</div>
+					</div>
+				</div>
+				<footer class="panel-footer bg-warning dker">
+					<div class="col-lg-12">
+						<div class="col-lg-12">
+							<%if !@beer.style.nil?%>
+								Style: <%=@beer.style%><br>
+							<%end%>
+							<%if !@beer.style_type.nil?%>
+								Style Type: <%=@beer.style_type%><br>
+							<%end%>
+							<%if !@beer.abv.nil?%>
+								ABV: <%=@beer.abv%><br>
+							<%end%>
+							<%if !@beer.ibu.nil?%>
+								IBU: <%=@beer.ibu%><br>
+							<%end%>
+							<%if !@beer.is_organic.nil?%>
+								Organic: <%=@beer.is_organic%><br>
+							<%end%>
+							<% if !@beer.serving.nil? %>
+								Served: <%=@beer.serving%><br>
+							<%end%>
+							<% if !@beer.availability.nil? %>
+								Availability: <%=@beer.availability%><br>
+							<%end%>
+							<%if @beer.likes.nil?%>
+								Likes: 0<br>
+							<%else%>
+								Likes: <%=@beer.likes%>
+							<%end%>
+						</div>
+					</div>
+				</footer>
+			</section>
+        </div>	
+        <div class="col-lg-7">
+    	<% if !@beer.description.nil?%>						
+      		<div class="panel bg-warning dker">
+      			<div class="panel-body">
+      				<%=@beer.description%>
+      			</div>
+      		</div>
+      	<%end%>
+      		<%=render 'shared/feed'%>
+        </div>
+      </div>
+    </section>
+  </vbox>
+</section>
 
