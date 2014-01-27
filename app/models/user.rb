@@ -46,6 +46,16 @@ class User < ActiveRecord::Base
     return self.cocktails.count + self.beers.count
   end
 
+  def checkins_count
+    @checkins = 0
+    self.drinks.each do |drink|
+      if !drink.venue.nil?
+        @checkins = @checkins+1
+      end
+    end
+    return @checkins
+  end
+
   def level
     if self.drinks.count >= 350 && self.uniq_drink_count >= 200
       return 14

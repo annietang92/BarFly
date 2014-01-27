@@ -16,10 +16,10 @@
 }
 .bg-barfly {
   background-color: #bf1e2d;
-  color: #dbd8e9;
+  color: white;
 }
 .bg-barfly a {
-  color: #eae9f2;
+  color: white;
 }
 .bg-barfly a:hover {
   color: #fff;
@@ -29,13 +29,13 @@
   background-color: inherit;
 }
 .bg-barfly .nav li > a {
-  color: #bdb8d7;
+  color: white;
 }
 .bg-barfly .nav li > a:hover {
   background-color: #bf1e2d;
 }
 .bg-barfly .nav li > ul.dropdown-menu > li > a {
-  color: #7166a9;
+  color: white;
 }
 .bg-barfly .nav li > ul.dropdown-menu > li > a:hover {
   color: #fff;
@@ -54,5 +54,5 @@
 }
 
 .bg-barfly .text-muted {
-  color: #ccc8e0;
+  color: white;
 }

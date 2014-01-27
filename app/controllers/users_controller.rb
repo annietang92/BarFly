@@ -22,6 +22,7 @@ class UsersController < ApplicationController
   end
 
   def show
+    @feed_items = current_user.drinks.paginate(page: params[:page], :per_page => 8)
     @user = User.find(params[:id])
     if @user.provider == "facebook"
       @facebook_auth = true

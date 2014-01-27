@@ -305,7 +305,6 @@ html {
 }
 
 body {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 14px;
   line-height: 1.428571429;
   color: #333333;
@@ -369,6 +368,13 @@ img {
   border-radius: 50%;
   width: 100px;
   height: 100px;
+}
+
+.img-circle-lg {
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  border: 8px solid rgba(239,53,71,0.8);
 }
 
 hr {
@@ -483,8 +489,6 @@ h6,
 .h4,
 .h5,
 .h6 {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: 500;
   line-height: 1.1;
   color: inherit;
 }
@@ -5757,7 +5761,7 @@ a.list-group-item.active:focus .list-group-item-text {
 }
 
 .panel-footer {
-  padding: 15px 0;
+  padding: 10px 0;
   border-top: 1px solid #dddddd;
   border-bottom-right-radius: 3px;
   border-bottom-left-radius: 3px;

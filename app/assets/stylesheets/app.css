@@ -2736,6 +2736,11 @@ fieldset[disabled] .btn-gplus.active {
   width: 64px;
   display: inline-block;
 }
+.thumb-xlg {
+  width: 200px;
+  display: inline-block;
+}
+
 .thumb-lg {
   width: 128px;
   display: inline-block;
@@ -2757,7 +2762,8 @@ fieldset[disabled] .btn-gplus.active {
 .thumb-xs img,
 .thumb-sm img,
 .thumb-md img,
-.thumb-lg img {
+.thumb-lg img
+.thumb-xlg img {
   height: auto;
   max-width: 100%;
   vertical-align: middle;
