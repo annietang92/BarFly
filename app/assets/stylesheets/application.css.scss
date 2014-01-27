@@ -110,8 +110,18 @@ label, input, button, select, textarea {
 	background-image: url(image-path('/assets/map.png'));
 }
 
+.group_width_fx{
+	max-width:100%;
+	width: 350px;
+}
+
+.padding_med{
+	padding-left:20px !important;
+	padding-right:20px !important;
+}
+
 .width_fx{
-	width: 75px;
+	width: 33.333333%;
 }
 .bg-purple{
 	background: rgba(100, 80, 120, 0.7) !important;
