@@ -6,9 +6,9 @@
         <section class="scrollable wrapper">
           <div class="row">
             <div class="col-lg-8">
-              <section class="panel ">
+              <section class="panel">
                 <% flash.each do |key, value| %>
-                    <div class="alert alert-<%= key %>"><%= value %></div>
+                    <div class="animated bounceInDown alert alert-<%= key %>"><%= value %></div>
                   <% end %>
                 <%= form_for(@new_drink) do |f| %>
                   <%= f.text_field :name, placeholder: "Bottoms Up! Whacha Drinking?", class: "drinks_tt form-control" %>

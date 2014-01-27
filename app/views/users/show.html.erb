@@ -7,7 +7,7 @@
           <section class="panel">
             <div class="panel-body">
               <div class="clearfix text-center m-t">
-                <div class="thumb-xlg">
+                <div class="thumb-xlg animated rollIn">
                   <%= image_tag @user.picture, class: "img-circle-lg" %>
                 </div>
                 <div class="h3 m-t m-b-xs">
@@ -27,7 +27,7 @@
                 </div>
               </div>
               <div class="row pull-out">
-                <div class="col-xs-4 bg-success dker">
+                <div class="col-xs-4 bg-success dker anmiated dropIn">
                   <div class="padder-v">
                     <span class="m-b-xs h4 block"><%=@user.followers.count%></span>
                     <small class="text-muted">Followers</small>
@@ -74,7 +74,7 @@
           </section>
         </div>
         <div class="col-lg-7">
-           <section class="padding_med panel bg-primary lt no-borders">
+           <section class="padding_med panel bg-primary lt no-borders animated bounceInDown">
             <% if @user === current_user %>
                <span class="font_white">Your Recent Activity</span>
             <% else %>

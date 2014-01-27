@@ -17,7 +17,7 @@
                 <%if current_user.picture.nil?%>
                   <%= link_to image_tag("Icons/icon_final.png"), current_user, class: "thumb-sm avatar animated rollIn" %>
                 <%else%> 
-                  <%= link_to image_tag(current_user.picture), current_user, class: "thumb-sm avatar animated rollIn" %> 
+                  <%= link_to image_tag(current_user.picture), current_user, class: "thumb-sm avatar" %> 
                 <%end%>
               <div class="visible-xs m-t m-b">
                 <a href="#" class="h3"><%=current_user.name%></a>
