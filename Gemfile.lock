@@ -69,6 +69,7 @@ GEM
       faraday (~> 0.8)
       faraday_middleware (>= 0.8)
       hashie (>= 1.0, < 3.0.0)
+    geocoder (1.1.9)
     hashie (2.0.5)
     hike (1.2.3)
     httpauth (0.2.0)
@@ -185,6 +186,7 @@ DEPENDENCIES
   filepicker-rails
   font-awesome-rails
   foursquare2
+  geocoder
   jbuilder (~> 1.2)
   jquery-rails
   omniauth-facebook (= 1.5.1)

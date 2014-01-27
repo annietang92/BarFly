@@ -101,6 +101,19 @@
       </section>
       <a href="#" class="hide nav-off-screen-block" data-toggle="class:nav-off-screen" data-target="#nav"></a>
     </section>
+<script type="text/javascript">
+  // Set up typeahead
+  var setUpDrinksTypeahead = function() {
+      // Initialize typeahead.
+      $(".drinks_tt").typeahead({
+          name: 'drinks',
+          local: <%= @all_drinks.to_s.html_safe %>
+      });
+  }
+  $(document).ready(function(){
+    setUpDrinksTypeahead();
+  });
+</script>
     <!-- /.vbox -->
 <% else %>
   <div class="landing_container">

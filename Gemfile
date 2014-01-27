@@ -19,6 +19,9 @@ gem 'wine_dot_com_api_request'
 #foursquare
 gem 'foursquare2'
 
+#geocoder
+gem 'geocoder'
+
 #filepicker
 gem 'filepicker-rails'
 

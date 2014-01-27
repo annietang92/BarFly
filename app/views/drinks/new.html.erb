@@ -106,5 +106,42 @@
     </div>
   </section>
 </section>
+<script type="text/javascript">
+  // Set up typeahead
+  var setUpCocktailPrimaryTypeahead = function() {
+      // Initialize typeahead.
+      $(".cocktailprimary_tt").typeahead({
+          name: 'cocktailprimary',
+          local: <%=Cocktail.pluck(:primary).uniq.to_s.html_safe%>
+      });
 
+      $(".cocktailglass_tt").typeahead({
+          name: 'glass',
+          local: ["Brandy Snifter", "Stemmed Glass", "Martini Style", "12 oz. glass", "Pub glass", "Shot glass", "Beer Stein", "Champagne Flute", "Cocktail Glass", "Collins Glass", "Highball Glass", "Hurricane Glass", "Irish Coffee Glass", "Margarita Glass", "Old Fashioned Glass", "Old Fashioned Glass or Cobbler", "Pint glass", "Poco Grande Glass", "Shot glass", "Tall glass", "Varies", "Wine Glass"]
+      });
+
+      $(".cocktailserve_tt").typeahead({
+          name: 'serve',
+          local: ["Straight up; without ice or on the rocks", "On the rocks; poured over ice", "Straight up; without ice", "Stirred not shaken", "Straight (or on the rocks)", "Straight up", "Hot", "Shaken", "In a chilled, salt-rimmed glass", "Blended with ice (frozen style)", "Neat; undiluted and without ice", "Over crushed or shaved ice", "Chilled, with ice", "Varies"] 
+
+      });
+  }
+  $(document).ready(function(){
+    setUpCocktailPrimaryTypeahead();
+  });
+</script>
+
+<script type="text/javascript">
+  // Set up typeahead
+  var setUpBeerStylesTypeahead = function() {
+      // Initialize typeahead.
+      $(".beerstyles_tt").typeahead({
+          name: 'beerstyles',
+          local: ["Classic English-Style Pale Ale", "English-Style India Pale Ale", "Ordinary Bitter", "Special Bitter or Best Bitter", "Extra Special Bitter", "English-Style Summer Ale", "Scottish-Style Light Ale", "Scottish-Style Heavy Ale", "Scottish-Style Export Ale", "English-Style Pale Mild Ale", "English-Style Dark Mild Ale", "English-Style Brown Ale", "Old Ale", "Strong Ale", "Scotch Ale", "British-Style Imperial Stout", "British-Style Barley Wine Ale", "Brown Porter", "Robust Porter", "Sweet or Cream Stout", "Oatmeal Stout", "Irish-Style Red Ale", "Classic Irish-Style Dry Stout", "Foreign (Export)-Style Stout", "American-Style Pale Ale", "Fresh \"Wet\" Hop Ale", "Pale American-Belgo-Style Ale", "Dark American-Belgo-Style Ale", "American-Style Strong Pale Ale", "American-Style India Pale Ale", "Imperial or Double India Pale Ale", "American-Style Amber/Red Ale", "Imperial or Double Red Ale", "American-Style Barley Wine Ale", "American-Style Wheat Wine Ale", "Golden or Blonde Ale", "American-Style Brown Ale", "Smoke Porter", "American-Style Brett Ale", "American-Style Sour Ale", "American-Style Black Ale", "American-Style Stout", "American-Style Imperial Stout", "Specialty Stouts", "German-Style Kölsch / Köln-Style Kölsch", "Berliner-Style Weisse (Wheat)", "Leipzig-Style Gose", "South German-Style Hefeweizen / Hefeweissbier", "South German-Style Kristall Weizen / Kristall Weissbier", "German-Style Leichtes Weizen / Weissbier", "South German-Style Bernsteinfarbenes Weizen / Weissbier", "South German-Style Dunkel Weizen / Dunkel Weissbier", "South German-Style Weizenbock / Weissbock", "Bamberg-Style Weiss (Smoke) Rauchbier (Dunkel or Helles)", "German-Style Brown Ale / Düsseldorf-Style Altbier", "Kellerbier (Cellar beer) or Zwickelbier - Ale", "Belgian-Style Flanders Oud Bruin or Oud Red Ales", "Belgian-Style Dubbel", "Belgian-Style Tripel", "Belgian-Style Quadrupel", "Belgian-Style Blonde Ale", "Belgian-Style Pale Ale", "Belgian-Style Pale Strong Ale", "Belgian-Style Dark Strong Ale", "Belgian-Style White (or Wit) / Belgian-Style Wheat", "Belgian-Style Lambic", "Belgian-Style Gueuze Lambic", "Belgian-Style Fruit Lambic", "Belgian-Style Table Beer", "Other Belgian-Style Ales", "French-Style Bière de Garde", "French & Belgian-Style Saison", "International-Style Pale Ale", "Australasian-Style Pale Ale", "German-Style Pilsener", "Bohemian-Style Pilsener", "European Low-Alcohol Lager / German Leicht(bier)", "Münchner (Munich)-Style Helles", "Dortmunder / European-Style Export", "Vienna-Style Lager", "German-Style Märzen", "German-Style Oktoberfest / Wiesen (Meadow)", "European-Style Dark / Münchner Dunkel", "German-Style Schwarzbier", "Bamberg-Style Märzen Rauchbier", "Bamberg-Style Helles Rauchbier", "Bamberg-Style Bock Rauchbier", "Traditional German-Style Bock", "German-Style Heller Bock/Maibock", "German-Style Doppelbock", "German-Style Eisbock", "Kellerbier (Cellar beer) or Zwickelbier - Lager", "American-Style Lager", "American-Style Light (Low Calorie) Lager", "American-Style Low-Carbohydrate Light Lager", "American-Style Amber (Low Calorie) Lager", "American-Style Premium Lager", "American-Style Pilsener", "American-Style Ice Lager", "American-Style Malt Liquor", "American-Style Amber Lager", "American-Style Märzen / Oktoberfest", "American-Style Dark Lager", "Baltic-Style Porter", "Australasian, Latin American or Tropical-Style Light Lager", "International-Style Pilsener", "Dry Lager", "Session Beer", "American-Style Cream Ale or Lager", "California Common Beer", "Japanese Sake-Yeast Beer", "Light American Wheat Ale or Lager with Yeast", "Light American Wheat Ale or Lager without Yeast", "Fruit Wheat Ale or Lager with or without Yeast", "Dark American Wheat Ale or Lager with Yeast", "Dark American Wheat Ale or Lager without Yeast", "Rye Ale or Lager with or without Yeast", "German-Style Rye Ale (Roggenbier) with or without Yeast", "Fruit Beer", "Field Beer", "Pumpkin Beer", "Chocolate / Cocoa-Flavored Beer", "Coffee-Flavored Beer", "Herb and Spice Beer", "Specialty Beer", "Specialty Honey Lager or Ale", "Gluten-Free Beer", "Indigenous Beer (Lager or Ale)", "Smoke Beer (Lager or Ale)", "Experimental Beer (Lager or Ale)", "Out of Category - Traditionally Brewed Beer", "Wood- and Barrel-Aged Beer", "Wood- and Barrel-Aged Pale to Amber Beer", "Wood- and Barrel-Aged Dark Beer", "Wood- and Barrel-Aged Strong Beer", "Wood- and Barrel-Aged Sour Beer", "Aged Beer (Ale or Lager)", "Other Strong Ale or Lager", "Non-Alcoholic (Beer) Malt Beverages", "Dry Mead", "Semi-Sweet Mead", "Sweet Mead", "Cyser (Apple Melomel)", "Pyment (Grape Melomel)", "Other Fruit Melomel", "Metheglin", "Braggot", "Open Category Mead", "Common Cider", "English Cider", "French Cider", "Common Perry", "Traditional Perry", "New England Cider", "Fruit Cider", "Apple Wine", "Other Specialty Cider or Perry", "American-Style Imperial Porter", "Adambier", "Grodzisz"]
+      });
+  }
+  $(document).ready(function(){
+    setUpBeerStylesTypeahead();
+  });
+</script>
 

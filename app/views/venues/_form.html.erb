@@ -1,0 +1,19 @@
+<% flash.each do |key, value| %>
+<div class="alert alert-<%= key %>"><%= value %></div>
+<% end %>
+<%= form_for @venue, url: venues_search_path do |f| %>
+<%= f.label :name, "Venue Name", class: "control-label" %>
+<% message= "Where did you drink your "+ @drink.name+" ?"%>
+<%= f.text_field :name, placeholder: message, class: "form-control" %>
+<%= f.label :city, "Near", class: "control-label" %>
+<%= f.text_field :city, placeholder: "City", class: "location_tt form-control"%>
+<%= f.hidden_field :drink_id, :value => @drink.id %>
+<footer class="panel-footer">
+  <%= f.submit "Search", class: "btn btn-info pull-right" %>
+  <div class="med_space"></div>
+  <div class="med_space"></div>
+  <div class="line line-dashed"></div>
+  <%= link_to "Skip", root_path, class: "btn btn-large btn-primary btn-block m-b-sm" %>
+  <div class="med_space"></div>
+  <% end %>
+</footer>

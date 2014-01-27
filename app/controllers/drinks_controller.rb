@@ -26,7 +26,7 @@ class DrinksController < ApplicationController
 			if !Beer.find_by(name: @drink.name).nil?
 				@drink.drink_id = Beer.find_by(name: @drink.name).id
 			else
-				flash.now[:error] = "We have no record of that drink! Would you like to add it?"
+				flash.now[:error] = "We have no record of that drink! #{ActionController::Base.helpers.link_to "Would you like to add it?", '/drinks/new'}".html_safe
 				render 'static_pages/index'
 				return
 			end
@@ -40,7 +40,12 @@ class DrinksController < ApplicationController
 			end
 		end
 		if @drink.save
-			flash.now[:success] = "New drink recorded! You can add a venue for your drink, or skip this step."
+			flash.now[:success] = "New drink recorded! You can add a venue, #{ActionController::Base.helpers.link_to "or skip this step.", '/'}".html_safe
+			@venue.city = current_user.location
+			client = Foursquare2::Client.new(:client_id => '4IEC2TEEXYZBNXI4Z0XWKOPCXPTL54WIYGSL20IRJVOH41QT', :client_secret => 'U1W5VEBHWP4I020DJL1HQ14MTRCQAMMDKH554VTYKUG4BEGF')
+			if !current_user.location.nil? || current_user.location != ""
+				@top_venues = client.search_venues(:near => @user.location, categoryId: '4bf58dd8d48988d116941735', limit: 20).groups[0].items
+			end
 			render 'venues/new'
 		else
 			render 'static_pages/index'

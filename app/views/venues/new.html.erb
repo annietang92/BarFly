@@ -1,45 +1,55 @@
-<% provide(:title, 'BarFly | Venue') %>
-<h1>Search Venues</h1>
-	<div class="row">
-		<%= form_for @venue, url: venues_search_path do |f| %>
-		  <%= f.label :name %>
-	      <%= f.text_field :name, placeholder: "Venue Name"%><br>
-	      <%= f.label :near %>
-	      <%= f.text_field :city, placeholder: "City", class: "location_tt"%>
-	      <%= f.hidden_field :drink_id, :value => @drink.id %>
-	      <%= f.submit "Search", class: "btn btn-large btn-primary" %>
-    	<% end %>
-    	<%= link_to "Skip", root_path, class: "btn btn-large btn-primary" %>
-  </div>
-  <% if !@venues.nil?%>
-  <h1><br>Venue Search Results</h1>
-  	<div class="row">
-  		<ol class="venues">
-  		<% @venues.each do |v| %>
-  			<li>
-  				<%= form_for @venue, url: venues_path do |t| %>
-  					<%= t.hidden_field :name, :value => v.name %>
-  					<%= t.hidden_field :foursquare_id, :value => v.id%>
-  					<%= t.hidden_field :address, :value => v.location.address %>
-  					<%= t.hidden_field :city, :value => v.location.city %>
-  					<%= t.hidden_field :state, :value => v.location.state %>
-  					<%= t.hidden_field :zip, :value => v.location.postalCode %>
-  					<%= t.hidden_field :lat, :value => v.location.lat %>
-  					<%= t.hidden_field :lng, :value => v.location.lng %>
-  					<%= t.hidden_field :phone, :value => v.contact.formattedPhone %>
-  					<%= t.hidden_field :description, :value => v.description %>
-  					<%= t.hidden_field :url, :value => v.url %>
-  					<%= t.hidden_field :hours, :value => v.hours %>
-  					<%= t.hidden_field :picture, :value => v.photos %>
-  					<%= t.hidden_field :drink_id, :value => @drink.id %>
-  					<%= t.submit "Select" %> <%= v.name%>
-				<% end %>
-  			</li>
-  		<%end%>
-  		</ol>
-  	</div>
-  <%end%>
-</div>
+<% provide(:title, 'BarFly | Search Venues') %>
+<section id="content">
+  <section class="vbox">
+    <section class="scrollable wrapper">
+      <div class="row">
+        <div class="col-lg-5">
+          <section class="panel ">
+            <%= render 'venues/form'%>
+          </section>
+        </div>
+        <div class="col-lg-7">
+          <% if @venues.nil?%>
+            <div class="col-lg-12">
+              <section class="padding_med panel bg-primary lt no-borders">
+                <span class="font_white">Select from Top Bars in Your Area</span>
+              </section>
+            </div>
+            <% @top_venues.each do |venue| %>
+              <div class="col-lg-6">
+                <section class="panel bg-semi-transparent ">
+                    <label class="btn btn-danger lt btn-sm"><small><%=venue.name%></small></label><div class="small_space"></div>
+                    <%= image_tag venue.categories[0].icon, class: "pull-right" %>
+                    <%=venue.location.address%><br>
+                    <%=venue.location.city%>, <%=venue.location.state%> <%venue.postalCode%><div class="small_space"></div>
+                    Check-Ins: <%=venue.stats.checkinsCount%><br>
+                    Likes: <%=venue.stats.tipCount%>
+                </section>
+              </div>
+            <% end %>
+          <%else%>
+            <div class="col-lg-12">
+              <section class="padding_med panel bg-success lt no-borders">
+                <span class="font_white">Your Search Results</span>
+              </section>
+            </div>
+            <% @venues.each do |venue| %>
+              <div class="col-lg-6">
+                <section class="panel bg-semi-transparent ">
+                    <label class="btn btn-danger lt btn-sm"><small><%=venue.name%></small></label><div class="small_space"></div>
+                    <%= image_tag venue.categories[0].icon, class: "pull-right" %>
+                    <%=venue.location.address%><br>
+                    <%=venue.location.city%>, <%=venue.location.state%> <%venue.postalCode%><div class="small_space"></div>
+                    Check-Ins: <%=venue.stats.checkinsCount%><br>
+                    Likes: <%=venue.stats.tipCount%>
+                </section>
+              </div>
+            <%end%>
+          <%end%>
+        </div>
+    </section>
+  </section>
+</section>
 
 <script type="text/javascript">
   // Set up typeahead
