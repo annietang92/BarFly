@@ -13,6 +13,7 @@ class BeersController < ApplicationController
 		@beer = Beer.new(beer_params)
 		if @beer.save
 			@drink = current_user.drinks.new
+			@drink.location = current_user.location
 			@drink.name = @beer.name
 			@drink.type = "Beer"
 			@drink.drink_id = @beer.id
