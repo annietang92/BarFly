@@ -1,24 +1,23 @@
 <%if feed_item.user === current_user%>
 <article class="comment-item">
+<%else%>
+<article class="other-post comment-item">
+<%end%>
     <a class="pull-left thumb-sm avatar">
       <%=  image_tag feed_item.user.picture, class: "img-circle" %>
     </a>
     <span class="arrow left"></span>
     <section class="comment-body panel">
-      <header class="panel-heading">
-          <label class="sm-label label bg-info m-l-xs"><%= link_to feed_item.user.name, feed_item.user %></label> 
-          <label class="sm-label label bg-primary m-l-xs"><%= feed_item.user.fly_status%></label>
-      </header>
       <div class="panel-body">
         <div>
-          Drank a 
+          <%= link_to feed_item.user.name, feed_item.user %> drank a 
           <% if feed_item.type === "Beer"%> 
-            <%= link_to feed_item.name, Beer.find(feed_item.drink_id) %> 
+            <%= link_to feed_item.name, Beer.find(feed_item.drink_id) %> beer
             <a href="/beers/<%=feed_item.drink_id%>" class="pull-right thumb-sm avatar">
               <%=image_tag Beer.find(feed_item.drink_id).img_icon, class: "img-circle"%>
             </a>
           <%else%>
-            <%= link_to feed_item.name, Cocktail.find(feed_item.drink_id) %>
+            <%= link_to feed_item.name, Cocktail.find(feed_item.drink_id) %> cocktail
             <a href="/cocktails/<%=feed_item.drink_id%>" class="pull-right thumb-sm avatar">
               <%=image_tag Cocktail.find(feed_item.drink_id).image, class: "img-circle" %>
             </a>
@@ -37,42 +36,3 @@
       </div>
     </section>
 </article>
-<%else%>
-<article class="comment-item">
-    <a class="pull-left thumb-sm avatar">
-      <%=  image_tag feed_item.user.picture, class: "img-circle" %>
-    </a>
-    <section class="comment-body panel">
-      <header class="panel-heading">
-          <label class="sm-label label bg-info m-l-xs"><%= link_to feed_item.user.name, feed_item.user %></label> 
-          <label class="sm-label label bg-primary m-l-xs"><%= feed_item.user.fly_status%></label>
-      </header>
-      <div class="panel-body">
-        <div>
-          Drank a 
-          <% if feed_item.type === "Beer"%> 
-            <%= link_to feed_item.name, Beer.find(feed_item.drink_id) %> 
-            <a href="/beers/<%=feed_item.drink_id%>" class="pull-right thumb-sm avatar">
-              <%=image_tag Beer.find(feed_item.drink_id).img_icon, class: "img-circle"%>
-            </a>
-          <%else%>
-            <%= link_to feed_item.name, Cocktail.find(feed_item.drink_id) %>
-            <a href="/cocktails/<%=feed_item.drink_id%>" class="pull-right thumb-sm avatar">
-              <%=image_tag Cocktail.find(feed_item.drink_id).image, class: "img-circle" %>
-            </a>
-          <%end%><br>
-          <%if feed_item.comment === "" %>
-          <%else%>
-            <i class="fa fa-comment-o"></i> "<%=feed_item.comment%>"
-          <%end%>
-          </div>
-          <div>
-            <span class="text-muted m-l-sm pull-right">
-              <small><i class="fa fa-clock-o"></i>
-              <%= time_ago_in_words(feed_item.created_at) %> ago.</small>
-            </span>
-          </div>
-      </div>
-    </section>
-</article>
-<%end%>
