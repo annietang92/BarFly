@@ -97,7 +97,7 @@ brewery_db = BreweryDB::Client.new do |config|
 	config.api_key = '20da4cd59c6e41f4ad0850dfa4e1cf7d'
 end
 
-(100..160).each do |i| 
+(35..99).each do |i| 
 	brewery_db.beers.all(styleId: i.to_s, :withBreweries => 'Y').each do |beer|
 		next if beer.labels.nil?
 		next if beer.style.nil?
