@@ -1,4 +1,7 @@
 class Cocktail < ActiveRecord::Base
+  validates :name, presence: true, uniqueness: { case_sensitive: false }
+  validates :description, presence: true
+  validates :primary, presence: true
   def self.all_cocktails
   	cocktail_array = []
   	Cocktail.all.each do |cocktail|

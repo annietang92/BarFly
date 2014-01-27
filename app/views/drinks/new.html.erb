@@ -1,18 +1,110 @@
 <% provide(:title, 'BarFly | New Drink') %>
-<h1>New Drink</h1>
-<div class="row">
-  <div class="span6 offset3">
-    <%= form_for(@drink) do |f| %>
-      <%= render 'shared/error_messages' %>
+<section id="content">
+  <section class="vbox">
+    <section class="scrollable wrapper">
+      <div class="tab-content">
+        <section class="tab-pane active" id="basic">
+         <div class="row">
+          <div class="col-sm-6">
+            <section class="panel">
+              <ul id="myTab" class="nav nav-tabs">
+                <%if @cocktail_active.nil?%>
+                  <li class="active"><a href="#beer" data-toggle="tab">New Beer</a></li>
+                  <li><a href="#cocktail" data-toggle="tab">New Cocktail</a></li>
+                <%else%>
+                  <li><a href="#beer" data-toggle="tab">New Beer</a></li>
+                  <li class="active"><a href="#cocktail" data-toggle="tab">New Cocktail</a></li>
+                <%end%>
+              </ul>
+              <div class="tab-content">
+                <%if @cocktail_active.nil?%>
+                  <div class="tab-pane active" id="beer">
+                <%else%>
+                  <div class="tab-pane" id="beer">
+                <%end%>
+                  <div class="panel-body">
+                    <%= form_for @beer do |f| %>
+                      <% if @beer.errors.any? %>
+                        <div id="error_explanation">
+                          <div class="alert alert-error">
+                            The form contains <%= pluralize(@beer.errors.count, "error") %>.
+                          </div>
+                          <ul>
+                          <% @beer.errors.full_messages.each do |msg| %>
+                            <li><%= msg %></li>
+                          <% end %>
+                          </ul>
+                        </div>
+                      <% end %>
+                       <%= f.label :name, class: 'control-label'%>
+                      <%= f.text_field :name, placeholder:"required", class: 'form-control' %><br>
+                      <%= f.label :description, class: 'control-label'%>
+                      <%= f.text_area :description, placeholder: "required", class: 'form-control' %>
+                      <div class="line line-dashed"></div>
+                      <%= f.label :brewed_by, class: 'control-label'%>
+                      <%= f.text_field :brewed_by, class: 'form-control' %>
+                      <%= f.label :style, class: 'control-label'%>
+                      <%= f.text_field :style, class: 'beerstyles_tt form-control' %>
+                      <%= f.label :abv, class: 'control-label'%>
+                      <%= f.text_field :abv, class: 'form-control' %>
+                      <%= f.label :ibu, class: 'control-label'%>
+                      <%= f.text_field :ibu, class: 'form-control' %>
+                      <%= f.label :is_organic, class: 'control-label'%><br>
+                      <%= f.radio_button :is_organic, 'N'%> No
+                      &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<%= f.radio_button :is_organic, 'Y'%> Yes
+                      <%= f.submit "Submit", class: "btn btn-xlarge btn-primary pull-right" %>
 
-      <%= f.radio_button :type, 'Beer', :checked => true %> 
-      <%= label :type, 'Beer' %>
-      <%= f.radio_button :type, 'Cocktail' %>
-      <%= label :type, 'Cocktail' %><br>
+                    <% end %>
+                  </div>
+                </div>
+                <%if @cocktail_active.nil?%>
+                  <div class="tab-pane" id="cocktail">
+                <%else%>
+                  <div class="tab-pane active" id="cocktail">
+                <%end%>
+                  <div class="panel-body">
+                    <%= form_for @cocktail do |f| %>
+                      <% if @cocktail.errors.any? %>
+                        <div id="error_explanation">
+                          <div class="alert alert-error">
+                            The form contains <%= pluralize(@cocktail.errors.count, "error") %>.
+                          </div>
+                          <ul>
+                          <% @cocktail.errors.full_messages.each do |msg| %>
+                            <li><%= msg %></li>
+                          <% end %>
+                          </ul>
+                        </div>
+                      <% end %>
+                       <%= f.label :name, 'Cocktail Name',class: 'control-label'%>
+                      <%= f.text_field :name, placeholder:"required", class: 'form-control' %><div class="small_space"></div>
+                      <%= f.label :primary, 'Primary Alcohol', class: 'control-label'%>
+                      <%= f.text_field :primary, placeholder: "required", class: 'cocktailprimary_tt form-control' %><div class="small_space"></div>
+                      <%= f.label :description, class: 'control-label'%>
+                      <%= f.text_area :description, placeholder: "required", class: 'form-control' %>
+                      <div class="line line-dashed"></div>
+                      <%= f.label :alcohols, 'All Alchohols', class: 'control-label'%>
+                      <%= f.text_field :alcohols, class: 'form-control' %>
+                      <%= f.label :served, class: 'control-label'%>
+                      <%= f.text_field :served, class: 'cocktailserve_tt form-control' %>
+                      <%= f.label :glass, 'Glass Type', class: 'control-label'%>
+                      <%= f.text_field :glass, class: 'cocktailglass_tt form-control' %>
+                      <%= f.label :ingredients, class: 'control-label'%>
+                      <%= f.text_field :ingredients, class: 'form-control' %>
+                      <%= f.label :instructions, class: 'control-label'%>
+                      <%= f.text_field :instructions, class: 'form-control' %>
+                      <%= f.hidden_field :iba, :value => "N"%><div class="small_space"></div>
+                      <%= f.submit "Submit", class: "btn btn-xlarge btn-primary pull-right" %>
+                    <% end %>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+      </section>
+    </div>
+  </section>
+</section>
 
-      <%= f.text_field :name, placeholder: "Drink (i.e. Martini)", class: "drinks_tt" %><br>
-      <%= f.text_area :comment, placeholder: "Comments?" %>
-      <%= f.submit "Submit", class: "btn btn-large btn-primary" %>
-    <% end %>
-  </div>
-</div>
+

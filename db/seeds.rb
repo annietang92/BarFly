@@ -47,35 +47,35 @@
 # # 	user.save!
 # # end
 
-Cocktail.delete_all
-open(File.open(File.join(Rails.root, '/SeedData/Cocktails.txt'))) do |file|
-	file.read.each_line do |line|
-		line_array = line.gsub("\n", "").split("\t")
-		cocktail = Cocktail.new
-		if !line_array[0].nil?
-			cocktail.name = line_array[0].squish
-		end
-		if !line_array[1].nil?
-			cocktail.primary = line_array[1].squish
-		end
-		if !line_array[2].nil?
-			cocktail.iba = line_array[2].squish
-		end
-		cocktail.alcohols = line_array[3]
-		cocktail.served = line_array[4]
-		cocktail.glass = line_array[5]
-		cocktail.ingredients = line_array[6]
-		cocktail.instructions = line_array[7]
-		cocktail.description = line_array[8]
-		cocktail.image = line_array[9]
-		if !line_array[10].nil?
-			cocktail.likes = Integer(line_array[10])
-		end
-		if Cocktail.find_by(name: cocktail.name).nil?
-			cocktail.save
-		end
-	end
-end
+# Cocktail.delete_all
+# open(File.open(File.join(Rails.root, '/SeedData/Cocktails.txt'))) do |file|
+# 	file.read.each_line do |line|
+# 		line_array = line.gsub("\n", "").split("\t")
+# 		cocktail = Cocktail.new
+# 		if !line_array[0].nil?
+# 			cocktail.name = line_array[0].squish
+# 		end
+# 		if !line_array[1].nil?
+# 			cocktail.primary = line_array[1].squish
+# 		end
+# 		if !line_array[2].nil?
+# 			cocktail.iba = line_array[2].squish
+# 		end
+# 		cocktail.alcohols = line_array[3]
+# 		cocktail.served = line_array[4]
+# 		cocktail.glass = line_array[5]
+# 		cocktail.ingredients = line_array[6]
+# 		cocktail.instructions = line_array[7]
+# 		cocktail.description = line_array[8]
+# 		cocktail.image = line_array[9]
+# 		if !line_array[10].nil?
+# 			cocktail.likes = Integer(line_array[10])
+# 		end
+# 		if Cocktail.find_by(name: cocktail.name).nil?
+# 			cocktail.save
+# 		end
+# 	end
+# end
 
 # LocationCache.delete_all
 # location_array = []
@@ -92,6 +92,17 @@ end
 # end
 # LocationCache.create(text: location_array.to_s)
 
+brewery_db = BreweryDB::Client.new do |config|
+	config.api_key = '20da4cd59c6e41f4ad0850dfa4e1cf7d'
+end
+
+all_style = []
+
+brewery_db.styles.all.each do |style|
+	all_style.push(style.name)
+end
+
+p all_style
 
 # Beer.delete_all
 # brewery_db = BreweryDB::Client.new do |config|

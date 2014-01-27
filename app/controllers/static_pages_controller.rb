@@ -6,7 +6,7 @@ class StaticPagesController < ApplicationController
 			@user = current_user
 			@new_drink = Drink.new
 			@drinks = current_user.drinks
-			@feed_items = current_user.feed.paginate(page: params[:page], :per_page => 10)
+			@feed_items = current_user.feed.paginate(page: params[:page], :per_page => 30)
 		end
 	end
 end

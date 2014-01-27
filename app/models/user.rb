@@ -48,6 +48,40 @@ class User < ActiveRecord::Base
     return self.cocktails.count + self.beers.count
   end
 
+  def level
+    if self.drinks.count >= 350 && self.uniq_drink_count >= 200
+      return 14
+    elsif self.drinks.count >= 275 && self.uniq_drink_count >= 180
+      return 13
+    elsif self.drinks.count >= 200 && self.uniq_drink_count >= 150
+      return 12
+    elsif self.drinks.count >= 150 && self.uniq_drink_count >= 100
+      return 11
+    elsif self.drinks.count >= 125 && self.uniq_drink_count >= 80
+      return 10
+    elsif self.drinks.count >= 100 && self.uniq_drink_count >= 75
+      return 9
+    elsif self.drinks.count >= 75 && self.uniq_drink_count >= 40
+      return 8
+    elsif self.drinks.count >= 50 && self.uniq_drink_count >= 30
+      return 7
+    elsif self.drinks.count >= 35 && self.uniq_drink_count >= 20
+      return 4
+    elsif self.drinks.count >= 25 && self.uniq_drink_count >= 15
+      return 5
+    elsif self.drinks.count >= 15 && self.uniq_drink_count >= 10
+      return 4
+    elsif self.drinks.count >= 10 && self.uniq_drink_count >= 6
+      return 3
+    elsif self.drinks.count >= 5 && self.uniq_drink_count >= 3
+      return 2
+    elsif self.drinks.count > 0
+      return 1
+    else
+      return 0
+    end
+  end
+
   def fly_status
     if self.drinks.count >= 350 && self.uniq_drink_count >= 200
       return 'BarFly'

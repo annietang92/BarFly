@@ -10,7 +10,8 @@
     <section class="comment-body panel">
       <div class="panel-body">
         <div>
-          <%= link_to feed_item.user.name, feed_item.user %> drank a 
+          <%= link_to feed_item.user.name, feed_item.user %>
+          (<%=feed_item.user.fly_status%>) drank a 
           <% if feed_item.type === "Beer"%> 
             <%= link_to feed_item.name, Beer.find(feed_item.drink_id) %> beer
             <%if !Beer.find(feed_item.drink_id).img_icon.nil?%>

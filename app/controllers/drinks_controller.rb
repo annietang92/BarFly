@@ -1,5 +1,10 @@
 class DrinksController < ApplicationController
+	before_action :signed_in_user
+	
 	def new
+		@beer = Beer.new
+		@cocktail = Cocktail.new
+		@feed_items = current_user.feed.paginate(page: params[:page], :per_page => 30)
 		@user = current_user
 		@drink = Drink.new
 		@beers = Beer.all_beers
@@ -8,6 +13,7 @@ class DrinksController < ApplicationController
 	end
 
 	def create
+		@feed_items = current_user.feed.paginate(page: params[:page], :per_page => 30)
 		@new_drink = Drink.new
 		@user = current_user
 		@drink = current_user.drinks.new(drink_params)
@@ -33,7 +39,7 @@ class DrinksController < ApplicationController
 			end
 		end
 		if @drink.save
-			flash[:success] = "New drink recorded! You can add a venue for your drink, or skip this step."
+			flash.now[:success] = "New drink recorded! You can add a venue for your drink, or skip this step."
 			render 'venues/new'
 		else
 			render 'static_pages/index'

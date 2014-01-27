@@ -7,8 +7,8 @@ Barfly::Application.routes.draw do
     end
   end
   resources :drinks
-  resources :beers, only: [:show]
-  resources :cocktails, only: [:show]
+  resources :beers
+  resources :cocktails
   resources :venues
   resources :sessions, only: [:new, :create, :destroy]
   resources :relationships, only: [:create, :destroy]

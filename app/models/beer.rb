@@ -1,4 +1,8 @@
 class Beer < ActiveRecord::Base
+
+  validates :name, presence: true, uniqueness: { case_sensitive: false }
+  validates :description, presence: true
+
   def self.all_beers
   	beer_array = []
   	Beer.all.each do |beer|
