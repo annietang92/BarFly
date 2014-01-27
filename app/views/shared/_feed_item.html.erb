@@ -1,27 +1,78 @@
-<li id="<%= feed_item.id %>">
-  <%=  link_to image_tag(feed_item.user.picture), feed_item.user %>
-  <span class="user">
-    <%= link_to feed_item.user.name, feed_item.user %> drank a 
-  </span>
-  <span class="drink">
-    <% if feed_item.type === "Beer"%> 
-      <%= link_to feed_item.name, Beer.find_by(feed_item.drink_id) %>
-    <%else%>
-      <%= link_to feed_item.name, Cocktail.find_by(id: feed_item.drink_id) %>
-    <%end%>
-  </span>
-  <% if !Drink.find(feed_item.id).venue.nil? %> at
-  <span class="venue">
-    <%= link_to feed_item.venue.name, feed_item.venue%>
-  </span>
-  <%end%>
-  <span class="timestamp">
-    <%= time_ago_in_words(feed_item.created_at) %> ago.
-  </span><br>
-  <span class="comment">"<%= feed_item.comment %>"</span>
-  <% if current_user?(feed_item.user) %>
-    <%= link_to "delete", feed_item, method: :delete,
-                                     confirm: "You sure?",
-                                     title: feed_item.comment %>
-  <% end %>
-</li><br>
+<%if feed_item.user === current_user%>
+<article class="comment-item">
+    <a class="pull-left thumb-sm avatar">
+      <%=  image_tag feed_item.user.picture, class: "img-circle" %>
+    </a>
+    <span class="arrow left"></span>
+    <section class="comment-body panel">
+      <header class="panel-heading">
+          <label class="sm-label label bg-info m-l-xs"><%= link_to feed_item.user.name, feed_item.user %></label> 
+          <label class="sm-label label bg-primary m-l-xs"><%= feed_item.user.fly_status%></label>
+      </header>
+      <div class="panel-body">
+        <div>
+          Drank a 
+          <% if feed_item.type === "Beer"%> 
+            <%= link_to feed_item.name, Beer.find(feed_item.drink_id) %> 
+            <a href="/beers/<%=feed_item.drink_id%>" class="pull-right thumb-sm avatar">
+              <%=image_tag Beer.find(feed_item.drink_id).img_icon, class: "img-circle"%>
+            </a>
+          <%else%>
+            <%= link_to feed_item.name, Cocktail.find(feed_item.drink_id) %>
+            <a href="/cocktails/<%=feed_item.drink_id%>" class="pull-right thumb-sm avatar">
+              <%=image_tag Cocktail.find(feed_item.drink_id).image, class: "img-circle" %>
+            </a>
+          <%end%><br>
+          <%if feed_item.comment === "" %>
+          <%else%>
+            <i class="fa fa-comment-o"></i> "<%=feed_item.comment%>"
+          <%end%>
+          </div>
+          <div>
+            <span class="text-muted m-l-sm pull-right">
+              <small><i class="fa fa-clock-o"></i>
+              <%= time_ago_in_words(feed_item.created_at) %> ago.</small>
+            </span>
+          </div>
+      </div>
+    </section>
+</article>
+<%else%>
+<article class="comment-item">
+    <a class="pull-left thumb-sm avatar">
+      <%=  image_tag feed_item.user.picture, class: "img-circle" %>
+    </a>
+    <section class="comment-body panel">
+      <header class="panel-heading">
+          <label class="sm-label label bg-info m-l-xs"><%= link_to feed_item.user.name, feed_item.user %></label> 
+          <label class="sm-label label bg-primary m-l-xs"><%= feed_item.user.fly_status%></label>
+      </header>
+      <div class="panel-body">
+        <div>
+          Drank a 
+          <% if feed_item.type === "Beer"%> 
+            <%= link_to feed_item.name, Beer.find(feed_item.drink_id) %> 
+            <a href="/beers/<%=feed_item.drink_id%>" class="pull-right thumb-sm avatar">
+              <%=image_tag Beer.find(feed_item.drink_id).img_icon, class: "img-circle"%>
+            </a>
+          <%else%>
+            <%= link_to feed_item.name, Cocktail.find(feed_item.drink_id) %>
+            <a href="/cocktails/<%=feed_item.drink_id%>" class="pull-right thumb-sm avatar">
+              <%=image_tag Cocktail.find(feed_item.drink_id).image, class: "img-circle" %>
+            </a>
+          <%end%><br>
+          <%if feed_item.comment === "" %>
+          <%else%>
+            <i class="fa fa-comment-o"></i> "<%=feed_item.comment%>"
+          <%end%>
+          </div>
+          <div>
+            <span class="text-muted m-l-sm pull-right">
+              <small><i class="fa fa-clock-o"></i>
+              <%= time_ago_in_words(feed_item.created_at) %> ago.</small>
+            </span>
+          </div>
+      </div>
+    </section>
+</article>
+<%end%>

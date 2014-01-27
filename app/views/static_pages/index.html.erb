@@ -10,7 +10,7 @@
                     <div class="alert alert-<%= key %>"><%= value %></div>
                   <% end %>
                 <%= form_for(@new_drink) do |f| %>
-                  <%= f.text_field :name, placeholder: "Whacha Drinking?", class: "drinks_tt form-control" %>
+                  <%= f.text_field :name, placeholder: "Bottoms Up! Whacha Drinking?", class: "drinks_tt form-control" %>
                   <div class="small_space"></div>
                   <%= f.text_area :comment, placeholder: "Good? Bad?", class: "form-control" %>
                 <footer class="panel-footer">
@@ -36,11 +36,8 @@
                         </label>
                       </div>
                   </section>
-                  <%=render 'widgets/news'%>
+                  <%=render 'shared/feed'%>
                 </div>
-              </div>
-              <div class="text-center m-b">
-                <i class="fa fa-spinner fa fa-spin"></i>
               </div>
             </div>
             <div class="col-lg-4">

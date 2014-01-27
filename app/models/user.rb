@@ -73,7 +73,7 @@ class User < ActiveRecord::Base
       return 'HorseFly'
     elsif self.drinks.count >= 10 && self.uniq_drink_count >= 6
       return 'DrainFly'
-    elsif self.drinks.count >= 5 && self.uniq_drink_count >= 4
+    elsif self.drinks.count >= 5 && self.uniq_drink_count >= 3
       return 'FruitFly'
     elsif self.drinks.count > 0
       return 'Gnat'

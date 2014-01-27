@@ -54,6 +54,7 @@ class UsersController < ApplicationController
 
   def create
     @user = User.new(user_params)
+    @user.picture = "Icons/icon_final.png"
     if @user.save
       sign_in @user
       flash[:success] = "Hello! Welcome to BarFly!"

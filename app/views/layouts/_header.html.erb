@@ -14,14 +14,14 @@
           <!-- user -->
           <div class="bg-barfly lt nav-user hidden-xs pos-rlt">
             <div class="nav-avatar pos-rlt">
-                <%if @user.picture.nil?%>
-                  <%= link_to image_tag("Icons/icon_final.png"), @user, class: "thumb-sm avatar animated rollIn" %>
+                <%if current_user.picture.nil?%>
+                  <%= link_to image_tag("Icons/icon_final.png"), current_user, class: "thumb-sm avatar animated rollIn" %>
                 <%else%> 
-                  <%= link_to image_tag(@user.picture), @user, class: "thumb-sm avatar animated rollIn" %> 
+                  <%= link_to image_tag(current_user.picture), current_user, class: "thumb-sm avatar animated rollIn" %> 
                 <%end%>
               <div class="visible-xs m-t m-b">
-                <a href="#" class="h3"><%=@user.name%></a>
-                <p><i class="fa fa-map-marker"></i> <%=@user.location%></p>
+                <a href="#" class="h3"><%=current_user.name%></a>
+                <p><i class="fa fa-map-marker"></i> <%=current_user.location%></p>
               </div>
             </div>
              <div class="nav-msg">

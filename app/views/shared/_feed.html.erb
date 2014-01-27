@@ -1,6 +1,12 @@
 <% if @feed_items.any? %>
-  <ol class="drinks">
-    <%= render partial: 'shared/feed_item', collection: @feed_items %>
-  </ol>
-  <%= will_paginate @feed_items %>
+<section class="comment-list block">
+	<%= render partial: 'shared/feed_item', collection: @feed_items %>
+	<article class="comment-item media" id="comment-form">
+		<a class="pull-left thumb-sm avatar">
+			<%=image_tag "Icons/icon_final_sm.png"%></a>
+		<section class="media-body">
+			<%= will_paginate @feed_items %>
+		</section>
+	</article>
+</section>
 <% end %>

@@ -1,6 +1,24 @@
-<!-- .comment-list -->
+<!-- news-list -->
 <section class="comment-list block">
-  <article id="comment-id-1" class="comment-item">
+  <article class="comment-item">
+    <a class="pull-left thumb-sm avatar">
+      <%=image_tag @user.picture, class: "img-circle"%>
+    </a>
+    <span class="arrow left"></span>
+    <section class="comment-body panel">
+      <header class="panel-heading">
+        <label class="label bg-info m-l-xs"><%=@user.name%></label> 
+        <span class="text-muted m-l-sm pull-right">
+          <i class="fa fa-clock-o"></i>
+          24 minutes ago
+        </span>
+      </header>
+      <div class="panel-body">
+        <div>Lorem ipsum dolor sit amet, consecteter adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet.</div>
+      </div>
+    </section>
+  </article>
+  <article class="comment-item">
     <a class="pull-left thumb-sm avatar">
       <%=image_tag @user.picture, class: "img-circle"%>
     </a>
