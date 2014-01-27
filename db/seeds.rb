@@ -77,27 +77,27 @@ open(File.open(File.join(Rails.root, '/SeedData/Cocktails.txt'))) do |file|
 	end
 end
 
-LocationCache.delete_all
-location_array = []
-open(File.open(File.join(Rails.root, '/SeedData/US/US.txt'))) do |file|
-	file.read.each_line do |line|
-		line_array = line.split("\t")
-		city = line_array[2]
-		state = line_array[4]
-		concat_location = city + ", " + state
-		if !location_array.include? concat_location
-			location_array.push(concat_location)
-		end
-	end
-end
-LocationCache.create(text: location_array.to_s)
+# LocationCache.delete_all
+# location_array = []
+# open(File.open(File.join(Rails.root, '/SeedData/US/US.txt'))) do |file|
+# 	file.read.each_line do |line|
+# 		line_array = line.split("\t")
+# 		city = line_array[2]
+# 		state = line_array[4]
+# 		concat_location = city + ", " + state
+# 		if !location_array.include? concat_location
+# 			location_array.push(concat_location)
+# 		end
+# 	end
+# end
+# LocationCache.create(text: location_array.to_s)
 
-Beer.delete_all
+# Beer.delete_all
 brewery_db = BreweryDB::Client.new do |config|
 	config.api_key = '20da4cd59c6e41f4ad0850dfa4e1cf7d'
 end
 
-(1..100).each do |i| 
+(100..160).each do |i| 
 	brewery_db.beers.all(styleId: i.to_s, :withBreweries => 'Y').each do |beer|
 		next if beer.labels.nil?
 		next if beer.style.nil?
