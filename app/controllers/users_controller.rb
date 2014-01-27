@@ -42,10 +42,15 @@ class UsersController < ApplicationController
   end
 
   def update
+    if user_params.include?(:feed_preference)
+      no_flash = true
+    end
     @user = User.find(params[:id])
     @locations = LocationCache.last.text
     if @user.update_attributes(user_params)
-      flash[:success] = "Profile updated"
+      if !no_flash
+        flash[:success] = "Profile updated"
+      end
       redirect_to root_url
     else
       render 'edit'
@@ -68,7 +73,7 @@ class UsersController < ApplicationController
 
     def user_params
       params.require(:user).permit(:name, :email, :location, :password,
-                                   :password_confirmation)
+                                   :password_confirmation, :feed_preference)
     end
 
     # Before filters

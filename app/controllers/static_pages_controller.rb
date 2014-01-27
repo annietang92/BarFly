@@ -6,7 +6,15 @@ class StaticPagesController < ApplicationController
 			@user = current_user
 			@new_drink = Drink.new
 			@drinks = current_user.drinks
-			@feed_items = current_user.feed.paginate(page: params[:page], :per_page => 30)
+
+			if @user.feed_preference === "Friends"
+				@feed_items = current_user.feed.paginate(page: params[:page], :per_page => 10)
+			elsif @user.feed_preference === "All"
+				@feed_items = current_user.feed_all.paginate(page: params[:page], :per_page => 10)
+			else
+				@feed_items = current_user.feed_local.paginate(page: params[:page], :per_page => 10)
+			end
+				
 		end
 	end
 end

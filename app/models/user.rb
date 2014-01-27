@@ -6,8 +6,6 @@ class User < ActiveRecord::Base
                     uniqueness: { case_sensitive: false }
 
   has_secure_password
-	validates :password, length: { minimum: 6 }
-
   has_many :drinks, dependent: :destroy
   has_many :relationships, foreign_key: "follower_id", dependent: :destroy
   has_many :followed_users, through: :relationships, source: :followed
@@ -118,6 +116,14 @@ class User < ActiveRecord::Base
 
   def feed
     Drink.from_users_followed_by(self)
+  end
+
+  def feed_all
+    Drink.all
+  end
+
+  def feed_local
+    Drink.where(location: self.location)
   end
 
   def following?(other_user)

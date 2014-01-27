@@ -20,6 +20,7 @@ class DrinksController < ApplicationController
 		drink_name_type = @drink.name.split(" \- ")
 		@drink.name = drink_name_type[0]
 		@drink.type = drink_name_type[1]
+		@drink.location = @user.location
 		@venue = Venue.new
 		if @drink.type === "Beer"
 			if !Beer.find_by(name: @drink.name).nil?

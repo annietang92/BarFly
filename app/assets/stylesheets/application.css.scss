@@ -171,3 +171,12 @@ label, input, button, select, textarea {
 		text-decoration: none;
 	}
 }
+
+.btn-transparent{
+	background-color:transparent;
+	border:none;
+	color:white;
+	padding:0;
+	margin:0;
+	outline: none;
+}

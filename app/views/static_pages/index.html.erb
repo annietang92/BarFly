@@ -29,14 +29,38 @@
                       <div class="med_vert"></div>
                       <div class="med_vert"></div>
                       <div class="group_width_fx btn-group" data-toggle="buttons">
-                        <label class="btn btn-sm btn-info active width_fx">
-                          <input type="radio" name="options" id="option1"> <i class="fa fa-check text-active"></i> Local
+                        <%if @user.feed_preference.nil? || @user.feed_preference === "Local"%>
+                          <label class="btn btn-sm btn-info active width_fx">
+                            <i class="fa fa-check text-active pull-left"></i>
+                        <%else%>
+                          <label class="btn btn-sm btn-info width_fx ">
+                        <%end%>
+                          <%= form_for(current_user) do |l|%>
+                            <div><%= l.hidden_field :feed_preference, :value => "Local" %></div>
+                            <%= l.submit "Local", class: "btn-transparent" %>
+                          <%end%>
                         </label>
-                        <label class="btn btn-sm btn-primary width_fx">
-                          <input type="radio" name="options" id="option2"> <i class="fa fa-check text-active"></i> Friends
+                        <%if @user.feed_preference === "Friends"%>
+                          <label class="btn btn-sm btn-primary active width_fx">
+                            <i class="fa fa-check text-active pull-left"></i>
+                        <%else%>
+                          <label class="btn btn-sm btn-primary width_fx">
+                        <%end%>
+                          <%= form_for(current_user) do |g|%>
+                            <div><%= g.hidden_field :feed_preference, :value => "Friends" %></div>
+                            <%= g.submit "Friends", class: "btn-transparent" %>
+                          <%end%>
                         </label>
-                        <label class="btn btn-sm btn-success width_fx">
-                          <input type="radio" name="options" id="option3"> <i class="fa fa-check text-active"></i> All
+                        <%if @user.feed_preference === "All"%>
+                          <label class="btn btn-sm btn-success active width_fx">
+                            <i class="fa fa-check text-active pull-left"></i>
+                        <%else%>
+                          <label class="btn btn-sm btn-success width_fx">
+                        <%end%>
+                          <%= form_for(current_user) do |a|%>
+                            <div><%= a.hidden_field :feed_preference, :value => "All" %></div>
+                            <%= a.submit "All", class: "btn-transparent" %>
+                          <%end%>
                         </label>
                       </div>
                   </section>
