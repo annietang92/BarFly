@@ -10,6 +10,7 @@
  *
  *= require_self
  *= require font-awesome
+ *= require bootstrap
  *= require_tree .
  */
  body {
@@ -142,4 +143,21 @@ label, input, button, select, textarea {
 
 .other-post{
 	margin-left: 44px !important;
+}
+
+.margin-right-small{
+	margin-right: 10px;
+}
+
+.font_gray{
+	color: #ccc;
+	a{
+		color: #eee;
+		padding: 2px;
+	}
+	a:hover{
+		background-color: rgba(200,200,200,0.2);
+		color: white;
+		text-decoration: none;
+	}
 }

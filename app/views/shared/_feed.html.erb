@@ -4,9 +4,7 @@
 	<article class="comment-item media" id="comment-form">
 		<a class="pull-left thumb-sm avatar">
 			<%=image_tag "Icons/icon_final_sm.png"%></a>
-		<section class="media-body">
-			<%= will_paginate @feed_items %>
-		</section>
+            <%= will_paginate @feed_items, :renderer => WillPaginate::ActionView::LinkRenderer, class: "pull-right margin-right-small font_gray"%>
 	</article>
 </section>
 <% end %>
