@@ -1,0 +1,42 @@
+<section class="padding_med panel bg-primary lt no-borders">
+  <span class="font_white">
+    Your News Feed</span>
+    <div class="med_vert"></div>
+    <div class="med_vert"></div>
+    <div class="med_vert"></div>
+    <div class="group_width_fx btn-group" data-toggle="buttons">
+      <%if @user.feed_preference.nil? || @user.feed_preference === "Local"%>
+      <label class="btn btn-sm btn-info active width_fx">
+        <i class="fa fa-check text-active pull-left"></i>
+        <%else%>
+        <label class="btn btn-sm btn-info width_fx ">
+          <%end%>
+          <%= form_for(current_user) do |l|%>
+          <div><%= l.hidden_field :feed_preference, :value => "Local" %></div>
+          <%= l.submit "Local", class: "btn-transparent" %>
+          <%end%>
+        </label>
+        <%if @user.feed_preference === "Friends"%>
+        <label class="btn btn-sm btn-primary active width_fx">
+          <i class="fa fa-check text-active pull-left"></i>
+          <%else%>
+          <label class="btn btn-sm btn-primary width_fx">
+            <%end%>
+            <%= form_for(current_user) do |g|%>
+            <div><%= g.hidden_field :feed_preference, :value => "Friends" %></div>
+            <%= g.submit "Friends", class: "btn-transparent" %>
+            <%end%>
+          </label>
+          <%if @user.feed_preference === "All"%>
+          <label class="btn btn-sm btn-success active width_fx">
+            <i class="fa fa-check text-active pull-left"></i>
+            <%else%>
+            <label class="btn btn-sm btn-success width_fx">
+              <%end%>
+              <%= form_for(current_user) do |a|%>
+              <div><%= a.hidden_field :feed_preference, :value => "All" %></div>
+              <%= a.submit "All", class: "btn-transparent" %>
+              <%end%>
+            </label>
+          </div>
+        </section>

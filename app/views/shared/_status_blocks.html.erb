@@ -1,0 +1,52 @@
+<div class="col-lg-12">
+  <div class="row pull-out"> 
+    <div class="col-xs-12 bg-barfly">
+      <div class="padder-v">
+        <span class="font_white"><%=@user.fly_status%> - Level <%=@user.level%></span><div class="small_space"></div>
+      </div>
+    </div>
+  </div>
+  <div class="row pull-out">
+    <div class="col-xs-4 bg-success dker anmiated dropIn">
+      <div class="padder-v">
+        <span class="m-b-xs h4 block"><%=@user.followers.count%></span>
+        <small class="text-muted">Followers</small>
+      </div>
+    </div>
+    <div class="col-xs-4 bg-info">
+      <div class="padder-v">
+        <span class="m-b-xs h4 block"><%=@user.followed_users.count%></span>
+        <small class="text-muted">Following</small>
+      </div>
+    </div>
+    <div class="col-xs-4 bg-warning dker">
+      <div class="padder-v">
+        <span class="m-b-xs h4 block">0</span>
+        <small class="text-muted">Memorabilia</small>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="col-lg-12">
+  <div class="row pull-out">
+    <div class="col-xs-4 bg-barfly lt">
+      <div class="padder-v">
+        <span class="m-b-xs h4 block"><%=@user.drinks.count%></span>
+        <small class="text-muted">Drinks</small>
+      </div>
+    </div>
+    <div class="col-xs-4 bg-primary">
+      <div class="padder-v">
+        <span class="m-b-xs h4 block"><%=@user.uniq_drink_count%></span>
+        <small class="text-muted">Unique</small>
+      </div>
+    </div>
+    <div class="col-xs-4 bg-danger">
+      <div class="padder-v">
+        <span class="m-b-xs h4 block"><%=@user.checkins_count%></span>
+        <small class="text-muted">Check-Ins</small>
+      </div>
+    </div>
+  </div>
+</div>
