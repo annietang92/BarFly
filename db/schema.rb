@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140125235631) do
+ActiveRecord::Schema.define(version: 20140127060701) do
 
   create_table "beers", force: true do |t|
     t.string   "name"
@@ -124,6 +124,7 @@ ActiveRecord::Schema.define(version: 20140125235631) do
     t.string   "picture"
     t.string   "recommendations"
     t.string   "new"
+    t.string   "feed_preference"
   end
 
   add_index "users", ["remember_token"], name: "index_users_on_remember_token"
