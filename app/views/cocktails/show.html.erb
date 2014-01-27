@@ -1,10 +1,71 @@
-<%=image_tag @cocktail.image, width: '200'%><br>
-<%=@cocktail.name%><br>
-<%=@cocktail.primary%><br>
-IBA: <%=@cocktail.iba%><br>
-Alcohols: <%@cocktail.alcohols%><br>
-Served: <%=@cocktail.served%><br>
-Glass: <%=@cocktail.glass%><br>
-Ingredients: <%=@cocktail.ingredients%><br>
-Instructions: <%=@cocktail.instructions%><br>
-<%=@cocktail.description%>
+<% provide(:title, @cocktail.name) %>
+<section id="content">
+  <section class="vbox">
+    <section class="scrollable wrapper">
+      <div class="row">
+        <div class="col-lg-4">
+        	<section class="panel">
+				<div class="panel-body">
+					<div class="clearfix text-center m-t">
+						<div class="thumb-xlg">
+							<% if !@cocktail.image.nil?%>
+								<%= image_tag @cocktail.image, class: "img-circle-lg" %>
+							<%else%>
+								<%= image_tag "cocktail_placeholder.png", class: "img-circle-lg" %>
+							<%end%>
+						</div>
+						<div class="h3 m-t m-b-xs">
+							<strong><%= @cocktail.name%></strong><div class="small_space"></div>
+							<small class="text-muted m-b"><i class="fa fa-glass"></i> <%= @cocktail.primary%>
+							</small>
+						</div>
+					</div>
+				</div>
+				<footer class="panel-footer bg-primary dker">
+					<div class="col-lg-12">
+						<div class="col-lg-12">
+							<% if @cocktail.iba === "Y"%>
+							<div class="small_space"></div>
+							<div>
+								<label class="label label-primary lter">IBA Official Cocktail</label>
+							</div><div class="small_space"></div>
+							<%end%>
+							<%if !@cocktail.alcohols.nil?%>
+								Containing Alcohols: <%=@cocktail.alcohols%><br>
+							<%end%>
+							<%if !@cocktail.served.nil?%>
+								Served: <%=@cocktail.served%><br>
+							<%end%>
+							<%if !@cocktail.glass.nil?%>
+								Glass Type: <%=@cocktail.glass%><br>
+							<%end%>
+							<%if !@cocktail.ingredients.nil?%>
+								Ingredients: <%=@cocktail.ingredients%><br><br>
+							<%end%>
+							<%if !@cocktail.instructions.nil?%>
+								Instructions: <%=@cocktail.instructions%><br>
+							<%end%>
+							<%if @cocktail.likes.nil?%>
+								Likes: 0<br>
+							<%else%>
+								Likes: <%=@cocktail.likes%>
+							<%end%>
+						</div>
+					</div>
+				</footer>
+			</section>
+        </div>	
+        <div class="col-lg-7">
+    	<% if !@cocktail.description.nil?%>						
+      		<div class="panel bg-primary dker">
+      			<div class="panel-body">
+      				<%=@cocktail.description%>
+      			</div>
+      		</div>
+      	<%end%>
+      		<%=render 'shared/feed'%>
+        </div>
+      </div>
+    </section>
+  </vbox>
+</section>

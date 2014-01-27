@@ -3,6 +3,7 @@ class CocktailsController < ApplicationController
                 only: [:show]
 	def show
 		@cocktail = Cocktail.find(params[:id])
+		@feed_items = Drink.all.where(name: @cocktail.name).paginate(page: params[:page], :per_page => 20)
 	end
 
 	def create
