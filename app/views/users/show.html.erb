@@ -75,7 +75,11 @@
         </div>
         <div class="col-lg-7">
            <section class="padding_med panel bg-primary lt no-borders">
+            <% if @user === current_user %>
                <span class="font_white">Your Recent Activity</span>
+            <% else %>
+               <span class="font_white"><%=@user.name%>'s Recent Activity</span>
+            <%end%>
             </section>
 
           <%=render 'shared/feed'%>
