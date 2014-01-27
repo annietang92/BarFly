@@ -33,6 +33,8 @@
                       <%= t.hidden_field :hours, :value => v.hours %>
                       <%= t.hidden_field :picture, :value => v.photos %>
                       <%= t.hidden_field :drink_id, :value => @drink.id %>
+                      <%= t.hidden_field :likes, :value => Integer(v.stats.tipCount)%>
+                      <%= t.hidden_field :checkins, :value => Integer(v.stats.checkinsCount) %>
                       <%= t.submit v.name, class: "btn btn-danger lt btn-sm" %>
                     <% end %><div class="small_space"></div>
                     <%= image_tag v.categories[0].icon, class: "pull-right" %>
@@ -67,6 +69,8 @@
                       <%= t.hidden_field :hours, :value => v.hours %>
                       <%= t.hidden_field :picture, :value => v.photos %>
                       <%= t.hidden_field :drink_id, :value => @drink.id %>
+                      <%= t.hidden_field :likes, :value => Integer(v.stats.tipCount)%>
+                      <%= t.hidden_field :checkins, :value => Integer(v.stats.checkinsCount) %>
                       <%= t.submit v.name, class: "btn btn-danger lt btn-sm" %>
                     <% end %><div class="small_space"></div>
                     <%= image_tag v.categories[0].icon, class: "pull-right" %>

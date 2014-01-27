@@ -40,6 +40,9 @@ class VenuesController < ApplicationController
 		@relationship = DrinkVenueRelationship.new
 		@relationship.drink_id = @venue.drink_id
 		if !Venue.find_by(foursquare_id: @venue.foursquare_id).nil?
+			venue = Venue.find_by(foursquare_id: @venue.foursquare_id)
+			checkins = venue.checkins + 1
+			venue.update_attribute(:checkins, checkins)
 			@relationship.venue_id = Venue.find_by(foursquare_id: @venue.foursquare_id).id
 			@relationship.save
 			redirect_to root_path
@@ -57,6 +60,6 @@ class VenuesController < ApplicationController
 	private
 
     def venue_params
-      params.require(:venue).permit(:name, :foursquare_id, :lat, :long, :address, :city, :state, :zip, :phone, :ll, :description, :url, :hours, :picture, :drink_id)
+      params.require(:venue).permit(:name, :foursquare_id, :lat, :long, :address, :city, :state, :zip, :phone, :ll, :description, :url, :hours, :picture, :drink_id, :likes, :checkins)
     end
 end
