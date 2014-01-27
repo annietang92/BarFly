@@ -7,7 +7,7 @@
       <%=  image_tag feed_item.user.picture, class: "img-circle" %>
     </a>
     <span class="arrow left"></span>
-    <section class="comment-body panel bg-semi-transparent">
+    <section class="comment-body panel">
       <div class="panel-body">
         <div>
           <%= link_to feed_item.user.name, feed_item.user %>
@@ -15,12 +15,18 @@
           <% if feed_item.type === "Beer"%> 
             <%= link_to feed_item.name, Beer.find(feed_item.drink_id) %> beer
             <%if !Beer.find(feed_item.drink_id).img_icon.nil?%>
+              <% if !Drink.find(feed_item.id).venue.nil? %> at
+                <%= link_to feed_item.venue.name, feed_item.venue%>
+              <%end%>
               <a href="/beers/<%=feed_item.drink_id%>" class="pull-right thumb-sm avatar">
                 <%=image_tag Beer.find(feed_item.drink_id).img_icon, class: "img-circle"%>
               </a>
             <%end%>
           <%else%>
             <%= link_to feed_item.name, Cocktail.find(feed_item.drink_id) %> cocktail
+            <% if !Drink.find(feed_item.id).venue.nil? %> at
+              <%= link_to feed_item.venue.name, feed_item.venue%>
+            <%end%>
             <%if !Cocktail.find(feed_item.drink_id).image.nil?%>
               <a href="/cocktails/<%=feed_item.drink_id%>" class="pull-right thumb-sm avatar">
                 <%=image_tag Cocktail.find(feed_item.drink_id).image, class: "img-circle" %>

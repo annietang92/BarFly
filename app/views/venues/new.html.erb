@@ -15,15 +15,31 @@
                 <span class="font_white">Select from Top Bars in Your Area</span>
               </section>
             </div>
-            <% @top_venues.each do |venue| %>
+            <% @top_venues.each do |v| %>
               <div class="col-lg-6">
                 <section class="panel bg-semi-transparent ">
-                    <label class="btn btn-danger lt btn-sm"><small><%=venue.name%></small></label><div class="small_space"></div>
-                    <%= image_tag venue.categories[0].icon, class: "pull-right" %>
-                    <%=venue.location.address%><br>
-                    <%=venue.location.city%>, <%=venue.location.state%> <%venue.postalCode%><div class="small_space"></div>
-                    Check-Ins: <%=venue.stats.checkinsCount%><br>
-                    Likes: <%=venue.stats.tipCount%>
+                    <%= form_for @venue, url: venues_path do |t| %>
+                      <%= t.hidden_field :name, :value => v.name %>
+                      <%= t.hidden_field :foursquare_id, :value => v.id%>
+                      <%= t.hidden_field :address, :value => v.location.address %>
+                      <%= t.hidden_field :city, :value => v.location.city %>
+                      <%= t.hidden_field :state, :value => v.location.state %>
+                      <%= t.hidden_field :zip, :value => v.location.postalCode %>
+                      <%= t.hidden_field :lat, :value => v.location.lat %>
+                      <%= t.hidden_field :lng, :value => v.location.lng %>
+                      <%= t.hidden_field :phone, :value => v.contact.formattedPhone %>
+                      <%= t.hidden_field :description, :value => v.description %>
+                      <%= t.hidden_field :url, :value => v.url %>
+                      <%= t.hidden_field :hours, :value => v.hours %>
+                      <%= t.hidden_field :picture, :value => v.photos %>
+                      <%= t.hidden_field :drink_id, :value => @drink.id %>
+                      <%= t.submit v.name, class: "btn btn-danger lt btn-sm" %>
+                    <% end %><div class="small_space"></div>
+                    <%= image_tag v.categories[0].icon, class: "pull-right" %>
+                    <%=v.location.address%><br>
+                    <%=v.location.city%>, <%=v.location.state%> <%v.postalCode%><div class="small_space"></div>
+                    Check-Ins: <%=v.stats.checkinsCount%><br>
+                    Likes: <%=v.stats.tipCount%>
                 </section>
               </div>
             <% end %>
@@ -33,15 +49,31 @@
                 <span class="font_white">Your Search Results</span>
               </section>
             </div>
-            <% @venues.each do |venue| %>
+            <% @venues.each do |v| %>
               <div class="col-lg-6">
                 <section class="panel bg-semi-transparent ">
-                    <label class="btn btn-danger lt btn-sm"><small><%=venue.name%></small></label><div class="small_space"></div>
-                    <%= image_tag venue.categories[0].icon, class: "pull-right" %>
-                    <%=venue.location.address%><br>
-                    <%=venue.location.city%>, <%=venue.location.state%> <%venue.postalCode%><div class="small_space"></div>
-                    Check-Ins: <%=venue.stats.checkinsCount%><br>
-                    Likes: <%=venue.stats.tipCount%>
+                    <%= form_for @venue, url: venues_path do |t| %>
+                      <%= t.hidden_field :name, :value => v.name %>
+                      <%= t.hidden_field :foursquare_id, :value => v.id%>
+                      <%= t.hidden_field :address, :value => v.location.address %>
+                      <%= t.hidden_field :city, :value => v.location.city %>
+                      <%= t.hidden_field :state, :value => v.location.state %>
+                      <%= t.hidden_field :zip, :value => v.location.postalCode %>
+                      <%= t.hidden_field :lat, :value => v.location.lat %>
+                      <%= t.hidden_field :lng, :value => v.location.lng %>
+                      <%= t.hidden_field :phone, :value => v.contact.formattedPhone %>
+                      <%= t.hidden_field :description, :value => v.description %>
+                      <%= t.hidden_field :url, :value => v.url %>
+                      <%= t.hidden_field :hours, :value => v.hours %>
+                      <%= t.hidden_field :picture, :value => v.photos %>
+                      <%= t.hidden_field :drink_id, :value => @drink.id %>
+                      <%= t.submit v.name, class: "btn btn-danger lt btn-sm" %>
+                    <% end %><div class="small_space"></div>
+                    <%= image_tag v.categories[0].icon, class: "pull-right" %>
+                    <%=v.location.address%><br>
+                    <%=v.location.city%>, <%=v.location.state%> <%v.postalCode%><div class="small_space"></div>
+                    Check-Ins: <%=v.stats.checkinsCount%><br>
+                    Likes: <%=v.stats.tipCount%>
                 </section>
               </div>
             <%end%>
@@ -50,7 +82,6 @@
     </section>
   </section>
 </section>
-
 <script type="text/javascript">
   // Set up typeahead
   var setUpLocationTypeahead = function() {
