@@ -29,7 +29,8 @@ class UsersController < ApplicationController
       @facebook_auth = true
     else
       @facebook_auth = false
-    end  end
+    end  
+  end
 
   def new
     @user = User.new
