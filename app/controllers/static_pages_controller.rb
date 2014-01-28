@@ -34,6 +34,7 @@ class StaticPagesController < ApplicationController
 	end
 
 	def discover
-
+		@discover = true
+		@top_venues = Venue.all.where(location: current_user.location(:order => "likes DESC")).take(40)
 	end
 end
