@@ -19,10 +19,6 @@ gem 'wine_dot_com_api_request'
 #foursquare
 gem 'foursquare2'
 
-#getting country codes
-gem "carmen", "~> 1.0.0"
-gem 'carmen-rails', '~> 1.0.0'
-
 #geocoder
 gem 'geocoder'
 

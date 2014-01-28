@@ -277,9 +277,10 @@ class User < ActiveRecord::Base
 		    user.password = auth.uid
 		    user.password_confirmation = auth.uid
 		    user.uid = auth.uid
-		    city_state = auth.info.location.to_s.split(",")
-        state = city_state[1].squish
-        user.location = Carmen::state_code(state, 'US')
+        location = auth.info.location.to_s
+        city_state = location.split(",")
+        state = LocationCache.state_code(city_state[1].squish)
+		    user.location = city_state[0].squish+" ,"+state
 		    user.oauth_token = auth.credentials.token
 		    user.provider = auth.provider
         user.picture = "http://graph.facebook.com/"+auth.uid+"/picture?width=300&height=300"
