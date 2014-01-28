@@ -7,7 +7,7 @@ class Venue < ActiveRecord::Base
   	has_many :venue_like_relationships, dependent: :destroy
 
   	def self.top_venues_around(user)
-  		if !user.location.nil? && user.location != ""
+  		if !user.location.nil?
   			userlocation = user.location.split(",")
   			city = userlocation[0].squish
   			state = userlocation[1].squish
