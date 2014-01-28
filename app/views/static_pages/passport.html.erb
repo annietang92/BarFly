@@ -7,8 +7,13 @@
 				<%@venues.each do |venue|%>
 						<div class="col-lg-3">
 							<section class="panel text-center">
+								<div class="m-l pull-left text-muted">
+									Visited
+									<%=pluralize(current_user.times_visited(venue), "time") %></div>
 								<%if current_user.like_venue?(venue)%>
-									<label class="label label-danger pull-right pos-abs"><i class="fa fa-heart"></i></label>
+									<label class="label like-label sm-label lable-sm label-danger pull-right pos-abs"><i class="fa fa-heart"></i></label>
+								<%else%>
+									<label class="abel like-label sm-label lable-sm label lable-sm pull-right pos-abs"><i class="fa fa-heart font_white "></i></label>
 								<%end%>
 								<%@image = "Stamps/stamp"+int.to_s+".jpg"%>
 								<%=link_to image_tag(@image),venue,class: "square-image-full max-sm"%>
@@ -17,7 +22,7 @@
 								<small class="text-muted"><br>
 									<i class="fa-book fa"></i> 
 									Stamped on 
-									<%=DrinkVenueRelationship.all.where(venue_id: venue.id).first.created_at.strftime("%B %d, %Y")%>
+									<%=current_user.first_visited_instance(venue).created_at.strftime("%B %d, %Y")%>
 								</small>
 							</section>
 						</div>

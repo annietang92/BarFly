@@ -18,7 +18,7 @@
 							</div>
 							Phone: <%=@venue.phone%><br>
 							<%if !@venue.url.nil? && @venue.url != "" %>
-								Website: <%= link_to @venue.url %>
+								Website: <a href=<%= @venue.url %>><%=@venue.url%></a>
 							<%end%>
 						</div>
 	        		</div>

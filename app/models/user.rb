@@ -236,6 +236,14 @@ class User < ActiveRecord::Base
   	end
   end
 
+  def first_visited_instance(venue)
+    venue.drinks.where(user_id: self.id).last
+  end
+
+  def times_visited(venue)
+    venue.drinks.where(user_id: self.id).count
+  end
+
   def User.new_remember_token
     SecureRandom.urlsafe_base64
   end

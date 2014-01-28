@@ -7,11 +7,6 @@ class VenuesController < ApplicationController
 
 	def new
 		@venue = Venue.new
-		client = Foursquare2::Client.new(:client_id => '4IEC2TEEXYZBNXI4Z0XWKOPCXPTL54WIYGSL20IRJVOH41QT', :client_secret => 'U1W5VEBHWP4I020DJL1HQ14MTRCQAMMDKH554VTYKUG4BEGF')
-		logger.info "ASHDALKSJHDLASKJHDA"
-		@top_venues = client.search_venues(:near => current_user.location, categoryId: '4bf58dd8d48988d116941735').groups[0].items
-		logger.info @top_venues.count
-
 		if !@drink.nil?
 			@user=current_user
 		else
@@ -21,8 +16,6 @@ class VenuesController < ApplicationController
 	end
 
 	def search
-		client = Foursquare2::Client.new(:client_id => '4IEC2TEEXYZBNXI4Z0XWKOPCXPTL54WIYGSL20IRJVOH41QT', :client_secret => 'U1W5VEBHWP4I020DJL1HQ14MTRCQAMMDKH554VTYKUG4BEGF')
-		@top_venues = client.search_venues(:near => current_user.location, categoryId: '4bf58dd8d48988d116941735', limit: 20).groups[0].items
 		@venue = Venue.new(venue_params)
 		if @venue.name === "" || @venue.name.nil?
 			@drink = Drink.find(@venue.drink_id)
