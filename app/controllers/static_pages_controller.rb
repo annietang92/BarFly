@@ -32,4 +32,7 @@ class StaticPagesController < ApplicationController
 		@top_cocktails = Cocktail.find(:all, :order => "likes").reverse
 		@user_tried = current_user.drinks.pluck(:name)
 	end
+
+	def discover
+	end
 end
