@@ -1,0 +1,16 @@
+<section class="panel bg-barfly no-borders">
+    <div class="panel-body">
+      <div class="clearfix">
+        <div class="clear">
+            <i class="fa fa-glass"></i> &nbsp;
+            Top Drinks In Your Area
+        </div>
+        <div class="line"></div>
+        <ol>
+          <%@top_drinks.each do |drink|%>
+            <li><%=drink%></li>
+          <%end%>
+        </ol>
+      </div>
+    </div>
+</section>

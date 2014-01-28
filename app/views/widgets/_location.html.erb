@@ -5,12 +5,12 @@
           <%=image_tag @user.picture, class: "img-circle"%>
         </a>
         <div class="clear">
-          <a href="#"><strong><%=@user.name%></strong></a>
+          <a href="#"><strong><%=@user.name%> - Level <%=@user.level%> (<%=@user.fly_status%>)</strong></a>
           <small class="block text-muted"><%=@user.location%></small>
         </div>
       </div>
       <div class="pull-in bg-map bg-light clearfix m-b-n hight_med">
-        <p class="m-t-sm m-b text-center animated bounceInDown">
+        <p class="m-t-sm m-b text-center">
           <i class="fa fa-map-marker text-danger fa fa-4x" data-toggle="tooltip"></i>
         </p>
       </div>

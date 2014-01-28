@@ -2,6 +2,8 @@ class StaticPagesController < ApplicationController
 	require 'will_paginate/array'
 
 	def index
+		@top_venues = Venue.top_venues_around(current_user).take(10)
+		@top_drinks = Drink.top_drinks_around(current_user).take(5)
 		@dashboard = true
 		if signed_in?
 			all_drinks = Cocktail.all_cocktails + Beer.all_beers
@@ -16,8 +18,7 @@ class StaticPagesController < ApplicationController
 				@feed_items = current_user.feed_all.paginate(page: params[:page], :per_page => 10)
 			else
 				@feed_items = current_user.feed_local.paginate(page: params[:page], :per_page => 10)
-			end
-				
+			end	
 		end
 	end
 

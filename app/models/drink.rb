@@ -17,4 +17,15 @@ class Drink < ActiveRecord::Base
 	    where("user_id IN (#{followed_user_ids}) OR user_id = :user_id",
 	          user_id: user.id)
 	  end
+
+    def self.top_drinks_around(user)
+      drinks = Drink.where(location: user.location)
+      unique_drinks = []
+      drinks.each do |drink|
+        if !unique_drinks.include?(drink.name)
+          unique_drinks.push(drink.name)
+        end
+      end
+      return unique_drinks
+    end
 end
