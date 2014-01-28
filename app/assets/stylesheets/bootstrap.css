@@ -377,6 +377,21 @@ img {
   border: 8px solid rgba(239,53,71,0.8);
 }
 
+.img-square-md {
+  border-radius: 5px;
+  width: 160px;
+  height: 160px;
+  border: 6px solid rgba(239,53,71,0.8);
+}
+
+.img-square-beer{
+  border: 6px solid #fcca5f;
+}
+
+.img-square-cocktail{
+  border: 6px solid #594f8d;
+}
+
 hr {
   margin-top: 20px;
   margin-bottom: 20px;

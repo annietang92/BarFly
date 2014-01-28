@@ -1,0 +1,105 @@
+<% provide(:title, "BarFly | Top Drinks") %>
+<section id="content">
+	<section class="vbox">
+		<section class="scrollable wrapper">
+			<div class="row">
+				<div class = "col-lg-6">
+					<div class="col-lg-12">
+						<section class="panel text-center bg-primary dker animated bounceInDown">
+							<i class="fa fa-glass"></i> &nbsp; Top Cocktails to Try
+						</section>
+					</div>
+					<%cocktail_count = 0%>
+					<%@top_cocktails.each do |cocktail|%>
+					<%if cocktail_count === 16 %>
+						<%end_loop = "true"%>
+					<%end%>
+					<%if end_loop !="true"%>
+					<%if !@user_tried.include?(cocktail.name)%>
+					<%cocktail_count = cocktail_count + 1 %>
+					<div class="col-lg-6">
+						<section class="panel text-center bg-semi-transparent">
+							<div class="panel-body">
+							<div class= "text-center">
+								<a href="/cocktails/<%=cocktail.id%>">
+								<% if !cocktail.image.nil?%>
+									<%= image_tag cocktail.image, class: "img-square-md img-square-cocktail" %>
+								<%else%>
+									<%= image_tag "cocktail_placeholder.png", class: "img-square-md img-square-cocktail" %>
+								<%end%>
+								</a>
+							</div>
+							<div class="h3 m-t m-b-xs">
+								<small class="m-b">
+									<span class="text-danger lter text-muted">
+									<i class="fa fa-heart"></i>
+									<%if cocktail.likes.nil?%>
+										0
+									<%else%>
+										<%=cocktail.likes%>
+									<%end%>
+									</span>
+									 &nbsp; <span class="font_black">
+										<%= truncate(cocktail.name, length: 16)%>
+									</span>
+								</small>
+							</div>
+						</div>
+						</section>
+					</div>
+					<%end%>
+					<%end%>
+					<%end%>
+				</div>
+				<div class = "col-lg-6">
+					<div class="col-lg-12">
+						<section class="panel text-center bg-warning dker animated bounceInDown">
+							<i class="fa fa-beer"></i> &nbsp; Top Beers to Try
+						</section>
+					</div>
+					<%beer_count = 0%>
+					<%@top_beers.each do |beer|%>
+					<%if beer_count === 16 %>
+						<%end_loop2 = "true"%>
+					<%end%>
+					<%if end_loop2 !="true"%>
+					<%if !@user_tried.include?(beer.name)%>
+					<%beer_count = beer_count + 1 %>
+					<div class="col-lg-6">
+						<section class="panel text-center bg-semi-transparent">
+							<div class="panel-body">
+							<div class= "text-center">
+								<a href="/beers/<%=beer.id%>">
+								<% if !beer.img_lg.nil?%>
+									<%= image_tag beer.img_lg, class: "img-square-md img-square-beer" %>
+								<%else%>
+									<%= image_tag "cocktail_placeholder.png", class: "img-square-md img-square-beer" %>
+								<%end%>
+								</a>
+							</div>
+							<div class="h3 m-t m-b-xs">
+								<small class="m-b">
+									<span class="text-danger lter text-muted">
+									<i class="fa fa-heart"></i>
+									<%if beer.likes.nil?%>
+										0
+									<%else%>
+										<%=beer.likes%>
+									<%end%>
+									</span>
+									 &nbsp; <span class="font_black">
+										<%= truncate(beer.name, length: 16)%>
+									</span>
+								</small>
+							</div>
+						</div>
+						</section>
+					</div>
+					<%end%>
+					<%end%>
+					<%end%>
+				</div>
+			</div>
+		</section>
+	</section>
+</section>

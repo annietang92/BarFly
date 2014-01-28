@@ -16,7 +16,7 @@ Barfly::Application.routes.draw do
   resources :venue_like_relationships, only: [:create, :destroy]
   resources :beer_like_relationships, only: [:create, :destroy]
 
-  match '/recommendations',  to: 'recommendations#index', via: 'get'
+  match '/top',  to: 'static_pages#top', via: 'get'
   match '/venues/search',  to: 'venues#search', via: 'post'
   match '/venues/search',  to: 'venues#search', via: 'get'
   match '/signup',  to: 'users#new',            via: 'get'

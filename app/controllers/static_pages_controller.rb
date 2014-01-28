@@ -25,4 +25,10 @@ class StaticPagesController < ApplicationController
 		@passport = true
 		@venues = current_user.venues.paginate(page: params[:page], :per_page => 48)
 	end
+
+	def top
+		@top_beers = Beer.find(:all, :order => "likes").reverse
+		@top_cocktails = Cocktail.find(:all, :order => "likes").reverse
+		@user_tried = current_user.drinks.pluck(:name)
+	end
 end
