@@ -274,7 +274,7 @@ class User < ActiveRecord::Base
 		    user.password = auth.uid
 		    user.password_confirmation = auth.uid
 		    user.uid = auth.uid
-		    user.location = auth.info.location
+		    user.location = auth.extra.raw.raw_info.location.name
 		    user.oauth_token = auth.credentials.token
 		    user.provider = auth.provider
         user.picture = "http://graph.facebook.com/"+auth.uid+"/picture?width=300&height=300"
