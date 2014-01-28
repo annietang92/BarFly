@@ -17,11 +17,8 @@ class UsersController < ApplicationController
     render 'show_follow'
   end
 
-  def index
-  	@users = User.paginate(page: params[:page], :per_page => 8)
-  end
-
   def show
+    @profile = true
     @user = User.find(params[:id])
     @feed_items = @user.drinks.paginate(page: params[:page], :per_page => 20)
 

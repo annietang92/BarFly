@@ -30,12 +30,8 @@
               </a>
               <ul class="dropdown-menu m-l-sm pull-left animated fadeInLeft">
                 <li>
-                  <li><%= link_to(raw("<i class='fa fa-user'></i> &nbsp;&nbsp;&nbsp;&nbsp; Profile"), current_user) %></li>
-                </li>
-                <li>
                   <li><%= link_to(raw("<i class='fa fa-wrench'></i>&nbsp;&nbsp;&nbsp;&nbsp; Settings"),  edit_user_path(current_user)) %></li>
                 </li>
-                <li class="divider"></li>
                 <li>
                   <li><%= link_to(raw("<i class='fa fa-power-off'></i>&nbsp;&nbsp;&nbsp;&nbsp; Sign out"), signout_path, method: "delete") %></li>
                 </li>
@@ -53,6 +49,16 @@
                 <a href="/">
                   <i class="fa fa-eye"></i>
                   <span>Dashboard</span>
+                </a>
+              </li>
+              <%if @profile%>
+              <li class="active">
+              <%else%>
+              <li>
+              <%end%>
+                <a href="/users/<%=current_user.id%>">
+                  <i class="fa fa-user"></i>
+                  <span>&nbsp;Profile</span>
                 </a>
               </li>
               <li>
@@ -77,8 +83,12 @@
                   <span>Memorabilia</span>
                 </a>
               </li>
+              <%if @top%>
+              <li class="active">
+              <%else%>
               <li>
-                <a href="/recommendations">
+              <%end%>
+                <a href="/top">
                   <i class="fa fa-heart"></i>
                   <span>Try These!</span>
                 </a>
@@ -87,9 +97,6 @@
           </nav>
         </section>
         <footer class="footer bg-gradient hidden-xs">
-          <span class="btn btn-sm btn-link m-r-n-xs">
-            <%= link_to(raw("<i class='fa fa-power-off'></i>"), signout_path, method: "delete") %>
-          </span>
         </footer>
       </section>
   </aside>
