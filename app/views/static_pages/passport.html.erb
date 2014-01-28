@@ -7,6 +7,9 @@
 				<%@venues.each do |venue|%>
 						<div class="col-lg-3">
 							<section class="panel text-center">
+								<%if current_user.like_venue?(venue)%>
+									<label class="label label-danger pull-right pos-abs"><i class="fa fa-heart"></i></label>
+								<%end%>
 								<%@image = "Stamps/stamp"+int.to_s+".jpg"%>
 								<%=link_to image_tag(@image),venue,class: "square-image-full max-sm"%>
 								<div class="line dashed-line"></div>
