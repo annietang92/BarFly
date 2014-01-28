@@ -2747,6 +2747,7 @@ fieldset[disabled] .btn-gplus.active {
 }
 .thumb-md {
   width: 90px;
+  height: 90px;
   display: inline-block;
 }
 .thumb-xs {

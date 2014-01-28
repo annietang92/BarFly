@@ -9,28 +9,27 @@
     <span class="arrow left"></span>
     <section class="comment-body panel">
       <div class="panel-body">
-        <div>
+        <div class="feed-min">
           <%= link_to feed_item.user.name, feed_item.user %>
           (<%=feed_item.user.fly_status%>) drank a 
           <% if feed_item.type === "Beer"%> 
-            <%= link_to feed_item.name, Beer.find(feed_item.drink_id) %> beer
+            <strong><%= link_to feed_item.name, Beer.find(feed_item.drink_id) %></strong> beer
             <%if !Beer.find(feed_item.drink_id).img_icon.nil?%>
-              <% if !Drink.find(feed_item.id).venue.nil? %> at
+              <a href="/beers/<%=feed_item.drink_id%>" class="pull-right m-l">  <%=image_tag Beer.find(feed_item.drink_id).img_icon, class: "square-image"%>
+              </a>
+              <% if !Drink.find(feed_item.id).venue.nil? %> <br>at
                 <%= link_to feed_item.venue.name, feed_item.venue%>
               <%end%>
-              <a href="/beers/<%=feed_item.drink_id%>" class="pull-right thumb-sm avatar">
-                <%=image_tag Beer.find(feed_item.drink_id).img_icon, class: "img-circle"%>
-              </a>
             <%end%>
           <%else%>
-            <%= link_to feed_item.name, Cocktail.find(feed_item.drink_id) %> cocktail
-            <% if !Drink.find(feed_item.id).venue.nil? %> at
-              <%= link_to feed_item.venue.name, feed_item.venue%>
-            <%end%>
-            <%if !Cocktail.find(feed_item.drink_id).image.nil?%>
-              <a href="/cocktails/<%=feed_item.drink_id%>" class="pull-right thumb-sm avatar">
-                <%=image_tag Cocktail.find(feed_item.drink_id).image, class: "img-circle" %>
+          <%if !Cocktail.find(feed_item.drink_id).image.nil?%>
+              <a href="/cocktails/<%=feed_item.drink_id%>" class="pull-right m-l">
+                <%=image_tag Cocktail.find(feed_item.drink_id).image, class: "square-image" %>
               </a>
+            <%end%>
+            <strong><%= link_to feed_item.name, Cocktail.find(feed_item.drink_id) %></strong> cocktail
+            <% if !Drink.find(feed_item.id).venue.nil? %> <br>at
+              <%= link_to feed_item.venue.name, feed_item.venue%>
             <%end%>
           <%end%>
           <div class="small_space"></div>
@@ -40,7 +39,7 @@
           <%end%>
           </div>
           <div>
-            <span class="text-muted m-l-sm pull-right">
+            <span class="text-muted pull-right">
               <small><i class="fa fa-map-marker"></i>
               <%= feed_item.location %></small>
               <div class="small_vert"></div>

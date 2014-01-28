@@ -30,7 +30,7 @@ class VenuesController < ApplicationController
 			return
 		end
 		@drink = Drink.find(@venue.drink_id)
-		@venues = client.search_venues(:near => @venue.city, :query => @venue.name, categoryId: '4bf58dd8d48988d116941735').groups[0].items
+		@venues = client.search_venues(:near => @venue.city, :query => @venue.name).groups[0].items
 		# @venues = client.search_venues(:near => @venue.city, :query => @venue.name).groups[0].items.paginate(page: params[:page], :per_page => 8)
 		render 'new'
 	end

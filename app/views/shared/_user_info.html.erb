@@ -1,25 +1,25 @@
-          <section class="panel">
-            <div class="panel-body">
-              <% flash.each do |key, value| %>
-                <div class="animated bounceInDown alert alert-<%= key %>"><%= value %></div>
-              <% end %>
-              <div class="clearfix text-center m-t">
-                <div class="thumb-xlg animated rollIn">
-                  <%= image_tag @user.picture, class: "img-circle-lg" %>
-                </div>
-                <div class="h3 m-t m-b-xs">
-                  <strong><%= @user.name%></strong><div class="small_space"></div>
-                  <small class="text-muted m-b"><i class="fa fa-map-marker icon-sm"></i> <%= @user.location%>
-                  </small>
-                </div>
-              </div>
-            </div>
-            <footer class="panel-footer text-center">
-            <%= render 'shared/status_blocks'%>
-            <br>
-            <% if @user === current_user && @user.provider != "facebook" %>
-              <%= link_to "Connect with Facebook", "/auth/facebook", class: "btn btn-lg btn-primary btn-block m-b-sm"%>
-            <%end%>
-            <%= render 'users/follow_form'%>
-            </footer>
-          </section>
+<section class="panel">
+	<div class="panel-body">
+		<% flash.each do |key, value| %>
+		<div class="animated bounceInDown alert alert-<%= key %>"><%= value %></div>
+		<% end %>
+		<div class="clearfix text-center m-t">
+			<div class="thumb-xlg animated rollIn">
+				<%= image_tag @user.picture, class: "img-circle-lg" %>
+			</div>
+			<div class="h3 m-t m-b-xs">
+				<strong><%= @user.name%></strong><div class="small_space"></div>
+				<small class="text-muted m-b"><i class="fa fa-map-marker"></i> <%= @user.location%>
+				</small>
+			</div>
+		</div>
+	</div>
+	<footer class="panel-footer text-center">
+		<%= render 'shared/status_blocks'%>
+		<br>
+		<% if @user === current_user && @user.provider != "facebook" %>
+		<%= link_to "Connect with Facebook", "/auth/facebook", class: "btn btn-lg btn-primary btn-block m-b-sm"%>
+		<%end%>
+		<%= render 'users/follow_form'%>
+	</footer>
+</section>

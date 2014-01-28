@@ -10,22 +10,30 @@
 	        			<div class="clearfix text-center">
 							<div class="h3 m-b-xs">
 								<strong><%= @venue.name%></strong><div class="small_space"></div>
-								<small class="text-muted m-b"><i class="fa fa-beer"></i> <%= @venue.address%>, <%= @venue.city%>, <%= @venue.state%> <%= @venue.zip%><br><br>
+								<small class="text-muted m-b"><i class="fa fa-map-marker"></i> <%= @venue.address%>, <%= @venue.city%>, <%= @venue.state%> <%= @venue.zip%><br><br>
 								</small>
 							</div>
 							Phone: <%=@venue.phone%><br>
-							Website: <%= link_to @venue.url %>
+							<%if !@venue.url.nil? && @venue.url != "" %>
+								Website: <%= link_to @venue.url %>
+							<%end%>
 						</div>
 	        		</div>
 	        		<div class="line line-dashed"></div>
 	        		<footer>
 	        			<div class="col-lg-12">
-	        				<div class="btn-group btn-group-justified">
-	        					<% checkin_label = @venue.checkins.to_s + "<br> Check-Ins" %>
-	        					<% likes_label = @venue.likes.to_s + "<br> Likes" %>
-	        					<%= link_to checkin_label.html_safe, signup_path, class: "btn btn-danger lter btn-xlarge" %>
-        						<%= link_to likes_label.html_safe, signin_path, class: "btn btn-warning dker btn-xlarge" %>
+	        				<div class="bg-danger lter col-lg-6 text-center">
+	        					 <br>
+	        					 <%=@venue.checkins%> &nbsp; <i class="fa fa-map-marker"></i><br>
+	        					 Check-Ins<br><br>
 	        				</div>
+	        				<div class="bg-warning dker col-lg-6 text-center">
+	        					 <br>
+	        					 <%=@venue.likes%> &nbsp; <i class="fa fa-heart"></i><br>
+	        					 Likes<br><br>
+	        				</div>
+
+	        				<%= link_to "Sign Up", signup_path, class: "m-t btn btn-primary btn-xlarge" %>
 	        			</div>
 	        		</footer>
 	        	</section>

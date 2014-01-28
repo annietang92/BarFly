@@ -196,3 +196,19 @@ label, input, button, select, textarea {
 .no-bold{
 	font-weight: normal !important;
 }
+
+.square-image{
+	width:70px;
+	height:70px;
+	overflow:hidden;
+	border-radius: 50%;
+	border: 3px solid #fc8d80;
+}
+
+.padding-img{
+	padding-right:30px !important;
+}
+
+.feed-min{
+	min-height:70px;
+}

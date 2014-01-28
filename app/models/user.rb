@@ -14,6 +14,16 @@ class User < ActiveRecord::Base
                                    dependent:   :destroy
   has_many :followers, through: :reverse_relationships, source: :follower
 
+
+  has_many :cocktail_like_relationships, foreign_key: "user_id", dependent: :destroy
+  has_many :beer_like_relationships, foreign_key: "user_id", dependent: :destroy
+  has_many :venue_like_relationships, foreign_key: "user_id", dependent: :destroy
+  
+  has_many :liked_cocktails, through: :cocktail_like_relationships, source: :cocktail
+  has_many :liked_beers, through: :beer_like_relationships, source: :beer
+  has_many :liked_venues, through: :venue_like_relationships, source: :venue
+
+
   def cocktails
     return self.drinks.where(type: "Cocktail").pluck(:name).uniq
   end
@@ -146,6 +156,63 @@ class User < ActiveRecord::Base
 
   def unfollow!(other_user)
     relationships.find_by(followed_id: other_user.id).destroy
+  end
+
+  def like_venue?(venue)
+    venue_like_relationships.find_by(venue_id: venue.id)
+  end
+
+  def like_venue!(venue)
+    venue_like_relationships.create!(venue_id: venue.id)
+    if venue.likes.nil?
+      likes = 0
+    end
+    likes = venue.likes + 1
+    venue.update_attribute(:likes, likes)
+  end
+
+  def unlike_venue!(venue)
+    venue_like_relationships.find_by(venue_id: venue.id).destroy
+    likes = venue.likes - 1
+    venue.update_attribute(:likes, likes)
+  end
+
+  def like_cocktail?(cocktail)
+    cocktail_like_relationships.find_by(cocktail: cocktail.id)
+  end
+
+  def like_cocktail!(cocktail)
+    cocktail_like_relationships.create!(cocktail_id: cocktail.id)
+    if cocktail.likes.nil?
+      likes = 0
+    end
+    likes = cocktail.likes + 1
+    cocktail.update_attribute(:likes, likes)
+  end
+
+  def unlike_cocktail!(cocktail)
+    cocktail_like_relationships.find_by(cocktail_id: cocktail.id).destroy
+    likes = cocktail.likes - 1
+    cocktail.update_attribute(:likes, likes)
+  end
+
+  def like_beer?(beer)
+    beer_like_relationships.find_by(beer_id: beer.id)
+  end
+
+  def like_beer!(beer)
+    beer_like_relationships.create!(beer_id: beer.id)
+    if beer.likes.nil?
+      likes = 0
+    end
+    likes = beer.likes + 1
+    beer.update_attribute(:likes, likes)
+  end
+
+  def unlike_beer!(beer)
+    beer_like_relationships.find_by(beer_id: beer.id).destroy
+    likes = beer.likes - 1
+    beer.update_attribute(:likes, likes)
   end
 
   def self.is_existing_email(email)

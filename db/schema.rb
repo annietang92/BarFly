@@ -11,7 +11,18 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140127074508) do
+ActiveRecord::Schema.define(version: 20140127233236) do
+
+  create_table "beer_like_relationships", force: true do |t|
+    t.integer  "user_id"
+    t.integer  "beer_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "beer_like_relationships", ["beer_id"], name: "index_beer_like_relationships_on_beer_id"
+  add_index "beer_like_relationships", ["user_id", "beer_id"], name: "index_beer_like_relationships_on_user_id_and_beer_id", unique: true
+  add_index "beer_like_relationships", ["user_id"], name: "index_beer_like_relationships_on_user_id"
 
   create_table "beers", force: true do |t|
     t.string   "name"
@@ -36,6 +47,17 @@ ActiveRecord::Schema.define(version: 20140127074508) do
     t.string   "variations"
     t.string   "beer_id"
   end
+
+  create_table "cocktail_like_relationships", force: true do |t|
+    t.integer  "user_id"
+    t.integer  "cocktail_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "cocktail_like_relationships", ["cocktail_id"], name: "index_cocktail_like_relationships_on_cocktail_id"
+  add_index "cocktail_like_relationships", ["user_id", "cocktail_id"], name: "index_cocktail_like_relationships_on_user_id_and_cocktail_id", unique: true
+  add_index "cocktail_like_relationships", ["user_id"], name: "index_cocktail_like_relationships_on_user_id"
 
   create_table "cocktails", force: true do |t|
     t.string   "name"
@@ -130,6 +152,17 @@ ActiveRecord::Schema.define(version: 20140127074508) do
 
   add_index "users", ["remember_token"], name: "index_users_on_remember_token"
   add_index "users", ["uid"], name: "index_users_on_uid"
+
+  create_table "venue_like_relationships", force: true do |t|
+    t.integer  "user_id"
+    t.integer  "venue_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "venue_like_relationships", ["user_id", "venue_id"], name: "index_venue_like_relationships_on_user_id_and_venue_id", unique: true
+  add_index "venue_like_relationships", ["user_id"], name: "index_venue_like_relationships_on_user_id"
+  add_index "venue_like_relationships", ["venue_id"], name: "index_venue_like_relationships_on_venue_id"
 
   create_table "venues", force: true do |t|
     t.string   "name"
