@@ -250,3 +250,10 @@ section:hover{
 	padding-top: 8px !important;
 	border-radius: 50% !important;
 }
+.pos-fixed{
+	position:fixed !important;
+	top:0;
+	height: 50px;
+	width: 100%;
+	z-index: 4000;
+}

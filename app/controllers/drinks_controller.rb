@@ -13,6 +13,7 @@ class DrinksController < ApplicationController
 	end
 
 	def create
+		@fly_status_orig = current_user.fly_status
 		@feed_items = current_user.feed.paginate(page: params[:page], :per_page => 30)
 		@new_drink = Drink.new
 		@user = current_user
@@ -41,6 +42,11 @@ class DrinksController < ApplicationController
 		end
 		if @drink.save
 			flash.now[:success] = "New drink recorded! You can add a venue, #{ActionController::Base.helpers.link_to "or skip this step.", '/'}".html_safe
+			@updated_fly_status = current_user.fly_status
+			if @fly_status_orig != @updated_fly_status
+				message = "fly status update"
+				flash.now[:fly_status] = message
+			end
 			@venue.city = current_user.location
 			client = Foursquare2::Client.new(:client_id => '4IEC2TEEXYZBNXI4Z0XWKOPCXPTL54WIYGSL20IRJVOH41QT', :client_secret => 'U1W5VEBHWP4I020DJL1HQ14MTRCQAMMDKH554VTYKUG4BEGF')
 			if !current_user.location.nil? || current_user.location != ""

@@ -90,6 +90,12 @@
     </section>
   </section>
 </section>
+<% if @new_status%>
+  <div class="pos-fixed bg-danger wrapper hidden-vertical animated fadeInUp text-center">            
+      <a href="#" data-dismiss="alert" class="pull-right m-t-n-sm"><i class="fa fa-times"></i></a>
+      Congrats! You are now a <%=current_user.fly_status%> (Level: <%=current_user.level%>)
+  </div>
+<%end%>
 <script type="text/javascript">
   // Set up typeahead
   var setUpLocationTypeahead = function() {

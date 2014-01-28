@@ -1,5 +1,10 @@
 <% flash.each do |key, value| %>
-<div class="alert alert-<%= key %>"><%= value %></div>
+	<% if value === "fly status update"%>
+		<% @new_status = true%>
+	<%end%>
+  <% if !@new_status %>
+	 <div class="alert alert-<%= key %>"><%= value %></div>
+  <%end%>
 <% end %>
 <%= form_for @venue, url: venues_search_path do |f| %>
 <%= f.label :name, "Venue Name", class: "control-label" %>
