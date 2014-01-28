@@ -277,7 +277,7 @@ class User < ActiveRecord::Base
         location = auth.info.location.to_s
         city_state = location.split(",")
         state = LocationCache.state_code(city_state[1].squish)
-		    user.location = city_state[0].squish+" ,"+state
+		    user.location = city_state[0].squish+", "+state
 		    user.oauth_token = auth.credentials.token
 		    user.provider = auth.provider
         user.picture = "http://graph.facebook.com/"+auth.uid+"/picture?width=300&height=300"
