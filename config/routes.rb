@@ -11,7 +11,7 @@ Barfly::Application.routes.draw do
   resources :cocktails
   resources :venues
   resources :sessions, only: [:new, :create, :destroy]
-  resources :relationships, only: [:create, :destroy]
+  resources :relationships
   resources :cocktail_like_relationships, only: [:create, :destroy]
   resources :venue_like_relationships, only: [:create, :destroy]
   resources :beer_like_relationships, only: [:create, :destroy]
