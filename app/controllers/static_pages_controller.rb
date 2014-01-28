@@ -28,11 +28,12 @@ class StaticPagesController < ApplicationController
 
 	def top
 		@top = true
-		@top_beers = Beer.find(:all, :order => "likes").reverse
-		@top_cocktails = Cocktail.find(:all, :order => "likes").reverse
+		@top_beers = Beer.all(:order => "likes DESC").take(40)
+		@top_cocktails = Cocktail.all(:order => "likes DESC").take(40)
 		@user_tried = current_user.drinks.pluck(:name)
 	end
 
 	def discover
+
 	end
 end
