@@ -209,6 +209,19 @@ label, input, button, select, textarea {
 	border: 3px solid #fc8d80;
 }
 
+.square-image-full{
+	width:100%;
+	height:100%;
+}
+
+section:hover{
+	text-decoration: none !important;
+}	
+
+.max-sm{
+	max-width:200px;
+}
+
 .padding-img{
 	padding-right:30px !important;
 }

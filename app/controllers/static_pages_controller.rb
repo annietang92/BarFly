@@ -1,4 +1,6 @@
 class StaticPagesController < ApplicationController
+	require 'will_paginate/array'
+
 	def index
 		if signed_in?
 			all_drinks = Cocktail.all_cocktails + Beer.all_beers
@@ -16,5 +18,9 @@ class StaticPagesController < ApplicationController
 			end
 				
 		end
+	end
+
+	def passport
+		@venues = current_user.venues.paginate(page: params[:page], :per_page => 48)
 	end
 end

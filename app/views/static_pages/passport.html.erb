@@ -1,0 +1,27 @@
+<% provide(:title, "BarFly | Passport") %>
+<section id="content">
+	<section class="vbox">
+		<section class="scrollable wrapper">
+			<div class="row">
+				<% int = @venues.count%>
+				<%@venues.each do |venue|%>
+						<div class="col-lg-3">
+							<section class="panel text-center">
+								<%@image = "Stamps/stamp"+int.to_s+".jpg"%>
+								<%=link_to image_tag(@image),venue,class: "square-image-full max-sm"%>
+								<div class="line dashed-line"></div>
+								<strong><%=link_to venue.name, venue%></strong>
+								<small class="text-muted"><br>
+									<i class="fa-book fa"></i> 
+									Stamped on 
+									<%=DrinkVenueRelationship.all.where(venue_id: venue.id).first.created_at.strftime("%B %d, %Y")%>
+								</small>
+							</section>
+						</div>
+					<% int = int - 1 %>
+				<%end%>
+			</div>
+			<%= will_paginate @venues, :renderer => WillPaginate::ActionView::LinkRenderer, class: "pull-right margin-right-small font_gray"%>
+		</section>
+	</section>
+</section>

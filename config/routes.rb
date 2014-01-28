@@ -28,5 +28,6 @@ Barfly::Application.routes.draw do
   match 'auth/failure',             to: 'static_pages#index', via: 'get'
 
   match '/fb', to: 'facebook#index',     via: 'get'
+  match '/passport', to: 'static_pages#passport',     via: 'get'
 
 end

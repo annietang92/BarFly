@@ -66,6 +66,16 @@ class User < ActiveRecord::Base
     return @checkins
   end
 
+  def venues
+    @venues = []
+    Venue.all.each do |venue|
+      venue.drinks.where(user_id: self.id).each do |match|
+        @venues.push(venue) if !@venues.include?(venue)
+      end
+    end
+    return @venues.reverse!
+  end
+
   def level
     if self.drinks.count >= 350 && self.uniq_drink_count >= 200
       return 14
