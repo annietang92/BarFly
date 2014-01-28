@@ -3,12 +3,12 @@
       <div class="clearfix">
         <div class="clear">
             <i class="fa fa-glass"></i> &nbsp;
-            Top Drinks In Your Area
+            Recent Drinks In Your Area
         </div>
         <div class="line"></div>
         <ol>
           <%@top_drinks.each do |drink|%>
-            <li><%=drink%></li>
+            <li><%=drink.name%></li>
           <%end%>
         </ol>
       </div>

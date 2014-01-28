@@ -3,7 +3,7 @@ class StaticPagesController < ApplicationController
 
 	def index
 		@top_venues = Venue.top_venues_around(current_user).take(10)
-		@top_drinks = Drink.top_drinks_around(current_user).take(5)
+		@top_drinks = Drink.where(location: current_user.location).take(10)
 		@dashboard = true
 		if signed_in?
 			all_drinks = Cocktail.all_cocktails + Beer.all_beers
