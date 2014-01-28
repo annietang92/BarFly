@@ -29,8 +29,8 @@ class StaticPagesController < ApplicationController
 
 	def top
 		@top = true
-		@top_beers = Beer.all(:order => "likes DESC").take(40)
-		@top_cocktails = Cocktail.all(:order => "likes DESC").take(40)
+		@top_beers = Beer.all(:order => "likes DESC").take(30)
+		@top_cocktails = Cocktail.where(iba: "Y").reverse.take(30)
 		@user_tried = current_user.drinks.pluck(:name)
 	end
 
