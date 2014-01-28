@@ -2,6 +2,7 @@ class StaticPagesController < ApplicationController
 	require 'will_paginate/array'
 
 	def index
+		@dashboard = true
 		if signed_in?
 			all_drinks = Cocktail.all_cocktails + Beer.all_beers
 			@all_drinks = all_drinks.sort
@@ -21,6 +22,7 @@ class StaticPagesController < ApplicationController
 	end
 
 	def passport
+		@passport = true
 		@venues = current_user.venues.paginate(page: params[:page], :per_page => 48)
 	end
 end

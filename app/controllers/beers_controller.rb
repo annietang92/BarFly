@@ -3,11 +3,13 @@ class BeersController < ApplicationController
                 only: [:show, :create]
 	
 	def show
+		@discover = true
 		@beer = Beer.find(params[:id])
 		@feed_items = Drink.all.where(name: @beer.name).paginate(page: params[:page], :per_page => 20)
 	end
 
 	def create
+		@discover = true
 		@cocktail = Cocktail.new
 		@venue = Venue.new
 		@user = current_user
