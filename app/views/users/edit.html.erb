@@ -1,27 +1,79 @@
 <% provide(:title, "Edit user") %>
 <section id="content">
-<h1>Update your profile</h1>
+  <section class="vbox">
+    <section class="scrollable wrapper">
+      <div class="row">
+        <div class = "col-lg-5">
+          <section class="panel">
+            <div class="panel-body">
+          <header class="panel-heading text-center">
+            <h3>Update Your Profile</h3>
+          </header>
+          <% flash.each do |key, value| %>
+          <div class="alert alert-<%= key %>"><%= value %></div>
+        <% end %>
 
-    <%= form_for(@user) do |f| %>
-      <%= render 'shared/error_messages' %>
+          <%= form_for(@user) do |f| %>
+          <div class="form-group">
+            <%= render 'shared/error_messages' %>
 
-      <%= f.label :name %>
-      <%= f.text_field :name %>
+            <%= f.label :name %>
+            <%= f.text_field :name, class: "form-control" %>
+          </div>
+          <div class="form-group">
 
-      <%= f.label :email %>
-      <%= f.text_field :email %>
+            <%= f.label :email %>
+            <%= f.text_field :email, class: "form-control" %>
 
-      <%= f.label :city %>
-      <%= f.text_field :location, class: "location_tt" %>
-
-      <%= f.label :password %>
-      <%= f.password_field :password %>
-
-      <%= f.label :password_confirmation, "Confirm Password" %>
-      <%= f.password_field :password_confirmation %><br>
-
-      <%= f.submit "Save changes", class: "btn btn-large btn-primary" %>
-    <% end %>
-
-    <%= image_tag @user.picture %>
+          </div>
+          <div class="form-group">
+            <%= f.label :city %>
+            <%= f.text_field :location, class: "location_tt form-control" %>
+          </div>
+           <div class="form-group">
+            <%= f.label :password %>
+            <%= f.password_field :password, class: "form-control" %>
+          </div>
+          <div class="form-group">
+            <%= f.label :password_confirmation, "Confirm Password" %>
+            <%= f.password_field :password_confirmation, class: "form-control" %><br>
+          </div><div class="small_space"></div>
+            <%= f.submit "Save changes", class: "btn btn-large btn-primary" %>
+          <% end %>
+        </div>
+        </section>
+        </div>
+        <div class = "col-lg-4">
+          <section class="panel transparent">
+            <div class="panel-body">
+              <div class="clearfix text-center m-t">
+                <div class="thumb-xlg">
+              <%if @user.picture.nil? || @user.picture === ""%>
+                <%=image_tag "Icons/icon_final.png", class: "img-circle-lg bg-white"%>
+              <%else%>
+                <%=image_tag @user.picture, class: "img-circle-lg bg-white"%>
+              <%end%>
+            </div>
+            </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </section>
+  </section>
 </section>
+
+<script type="text/javascript">
+  // Set up typeahead
+  var setUpLocationTypeahead = function() {
+      // Initialize typeahead.
+      $(".location_tt").typeahead({
+          name: 'location',
+          local: <%= @locations.to_s.html_safe %>
+      });
+  }
+
+  $(document).ready(function(){
+    setUpLocationTypeahead();
+  });
+</script>
