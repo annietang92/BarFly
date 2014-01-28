@@ -1498,7 +1498,6 @@ fieldset[disabled] .btn-gplus.active {
 }
 .btn {
   font-weight: 500;
-  background-image: none !important;
   border: none !important;
   box-shadow: none !important;
 }

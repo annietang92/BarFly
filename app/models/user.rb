@@ -165,9 +165,10 @@ class User < ActiveRecord::Base
   def like_venue!(venue)
     venue_like_relationships.create!(venue_id: venue.id)
     if venue.likes.nil?
-      likes = 0
+      likes = 1
+    else
+      likes = venue.likes + 1
     end
-    likes = venue.likes + 1
     venue.update_attribute(:likes, likes)
   end
 
@@ -184,9 +185,10 @@ class User < ActiveRecord::Base
   def like_cocktail!(cocktail)
     cocktail_like_relationships.create!(cocktail_id: cocktail.id)
     if cocktail.likes.nil?
-      likes = 0
+      likes = 1
+    else
+      likes = cocktail.likes + 1
     end
-    likes = cocktail.likes + 1
     cocktail.update_attribute(:likes, likes)
   end
 
@@ -203,9 +205,10 @@ class User < ActiveRecord::Base
   def like_beer!(beer)
     beer_like_relationships.create!(beer_id: beer.id)
     if beer.likes.nil?
-      likes = 0
+      likes = 1
+    else
+      likes = beer.likes + 1
     end
-    likes = beer.likes + 1
     beer.update_attribute(:likes, likes)
   end
 

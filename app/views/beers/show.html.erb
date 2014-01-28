@@ -6,13 +6,21 @@
         <div class="col-lg-4">
         	<section class="panel">
 				<div class="panel-body">
+
+					<%=render 'likes'%>
+
 					<div class="clearfix text-center m-t">
 						<div class="thumb-xlg">
 							<%= image_tag @beer.img_lg, class: "img-circle-lg" %>
 						</div>
 						<div class="h3 m-t m-b-xs">
 							<strong><%= @beer.name%></strong><div class="small_space"></div>
-							<small class="text-muted m-b"><i class="fa fa-beer"></i> <%= @beer.brewed_by%>
+							<small class="text-muted m-b"><i class="fa fa-beer"></i> <%= @beer.brewed_by%> &nbsp; <i class="fa fa-heart"></i>
+							<%if @beer.likes.nil?%>
+								0
+							<%else%>
+								<%=@beer.likes%>
+							<%end%>
 							</small>
 						</div>
 					</div>
@@ -41,11 +49,6 @@
 							<% if !@beer.availability.nil? %>
 								Availability: <%=@beer.availability%><br>
 							<%end%>
-							<%if @beer.likes.nil?%>
-								Likes: 0<br>
-							<%else%>
-								Likes: <%=@beer.likes%>
-							<%end%>
 						</div>
 					</div>
 				</footer>
@@ -54,9 +57,7 @@
         <div class="col-lg-7">
     	<% if !@beer.description.nil?%>						
       		<div class="panel bg-warning dker">
-      			<div class="panel-body">
       				<%=@beer.description%>
-      			</div>
       		</div>
       	<%end%>
       		<%=render 'shared/feed'%>

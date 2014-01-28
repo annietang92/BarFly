@@ -176,11 +176,15 @@ label, input, button, select, textarea {
 	}
 }
 
+.pos_abs{
+	position:absolute;
+}
+
 .btn-transparent{
 	background-color:transparent;
 	border:none;
 	color:white;
-	padding:0;
+	padding:0 !important;
 	margin:0;
 	outline: none;
 }
@@ -211,4 +215,18 @@ label, input, button, select, textarea {
 
 .feed-min{
 	min-height:70px;
+}
+
+.btn-unlike{
+	width: 40px;
+	background-image: url(image-path('/assets/like_white.png')) !important;
+	background-repeat: no-repeat;
+	background-size: 40px 40px;
+}
+
+.btn-relike{
+	width: 40px;
+	background-image: url(image-path('/assets/like.png')) !important;
+	background-repeat: no-repeat;
+	background-size: 40px 40px;
 }

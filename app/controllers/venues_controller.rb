@@ -2,6 +2,7 @@ class VenuesController < ApplicationController
 
 	def show
 		@venue = Venue.find(params[:id])
+		@feed_items = @venue.drinks.paginate(page: params[:page], :per_page => 20)
 	end
 
 	def new

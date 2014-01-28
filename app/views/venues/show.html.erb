@@ -7,9 +7,12 @@
         	<div class="col-lg-4">
 	        	<section class="panel">
 	        		<div class="panel-body">
+
+	        			<%=render 'likes'%>
+
 	        			<div class="clearfix text-center">
 							<div class="h3 m-b-xs">
-								<strong><%= @venue.name%></strong><div class="small_space"></div>
+								<strong><br><br><%= @venue.name%></strong><div class="small_space"></div>
 								<small class="text-muted m-b"><i class="fa fa-map-marker"></i> <%= @venue.address%>, <%= @venue.city%>, <%= @venue.state%> <%= @venue.zip%><br><br>
 								</small>
 							</div>
@@ -33,21 +36,24 @@
 	        					 Likes<br><br>
 	        				</div>
 
-	        				<%= link_to "Sign Up", signup_path, class: "m-t btn btn-primary btn-xlarge" %>
+	        				<button class="btn btn-transparent"></button>
 	        			</div>
 	        		</footer>
 	        	</section>
         	</div>
+        	<div class="col-lg-7">
+	    	<% if !@venue.description.nil? && @venue.description != ""%>						
+	      		<div class="panel bg-danger lter">
+	      				<%=@venue.description%>
+	      		</div>
+	      	<%else%>
+	      		<div class="panel bg-danger lter">
+	      				Recent Check-Ins
+	      		</div>
+	      	<%end%>
+	      		<%=render 'shared/feed'%>
+	        </div>
         </div>
   	</section>
   </section>
 </section>
-
-<h1><%=@venue.name%></h1>
-<h1><%=pluralize(@venue.checkins, "check-ins")%></h1>
-<h1><%=pluralize(@venue.likes, "likes")%></h1>
-<%=@venue.address%><br>
-<%=@venue.city%>, <%=@venue.state%> <%=@venue.zip%><br>
-<%=@venue.phone%><br><br>
-<%= link_to @venue.url %><br>
-<%=@venue.description%>

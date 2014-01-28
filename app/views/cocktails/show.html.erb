@@ -6,6 +6,9 @@
         <div class="col-lg-4">
         	<section class="panel">
 				<div class="panel-body">
+					
+					<%=render 'likes'%>
+
 					<div class="clearfix text-center m-t">
 						<div class="thumb-xlg">
 							<% if !@cocktail.image.nil?%>
@@ -16,7 +19,12 @@
 						</div>
 						<div class="h3 m-t m-b-xs">
 							<strong><%= @cocktail.name%></strong><div class="small_space"></div>
-							<small class="text-muted m-b"><i class="fa fa-glass"></i> <%= @cocktail.primary%>
+							<small class="text-muted m-b"><i class="fa fa-glass"></i> <%= @cocktail.primary%> &nbsp; <i class="fa fa-heart"></i>
+							<%if @cocktail.likes.nil?%>
+								0
+							<%else%>
+								<%=@cocktail.likes%>
+							<%end%>
 							</small>
 						</div>
 					</div>
@@ -44,11 +52,6 @@
 							<%end%>
 							<%if !@cocktail.instructions.nil?%>
 								Instructions: <%=@cocktail.instructions%><br>
-							<%end%><br>
-							<%if @cocktail.likes.nil?%>
-								Likes: 0<br>
-							<%else%>
-								Likes: <%=@cocktail.likes%>
 							<%end%>
 						</div>
 					</div>
@@ -58,9 +61,7 @@
         <div class="col-lg-7">
     	<% if !@cocktail.description.nil?%>						
       		<div class="panel bg-primary dker">
-      			<div class="panel-body">
       				<%=@cocktail.description%>
-      			</div>
       		</div>
       	<%end%>
       		<%=render 'shared/feed'%>

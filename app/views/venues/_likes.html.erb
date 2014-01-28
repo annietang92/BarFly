@@ -1,0 +1,15 @@
+<%if !current_user.venue_like_relationships.find_by(venue_id: @venue.id).nil? %>
+	<%= form_for(current_user.venue_like_relationships.find_by(venue_id: @venue.id),
+	html: { method: :delete }) do |f| %>
+		<button type="button" class="pos_abs btn btn-transparent pull-left" data-toggle="tooltip" data-placement="right" title="" data-original-title="Unlike">
+			<%= f.submit " ", class: "btn-unlike btn active" %>
+		</button>
+	<% end %>
+<% else %>
+	<%= form_for(current_user.venue_like_relationships.build(venue_id: @venue.id)) do |f| %>
+		<div><%= f.hidden_field :venue_id %></div>
+		<button type="button" class="pos_abs btn btn-transparent pull-left" data-toggle="tooltip" data-placement="right" title="" data-original-title="Like!">
+			<%= f.submit " ", class: "btn-unlike btn btn-danger lter" %>
+		</button>
+	<% end %>
+<% end %>

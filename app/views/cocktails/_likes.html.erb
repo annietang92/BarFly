@@ -1,0 +1,15 @@
+<%if !current_user.cocktail_like_relationships.find_by(cocktail_id: @cocktail.id).nil? %>
+	<%= form_for(current_user.cocktail_like_relationships.find_by(cocktail_id: @cocktail.id),
+	html: { method: :delete }) do |f| %>
+		<button type="button" class="pos_abs btn btn-transparent pull-left" data-toggle="tooltip" data-placement="right" title="" data-original-title="Unlike">
+			<%= f.submit " ", class: "btn-unlike btn active" %>
+		</button>
+	<% end %>
+<% else %>
+	<%= form_for(current_user.cocktail_like_relationships.build(cocktail_id: @cocktail.id)) do |f| %>
+		<div><%= f.hidden_field :cocktail_id %></div>
+		<button type="button" class="pos_abs btn btn-transparent pull-left" data-toggle="tooltip" data-placement="right" title="" data-original-title="Like!">
+			<%= f.submit " ", class: "btn-unlike btn btn-danger lter" %>
+		</button>
+	<% end %>
+<% end %>

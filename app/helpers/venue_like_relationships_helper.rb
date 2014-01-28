@@ -1,0 +1,2 @@
+module VenueLikeRelationshipsHelper
+end
