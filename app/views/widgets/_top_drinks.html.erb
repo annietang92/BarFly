@@ -8,7 +8,7 @@
         <div class="line"></div>
         <ol>
           <%@top_venues.each do |venue|%>
-            <li><%=link_to venue.name%></li>
+            <li><%=link_to venue.name, venue%></li>
           <%end%>
         </ol>
       </div>

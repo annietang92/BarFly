@@ -2,6 +2,7 @@ class CocktailsController < ApplicationController
 	before_action :signed_in_user,
                 only: [:show]
 	def show
+		@user = current_user
 		@cocktail = Cocktail.find(params[:id])
 		@feed_items = Drink.all.where(name: @cocktail.name).paginate(page: params[:page], :per_page => 20)
 	end
