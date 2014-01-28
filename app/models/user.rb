@@ -1,4 +1,7 @@
 class User < ActiveRecord::Base
+  require 'carmen'
+  include Carmen
+
 	before_save { self.email = email.downcase }
 	validates :name,  presence: true, length: { maximum: 50 }
   VALID_EMAIL_REGEX = /\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i
@@ -274,7 +277,9 @@ class User < ActiveRecord::Base
 		    user.password = auth.uid
 		    user.password_confirmation = auth.uid
 		    user.uid = auth.uid
-		    user.location = auth.info.location.to_s
+		    city_state = auth.info.location.to_s.split(",")
+        state = city_state[1].squish
+        user.location = Carmen::state_code(state, 'US')
 		    user.oauth_token = auth.credentials.token
 		    user.provider = auth.provider
         user.picture = "http://graph.facebook.com/"+auth.uid+"/picture?width=300&height=300"
