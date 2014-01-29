@@ -18,6 +18,8 @@ class DrinksController < ApplicationController
 			redirect_to edit_user_path(current_user)
 			return
 		end
+		@top_venues = Venue.top_venues_around(current_user).take(10)
+			@top_drinks = Drink.where(location: current_user.location).take(10)
 		@fly_status_orig = current_user.fly_status
 		@feed_items = current_user.feed.paginate(page: params[:page], :per_page => 30)
 		@new_drink = Drink.new
