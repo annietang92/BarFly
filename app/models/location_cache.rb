@@ -33,7 +33,7 @@ class LocationCache < ActiveRecord::Base
 	end
 
 	def self.is_valid_location(location)
-		if LocationCache.last.text.include?(location)
+		if LocationCache.first.text.include?(location)
 			return true
 		else
 			return false
