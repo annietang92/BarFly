@@ -31,4 +31,14 @@ class LocationCache < ActiveRecord::Base
 		end
 		return abv.upcase		
 	end
+
+	def self.is_valid_location(location)
+		if LocationCache.first.text.include?(location)
+			if location != "APO, AA" && location != "FPO, AA"
+				return true
+			end
+		else
+			return false
+		end
+	end
 end

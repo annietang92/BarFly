@@ -13,6 +13,16 @@ class DrinksController < ApplicationController
 	end
 
 	def create
+		if current_user.location.nil?
+			flash[:error] = "Please choose and save your current city."
+			redirect_to edit_user_path(current_user)
+			return
+		end
+		if !LocationCache.is_valid_location(current_user.location)
+			flash[:error] = "Please update with a valid location"
+			redirect_to edit_user_path(current_user)
+			return
+		end
 		@fly_status_orig = current_user.fly_status
 		@feed_items = current_user.feed.paginate(page: params[:page], :per_page => 30)
 		@new_drink = Drink.new
