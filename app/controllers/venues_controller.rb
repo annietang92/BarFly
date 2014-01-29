@@ -17,6 +17,11 @@ class VenuesController < ApplicationController
 
 	def search
 		@venue = Venue.new(venue_params)
+		if !LocationCache.is_valid_location(@venue.city)
+			flash.now[:error] = "Not a valid city"
+			render 'new'
+			return
+		end
 		if @venue.name === "" || @venue.name.nil?
 			@drink = Drink.find(@venue.drink_id)
 			flash.now[:error] = "Must input a venue name!"
