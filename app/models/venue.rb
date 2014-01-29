@@ -10,7 +10,7 @@ class Venue < ActiveRecord::Base
   		if !user.location.nil?
   			userlocation = user.location.split(",")
   			city = userlocation[0].squish
-  			state = userlocation[1].squish unless userlocation.count === 1
+  			state = userlocation[1].squish
   			return Venue.where(city: city, state: state)
   		else
   			return []
