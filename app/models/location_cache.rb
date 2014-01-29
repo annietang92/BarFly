@@ -34,7 +34,9 @@ class LocationCache < ActiveRecord::Base
 
 	def self.is_valid_location(location)
 		if LocationCache.first.text.include?(location)
-			return true
+			if location.include?(", ")
+				return true
+			end
 		else
 			return false
 		end
