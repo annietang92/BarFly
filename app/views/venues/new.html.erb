@@ -73,7 +73,7 @@
                       <%= t.hidden_field :drink_id, :value => @drink.id %>
                       <%= t.hidden_field :likes, :value => Integer(v.stats.tipCount)%>
                       <%= t.hidden_field :checkins, :value => Integer(v.stats.checkinsCount) %>
-                      <%= t.submit v.name, class: "btn btn-danger lt btn-sm" %>
+                      <%= t.submit truncate(v.name,length:36), class: "btn btn-danger lt btn-sm" %>
                     <% end %><div class="small_space"></div>
                     <% if !v.categories[0].nil?%>
                     <%= image_tag v.categories[0].icon, class: "pull-right" %>

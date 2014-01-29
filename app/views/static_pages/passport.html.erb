@@ -25,7 +25,7 @@
 									<%@image = "Stamps/stamp"+int.to_s+".jpg"%>
 									<%=link_to image_tag(@image),venue,class: "square-image-full max-sm"%>
 									<div class="line dashed-line"></div>
-									<strong><%=link_to venue.name, venue%></strong>
+									<strong><%=truncate(venue.name, length: 22)%></strong>
 									<small class="text-muted"><br>
 										<i class="fa-book fa"></i> 
 										Stamped on 
