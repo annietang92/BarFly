@@ -38,10 +38,11 @@
                       <%= t.submit v.name, class: "btn btn-danger lt btn-sm" %>
                     <% end %><div class="small_space"></div>
                     <% if !v.categories[0].nil?%>
-                      <%= image_tag v.categories[0].icon, class: "pull-right" %>
+                    <%image = v.categories[0].icon.prefix.chomp('_') + ".png"%>
+                      <%= image_tag image, class: "pull-right" %>
                     <%end%>
                     <%=v.location.address%><br>
-                    <%=v.location.city%>, <%=v.location.state%> <%v.postalCode%><div class="small_space"></div>
+                    <%=v.location.city%>, <%=v.location.state%> <%v.location.postalCode%><div class="small_space"></div>
                     Check-Ins: <%=v.stats.checkinsCount%><br>
                     Likes: <%=v.stats.tipCount%>
                 </section>
