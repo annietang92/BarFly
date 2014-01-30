@@ -23,9 +23,9 @@ class BeersController < ApplicationController
 			@drink.comment = current_user.name.to_s + " just created a new beer!"
 			if @drink.save
 				@venue.city = current_user.location
-				client = Foursquare2::Client.new(:client_id => '4IEC2TEEXYZBNXI4Z0XWKOPCXPTL54WIYGSL20IRJVOH41QT', :client_secret => 'U1W5VEBHWP4I020DJL1HQ14MTRCQAMMDKH554VTYKUG4BEGF')
+				client = Foursquare2::Client.new(:api_version => '20120505', :client_id => '4IEC2TEEXYZBNXI4Z0XWKOPCXPTL54WIYGSL20IRJVOH41QT', :client_secret => 'U1W5VEBHWP4I020DJL1HQ14MTRCQAMMDKH554VTYKUG4BEGF')
 				if !current_user.location.nil? || current_user.location != ""
-					@top_venues = client.search_venues(:near => @user.location, categoryId: '4bf58dd8d48988d116941735', limit: 20).groups[0].items
+					@top_venues = client.search_venues(:near => @user.location, categoryId: '4bf58dd8d48988d116941735', limit: 20).venues
 				end
 				flash.now[:success] = "New drink recorded! You can add a venue for your drink, or skip this step."
 				render 'venues/new'
