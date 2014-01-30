@@ -43,6 +43,8 @@ class DrinksController < ApplicationController
 				@drink.drink_id = Cocktail.find_by(name: @drink.name).id
 			else
 				flash.now[:error] = "We have no record of that drink! #{ActionController::Base.helpers.link_to "Would you like to add it?", '/drinks/new'}".html_safe
+				all_drinks = Cocktail.all_cocktails + Beer.all_beers
+				@all_drinks = all_drinks.sort
 				render 'static_pages/index'
 				return
 			end
